@@ -1,48 +1,56 @@
 import { useEffect, useState } from 'react'
 
 export default function PageLoader() {
-  const [showLoader, setShowLoader] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
+  const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    // Hide loader after 2 seconds
-    const timer = setTimeout(() => {
-      setShowLoader(false)
-    }, 2000)
+    // Simulate progress
+    const interval = setInterval(() => {
+      setProgress(prev => {
+        if (prev >= 90) return prev
+        return prev + Math.random() * 30
+      })
+    }, 200)
 
-    return () => clearTimeout(timer)
+    // Stop loading after page load
+    const timer = setTimeout(() => {
+      setProgress(100)
+      setTimeout(() => setIsLoading(false), 300)
+    }, 1800)
+
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timer)
+    }
   }, [])
 
-  if (!showLoader) {
+  if (!isLoading) {
     return null
   }
 
   return (
-    <div className="fixed inset-0 bg-white z-50 flex items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-6">
-        {/* Logo - SVG */}
+    <>
+      {/* Top Progress Bar */}
+      <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-neutral-100">
+        <div 
+          className="h-full bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600 transition-all duration-300 ease-out"
+          style={{ width: `${progress}%` }}
+        ></div>
+      </div>
+      
+      {/* Logo indicator at top-right */}
+      <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-md">
         <div className="animate-bounce">
           <img 
             src="/images/assets/logo-gradient.svg" 
-            alt="RCFI Logo"
-            className="w-20 h-20 object-contain"
+            alt="Loading"
+            className="w-5 h-5"
           />
         </div>
-        
-        {/* Loading Text */}
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-primary-900 mb-3">
-            RCFI Technology
-          </h2>
-          <p className="text-sm text-neutral-600 mb-6">
-            Empowering Africa's Digital Transformation
-          </p>
-        </div>
-
-        {/* Loading Spinner */}
-        <div className="mt-4">
-          <div className="w-8 h-8 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin"></div>
-        </div>
+        <span className="text-xs font-semibold text-primary-600">Loading...</span>
       </div>
-    </div>
+    </>
   )
 }
+
