@@ -47,14 +47,14 @@ export default function CompanyOverview() {
               </p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-12 flex items-center justify-center">
+          <div className="bg-gradient-to-br from-green-100 to-green-100 rounded-2xl p-12 flex items-center justify-center">
             <div className="grid grid-cols-2 gap-4 w-full">
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">3</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">3</div>
                 <div className="text-sm text-gray-600">Products</div>
               </div>
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">47</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">47</div>
                 <div className="text-sm text-gray-600">Counties</div>
               </div>
               <div className="bg-white rounded-xl p-6 text-center">

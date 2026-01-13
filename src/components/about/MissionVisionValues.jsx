@@ -30,14 +30,14 @@ export default function MissionVisionValues() {
   ]
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-green-50 to-green-50">
       <div className="max-w-7xl mx-auto">
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {/* Mission */}
           <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
-            <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-              <FiTarget className="w-8 h-8 text-blue-600" />
+            <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+              <FiTarget className="w-8 h-8 text-green-600" />
             </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -47,8 +47,8 @@ export default function MissionVisionValues() {
 
           {/* Vision */}
           <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
-            <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-              <FiEye className="w-8 h-8 text-purple-600" />
+            <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+              <FiEye className="w-8 h-8 text-green-600" />
             </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h3>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -71,8 +71,8 @@ export default function MissionVisionValues() {
               const Icon = value.icon
               return (
                 <div key={index} className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-green-600" />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h4>
                   <p className="text-gray-600">{value.description}</p>
