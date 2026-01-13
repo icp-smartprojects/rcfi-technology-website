@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FiChevronDown, FiSearch } from 'react-icons/fi'
 
@@ -215,12 +216,12 @@ export default function FAQ() {
             Our team is here to help. Contact us and we'll get back to you within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all">
+            <Link href="/contact" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all">
               Contact Support
-            </a>
-            <a href="/contact/demo" className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-semibold transition-all">
+            </Link>
+            <Link href="/contact/demo" className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-semibold transition-all">
               Schedule a Call
-            </a>
+            </Link>
           </div>
         </div>
       </section>

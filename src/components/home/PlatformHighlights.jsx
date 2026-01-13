@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FiPlay } from 'react-icons/fi'
 
 export default function PlatformHighlights() {
@@ -47,12 +48,12 @@ export default function PlatformHighlights() {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact/demo" className="btn btn-primary">
+              <Link href="/contact/demo" className="btn btn-primary">
                 Schedule a Demo
-              </a>
-              <a href="/resources/documentation" className="btn btn-outline">
+              </Link>
+              <Link href="/resources/documentation" className="btn btn-outline">
                 View Documentation
-              </a>
+              </Link>
             </div>
           </div>
 

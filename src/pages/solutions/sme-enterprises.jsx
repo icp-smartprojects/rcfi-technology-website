@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FiStore, FiCheckCircle, FiShield, FiUsers, FiAward, FiArrowRight, FiTrendingUp, FiDollarSign } from 'react-icons/fi'
+import { FiBarChart2, FiCheckCircle, FiShield, FiUsers, FiAward, FiArrowRight, FiTrendingUp, FiDollarSign } from 'react-icons/fi'
 
 export default function SMESolution() {
   return (
@@ -16,7 +16,7 @@ export default function SMESolution() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                <FiStore /> SMEs & Enterprises
+                <FiBarChart2 /> SMEs & Enterprises
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Digital Transformation for Growing Businesses
@@ -34,7 +34,7 @@ export default function SMESolution() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiStore className="w-64 h-64 text-orange-600 opacity-20" />
+              <FiBarChart2 className="w-64 h-64 text-orange-600 opacity-20" />
             </div>
           </div>
         </div>

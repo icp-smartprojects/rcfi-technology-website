@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FiCheckCircle, FiCalendar, FiClock, FiVideo } from 'react-icons/fi'
 
@@ -42,9 +43,9 @@ export default function RequestDemo() {
             <p className="text-xl text-gray-600 mb-8">
               We've received your demo request. Our team will contact you within 24 hours to schedule your personalized demonstration.
             </p>
-            <a href="/" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all inline-block">
+            <Link href="/" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all inline-block">
               Back to Home
-            </a>
+            </Link>
           </div>
         </section>
       </>

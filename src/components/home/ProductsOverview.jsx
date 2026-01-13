@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ProductCard from '@/components/common/ProductCard'
 import { productsData } from '@/data/productsData'
 
@@ -39,7 +40,7 @@ export default function ProductsOverview() {
           <p className="text-neutral-600 mb-6">
             Not sure which solution is right for you?
           </p>
-          <a 
+          <Link 
             href="/contact" 
             className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold text-lg"
           >
@@ -47,7 +48,7 @@ export default function ProductsOverview() {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FiGavel, FiCheckCircle, FiShield, FiLock, FiFileText, FiArrowRight, FiClock, FiAward } from 'react-icons/fi'
+import { FiCheckCircle, FiShield, FiLock, FiFileText, FiArrowRight, FiClock, FiAward } from 'react-icons/fi'
 
 export default function LegalSolution() {
   return (
@@ -16,7 +16,7 @@ export default function LegalSolution() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                <FiGavel /> Legal & Compliance
+                <FiCheckCircle /> Legal & Compliance
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Secure, Legally Binding Digital Workflows
@@ -34,7 +34,7 @@ export default function LegalSolution() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-red-100 to-red-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiGavel className="w-64 h-64 text-red-600 opacity-20" />
+              <FiCheckCircle className="w-64 h-64 text-red-600 opacity-20" />
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FiLandmark, FiUniversity, FiUsers, FiStore, FiGavel, FiArrowRight } from 'react-icons/fi'
+import { FiTrendingUp, FiDollarSign, FiUsers, FiBarChart2, FiCheckCircle, FiArrowRight } from 'react-icons/fi'
 
 export default function SolutionsIndex() {
   const solutions = [
@@ -8,7 +8,7 @@ export default function SolutionsIndex() {
       id: 'government',
       title: 'Government & Public Sector',
       description: 'Modernize service delivery, ensure compliance, and build citizen trust',
-      icon: FiLandmark,
+      icon: FiTrendingUp,
       color: 'blue',
       benefits: [
         'Digital citizen services',
@@ -22,7 +22,7 @@ export default function SolutionsIndex() {
       id: 'financial',
       title: 'Financial Services',
       description: 'Secure onboarding, compliance, and digital transformation',
-      icon: FiUniversity,
+      icon: FiDollarSign,
       color: 'green',
       benefits: [
         'Instant e-KYC verification',
@@ -50,7 +50,7 @@ export default function SolutionsIndex() {
       id: 'sme',
       title: 'SMEs & Enterprises',
       description: 'Digital transformation for growing businesses',
-      icon: FiStore,
+      icon: FiBarChart2,
       color: 'orange',
       benefits: [
         'Professional invoicing',
@@ -64,7 +64,7 @@ export default function SolutionsIndex() {
       id: 'legal',
       title: 'Legal & Compliance',
       description: 'Secure, legally binding digital workflows',
-      icon: FiGavel,
+      icon: FiCheckCircle,
       color: 'red',
       benefits: [
         'Court-admissible signatures',

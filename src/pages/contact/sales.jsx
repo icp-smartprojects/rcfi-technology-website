@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FiMail, FiPhone, FiMessageSquare, FiCheckCircle } from 'react-icons/fi'
 
@@ -40,9 +41,9 @@ export default function ContactSales() {
             <p className="text-xl text-gray-600 mb-8">
               Our sales team will contact you within 24 hours to discuss your needs.
             </p>
-            <a href="/" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all inline-block">
+            <Link href="/" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all inline-block">
               Back to Home
-            </a>
+            </Link>
           </div>
         </section>
       </>

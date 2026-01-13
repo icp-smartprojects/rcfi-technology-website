@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { FiPhone, FiMail, FiMapPin, FiClock, FiSend, FiCheckCircle } from 'react-icons/fi'
 import { companyInfo } from '@/data/companyData'
 
@@ -292,7 +293,7 @@ export default function ContactPage() {
               </h2>
 
               <div className="space-y-6">
-                <a 
+                <Link 
                   href="/contact/demo"
                   className="block bg-primary-50 rounded-xl p-6 hover:bg-primary-100 transition-colors group"
                 >
@@ -309,9 +310,9 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
 
-                <a 
+                <Link 
                   href="/resources/documentation"
                   className="block bg-neutral-50 rounded-xl p-6 hover:bg-neutral-100 transition-colors group"
                 >
@@ -328,9 +329,9 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
 
-                <a 
+                <Link 
                   href="/resources/faq"
                   className="block bg-neutral-50 rounded-xl p-6 hover:bg-neutral-100 transition-colors group"
                 >
@@ -347,7 +348,7 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               {/* Office Hours */}

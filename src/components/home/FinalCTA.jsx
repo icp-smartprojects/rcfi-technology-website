@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import CTAButton from '@/components/common/CTAButton'
 import { FiArrowRight, FiPhone } from 'react-icons/fi'
 
@@ -79,7 +80,7 @@ export default function FinalCTA() {
 
           {/* Secondary CTAs */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <a 
+            <Link 
               href="/resources/documentation" 
               className="group bg-neutral-50 rounded-2xl p-6 hover:bg-neutral-100 transition-all"
             >
@@ -90,9 +91,9 @@ export default function FinalCTA() {
               <div className="text-sm text-neutral-600">
                 Technical guides and API references
               </div>
-            </a>
+            </Link>
 
-            <a 
+            <Link 
               href="/resources/case-studies" 
               className="group bg-neutral-50 rounded-2xl p-6 hover:bg-neutral-100 transition-all"
             >
@@ -103,9 +104,9 @@ export default function FinalCTA() {
               <div className="text-sm text-neutral-600">
                 Real success stories from clients
               </div>
-            </a>
+            </Link>
 
-            <a 
+            <Link 
               href="/resources/faq" 
               className="group bg-neutral-50 rounded-2xl p-6 hover:bg-neutral-100 transition-all"
             >
@@ -116,7 +117,7 @@ export default function FinalCTA() {
               <div className="text-sm text-neutral-600">
                 Common questions answered
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
