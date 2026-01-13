@@ -55,13 +55,15 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">R</span>
-            </div>
+          <Link href="/" className="flex items-center space-x-2">
+            <img 
+              src="/images/assets/logo-black.svg" 
+              alt="RCFI Logo"
+              className="w-10 h-10 object-contain"
+            />
             <div>
-              <div className="font-display font-bold text-xl text-neutral-900">RCFI Technology</div>
-              <div className="text-xs text-neutral-600">Digital Transformation</div>
+              <div className="font-display font-bold text-lg text-neutral-900">RCFI</div>
+              <div className="text-xs text-neutral-600">Technology</div>
             </div>
           </Link>
 

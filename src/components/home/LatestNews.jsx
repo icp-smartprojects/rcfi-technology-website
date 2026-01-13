@@ -63,11 +63,11 @@ export default function LatestNews() {
             <Link
               key={post.id}
               href={post.href}
-              className="group bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 card-hover animate-slide-up"
+              className="group flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 card-hover animate-slide-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="hidden h-48 overflow-hidden">
                 <img 
                   src={post.image} 
                   alt={post.title}
@@ -76,36 +76,38 @@ export default function LatestNews() {
                     e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f3f4f6" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%239ca3af"%3E' + post.category + '%3C/text%3E%3C/svg%3E'
                   }}
                 />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full">
-                    {post.category}
-                  </span>
-                </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                {/* Meta */}
-                <div className="flex items-center gap-4 text-sm text-neutral-500 mb-3">
-                  <div className="flex items-center gap-1">
-                    <FiCalendar className="w-4 h-4" />
-                    <span>{post.date}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <FiClock className="w-4 h-4" />
-                    <span>{post.readTime}</span>
-                  </div>
+              <div className="p-6 flex flex-col flex-grow">
+                {/* Category Badge */}
+                <div className="mb-3">
+                  <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">
+                    {post.category}
+                  </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2">
+                <h3 className="text-lg font-bold text-neutral-900 mb-4 group-hover:text-primary-600 transition-colors line-clamp-2 leading-snug">
                   {post.title}
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-neutral-600 mb-4 line-clamp-3">
+                <p className="text-neutral-600 mb-6 line-clamp-3 flex-grow">
                   {post.excerpt}
                 </p>
+
+                {/* Meta */}
+                <div className="flex items-center gap-4 text-xs text-neutral-500 mb-4 border-t border-neutral-100 pt-4">
+                  <div className="flex items-center gap-1">
+                    <FiCalendar className="w-3 h-3" />
+                    <span>{post.date}</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <FiClock className="w-3 h-3" />
+                    <span>{post.readTime}</span>
+                  </div>
+                </div>
 
                 {/* Read More Link */}
                 <div className="flex items-center gap-2 text-primary-600 font-semibold group-hover:gap-3 transition-all">

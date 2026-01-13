@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FiUniversity, FiCheckCircle, FiShield, FiUsers, FiAward, FiArrowRight, FiZap, FiLock } from 'react-icons/fi'
+import { FiCheckCircle, FiArrowRight, FiShield, FiUsers, FiAward, FiZap } from 'react-icons/fi'
 
 export default function FinancialServicesSolution() {
   return (
@@ -16,7 +16,7 @@ export default function FinancialServicesSolution() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                <FiUniversity /> Financial Services
+                🏦 Financial Services
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Secure Onboarding & Digital Transformation
@@ -34,7 +34,7 @@ export default function FinancialServicesSolution() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiUniversity className="w-64 h-64 text-green-600 opacity-20" />
+              <div className="text-9xl opacity-20">🏦</div>
             </div>
           </div>
         </div>
@@ -214,38 +214,32 @@ export default function FinancialServicesSolution() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: FiZap,
                 title: 'Instant Verification',
                 description: 'e-KYC completed in under 10 seconds via government database integration',
                 stat: '<10s',
                 statLabel: 'Average KYC time'
               },
               {
-                icon: FiLock,
                 title: 'Bank-Grade Security',
                 description: 'ISO 27001 certified with FIPS 140-2 Level 3 HSM protection',
                 stat: '99.95%',
                 statLabel: 'Uptime SLA'
               },
               {
-                icon: FiCheckCircle,
                 title: 'Full Compliance',
                 description: 'CBK, IRA, and Kenya DPA 2019 compliant out of the box',
                 stat: '100%',
                 statLabel: 'Regulatory aligned'
               }
-            ].map((benefit, index) => {
-              const Icon = benefit.icon
-              return (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                  <Icon className="w-12 h-12 mb-4" />
-                  <div className="text-3xl font-bold mb-2">{benefit.stat}</div>
-                  <div className="text-sm text-green-100 mb-4">{benefit.statLabel}</div>
-                  <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                  <p className="text-green-100">{benefit.description}</p>
-                </div>
-              )
-            })}
+            ].map((benefit, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <div className="text-3xl mb-4">✓</div>
+                <div className="text-3xl font-bold mb-2">{benefit.stat}</div>
+                <div className="text-sm text-green-100 mb-4">{benefit.statLabel}</div>
+                <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
+                <p className="text-green-100">{benefit.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

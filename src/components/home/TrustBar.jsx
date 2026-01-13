@@ -12,7 +12,7 @@ export default function TrustBar() {
           {partners.map((partner, index) => (
             <div 
               key={partner.name}
-              className="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+              className="flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity duration-300"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <img 

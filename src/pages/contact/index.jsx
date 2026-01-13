@@ -373,17 +373,17 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-0">
-        <div className="h-96 bg-neutral-200">
+      <section className="w-full bg-neutral-100">
+        <div style={{ width: '100%', height: '500px', position: 'relative' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817799567!2d36.82194631475394!3d-1.2846454359953208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMDQuOCJTIDM2wrA0OScyNi4wIkU!5e0!3m2!1sen!2ske!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.8246556!2d36.82195!3d-1.2846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6faffffff%3A0x500ad2c5!2sHifadhi%20House!5e0!3m2!1sen!2ske!4v1701234567890"
             width="100%"
             height="100%"
-            style={{ border: 0 }}
+            style={{ border: 'none' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="RCFI Office Location"
+            title="RCFI Office Location - Hifadhi House, ICD Road, Nairobi"
           ></iframe>
         </div>
       </section>

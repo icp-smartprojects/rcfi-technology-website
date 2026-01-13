@@ -73,41 +73,27 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Image / Dashboard Preview */}
-        <div className="mt-16 animate-slide-up animation-delay-400">
-          <div className="relative max-w-6xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/images/hero/dashboard-preview.jpg" 
-                alt="RCFI Platform Dashboard"
-                className="w-full h-auto"
-                onError={(e) => {
-                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1200" height="675"%3E%3Crect fill="%23f3f4f6" width="1200" height="675"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="48" fill="%239ca3af"%3ERCFI Platform Dashboard%3C/text%3E%3C/svg%3E'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/20 to-transparent"></div>
-            </div>
-            {/* Floating Cards */}
-            <div className="hidden lg:block absolute -top-8 -left-8 w-64 bg-white rounded-xl shadow-xl p-6 animate-float">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                  <FiCheckCircle className="w-6 h-6 text-green-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-neutral-900">99.95%</div>
-                  <div className="text-xs text-neutral-600">Uptime SLA</div>
-                </div>
+        {/* Floating Cards - Stats */}
+        <div className="mt-16 relative max-w-6xl mx-auto">
+          <div className="hidden lg:block absolute -top-8 -left-8 w-64 bg-white rounded-xl shadow-xl p-6 animate-float">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                <FiCheckCircle className="w-6 h-6 text-green-600" />
+              </div>
+              <div>
+                <div className="font-semibold text-neutral-900">99.95%</div>
+                <div className="text-xs text-neutral-600">Uptime SLA</div>
               </div>
             </div>
-            <div className="hidden lg:block absolute -bottom-8 -right-8 w-64 bg-white rounded-xl shadow-xl p-6 animate-float animation-delay-300">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-                  <FiShield className="w-6 h-6 text-primary-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-neutral-900">ISO 27001</div>
-                  <div className="text-xs text-neutral-600">Certified Security</div>
-                </div>
+          </div>
+          <div className="hidden lg:block absolute -bottom-8 -right-8 w-64 bg-white rounded-xl shadow-xl p-6 animate-float animation-delay-300">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                <FiShield className="w-6 h-6 text-primary-600" />
+              </div>
+              <div>
+                <div className="font-semibold text-neutral-900">ISO 27001</div>
+                <div className="text-xs text-neutral-600">Certified Security</div>
               </div>
             </div>
           </div>

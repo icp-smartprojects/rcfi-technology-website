@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import { FiPlay } from 'react-icons/fi'
 
 export default function PlatformHighlights() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
-
   const highlights = [
     'Integrated digital trust ecosystem across all products',
     'Blockchain-secured documents for long-term integrity',
@@ -61,40 +58,15 @@ export default function PlatformHighlights() {
 
           {/* Right: Video/Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
-              {!isVideoPlaying ? (
-                <>
-                  <img 
-                    src="/images/platform/demo-thumbnail.jpg" 
-                    alt="Platform Demo"
-                    className="w-full h-auto"
-                    onError={(e) => {
-                      e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect fill="%23f3f4f6" width="800" height="600"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" fill="%239ca3af"%3EPlatform Demo%3C/text%3E%3C/svg%3E'
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 to-transparent flex items-center justify-center">
-                    <button
-                      onClick={() => setIsVideoPlaying(true)}
-                      className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-primary-600 hover:scale-110 transition-transform duration-300 shadow-xl group-hover:bg-primary-600 group-hover:text-white"
-                      aria-label="Play video"
-                    >
-                      <FiPlay className="w-8 h-8 ml-1" />
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <div className="aspect-video bg-neutral-900">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                    title="RCFI Platform Demo"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              )}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/platform/demo-thumbnail.jpg" 
+                alt="Platform Demo"
+                className="w-full h-auto"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect fill="%23f3f4f6" width="800" height="600"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" fill="%239ca3af"%3EPlatform Demo%3C/text%3E%3C/svg%3E'
+                }}
+              />
             </div>
 
             {/* Floating Stats */}

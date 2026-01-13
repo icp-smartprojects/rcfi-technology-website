@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FiLandmark, FiCheckCircle, FiShield, FiUsers, FiAward, FiArrowRight } from 'react-icons/fi'
+import { FiCheckCircle, FiArrowRight, FiShield, FiUsers, FiAward } from 'react-icons/fi'
 
 export default function GovernmentSolution() {
   return (
@@ -16,7 +16,7 @@ export default function GovernmentSolution() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                <FiLandmark /> Government & Public Sector
+                ⚖️ Government & Public Sector
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Modernize Public Service Delivery
@@ -33,8 +33,8 @@ export default function GovernmentSolution() {
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiLandmark className="w-64 h-64 text-blue-600 opacity-20" />
+            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 flex items-center justify-center text-blue-600 text-9xl opacity-20">
+              ⚖️
             </div>
           </div>
         </div>
@@ -248,45 +248,36 @@ export default function GovernmentSolution() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: FiShield,
                 title: 'Kenya DPA 2019 Compliant',
                 description: 'Full compliance with Kenya Data Protection Act and CAK regulations'
               },
               {
-                icon: FiLandmark,
                 title: 'National System Integration',
                 description: 'Seamless integration with NIIMS, NTSA, KRA, and eCitizen'
               },
               {
-                icon: FiUsers,
                 title: 'Konza Data Center Hosted',
                 description: 'Hosted on Kenya\'s national data center for data sovereignty'
               },
               {
-                icon: FiCheckCircle,
                 title: 'Multi-Language Support',
                 description: 'Available in English and Kiswahili for accessibility'
               },
               {
-                icon: FiAward,
                 title: 'Offline Capable',
                 description: 'Works in low-connectivity rural areas with sync capability'
               },
               {
-                icon: FiShield,
                 title: 'ISO 27001 Certified',
                 description: 'International information security standards compliance'
               }
-            ].map((feature, index) => {
-              const Icon = feature.icon
-              return (
-                <div key={index} className="bg-gray-50 rounded-xl p-6">
-                  <Icon className="w-12 h-12 text-blue-600 mb-4" />
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              )
-            })}
+            ].map((feature, index) => (
+              <div key={index} className="bg-gray-50 rounded-xl p-6">
+                <div className="w-12 h-12 text-blue-600 mb-4 text-2xl">✓</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -295,10 +286,10 @@ export default function GovernmentSolution() {
       <section className="py-24 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Modernize Your Public Services?
+            Ready to Transform Public Service Delivery?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Let's discuss how RCFI can help your agency deliver better citizen services
+            Join leading government agencies using RCFI for secure, compliant digital transformation
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact/demo" className="px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all">
