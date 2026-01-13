@@ -54,17 +54,17 @@ export default function Documentation() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Documentation</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Everything you need to integrate and use RCFI solutions
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold transition-all">
+            <Link href="#" className="px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold transition-all">
               View API Docs
             </Link>
-            <Link href="#" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold transition-all">
+            <Link href="#" className="px-8 py-4 border-2 border-green-600 text-primary-600 rounded-lg hover:bg-primary-50 font-semibold transition-all">
               Download SDKs
             </Link>
           </div>
@@ -79,12 +79,12 @@ export default function Documentation() {
               const Icon = section.icon
               return (
                 <div key={index} className="bg-white rounded-xl shadow-lg p-6">
-                  <Icon className="w-10 h-10 text-green-600 mb-4" />
+                  <Icon className="w-10 h-10 text-primary-600 mb-4" />
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{section.title}</h3>
                   <ul className="space-y-2">
                     {section.items.map((item, i) => (
                       <li key={i}>
-                        <Link href={item.href} className="text-gray-600 hover:text-green-600 transition-colors">
+                        <Link href={item.href} className="text-gray-600 hover:text-primary-600 transition-colors">
                           {item.name}
                         </Link>
                       </li>

@@ -34,14 +34,14 @@ export default function ContactSales() {
         </Head>
         <section className="pt-32 pb-20 px-4 min-h-screen flex items-center justify-center">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FiCheckCircle className="w-12 h-12 text-green-600" />
+            <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <FiCheckCircle className="w-12 h-12 text-primary-600" />
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">We'll Be In Touch Soon!</h1>
             <p className="text-xl text-gray-600 mb-8">
               Our sales team will contact you within 24 hours to discuss your needs.
             </p>
-            <Link href="/" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all inline-block">
+            <Link href="/" className="px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold transition-all inline-block">
               Back to Home
             </Link>
           </div>
@@ -67,20 +67,20 @@ export default function ContactSales() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <div className="bg-blue-50 rounded-xl p-6 text-center">
-              <FiPhone className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <div className="bg-primary-50 rounded-xl p-6 text-center">
+              <FiPhone className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600 mb-2">+254 754 134 704</p>
               <p className="text-sm text-gray-500">Mon-Fri, 8am-6pm EAT</p>
             </div>
-            <div className="bg-blue-50 rounded-xl p-6 text-center">
-              <FiMail className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <div className="bg-primary-50 rounded-xl p-6 text-center">
+              <FiMail className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Email Us</h3>
               <p className="text-gray-600 mb-2">sales@rcfi.co.ke</p>
               <p className="text-sm text-gray-500">Response within 24 hours</p>
             </div>
-            <div className="bg-blue-50 rounded-xl p-6 text-center">
-              <FiMessageSquare className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <div className="bg-primary-50 rounded-xl p-6 text-center">
+              <FiMessageSquare className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Live Chat</h3>
               <p className="text-gray-600 mb-2">Available Now</p>
               <p className="text-sm text-gray-500">Mon-Sat, 8am-8pm EAT</p>
@@ -98,7 +98,7 @@ export default function ContactSales() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                 />
               </div>
 
@@ -111,7 +111,7 @@ export default function ContactSales() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -122,7 +122,7 @@ export default function ContactSales() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function ContactSales() {
                   required
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                 />
               </div>
 
@@ -146,7 +146,7 @@ export default function ContactSales() {
                   required
                   value={formData.interest}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                 >
                   <option value="">Select an option</option>
                   <option value="digisign">DigiSign</option>
@@ -164,7 +164,7 @@ export default function ContactSales() {
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                   >
                     <option value="">Select range</option>
                     <option value="<100k">Less than KES 100,000</option>
@@ -179,7 +179,7 @@ export default function ContactSales() {
                     name="timeline"
                     value={formData.timeline}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                   >
                     <option value="">Select timeline</option>
                     <option value="immediate">Immediate</option>
@@ -198,14 +198,14 @@ export default function ContactSales() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                   placeholder="Tell us about your needs..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold text-lg transition-all"
+                className="w-full px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold text-lg transition-all"
               >
                 Send Message
               </button>

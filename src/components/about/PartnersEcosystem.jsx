@@ -36,19 +36,19 @@ export default function PartnersEcosystem() {
 
   const colorClasses = {
     blue: {
-      bg: 'bg-blue-100',
-      text: 'text-blue-600',
-      border: 'border-blue-200'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      border: 'border-primary-200'
     },
     purple: {
-      bg: 'bg-purple-100',
-      text: 'text-purple-600',
-      border: 'border-purple-200'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      border: 'border-primary-200'
     },
     green: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      border: 'border-green-200'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      border: 'border-primary-200'
     }
   }
 
@@ -92,14 +92,14 @@ export default function PartnersEcosystem() {
         </div>
 
         {/* Become a Partner CTA */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 lg:p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-primary-900 to-primary-700 rounded-2xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">
             Become a Partner
           </h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Join our ecosystem and help drive digital transformation across Africa
           </p>
-          <Link href="/partners/become-partner" className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all">
+          <Link href="/partners/become-partner" className="inline-block px-8 py-4 bg-white text-primary-900 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">
             Partner With Us
           </Link>
         </div>

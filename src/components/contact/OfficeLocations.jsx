@@ -19,8 +19,8 @@ export default function OfficeLocations() {
             {/* Address */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <FiMapPin className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <FiMapPin className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Address</h3>
@@ -36,12 +36,12 @@ export default function OfficeLocations() {
             {/* Phone */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <FiPhone className="w-6 h-6 text-green-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <FiPhone className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
-                  <a href="tel:+254754134704" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <a href="tel:+254754134704" className="text-gray-600 hover:text-primary-600 transition-colors">
                     +254 754 134 704
                   </a>
                   <p className="text-sm text-gray-500 mt-1">Mon-Fri, 8am-6pm EAT</p>
@@ -52,26 +52,26 @@ export default function OfficeLocations() {
             {/* Email */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <FiMail className="w-6 h-6 text-purple-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <FiMail className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
                   <div className="space-y-1">
                     <div>
-                      <a href="mailto:info@rcfi.co.ke" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      <a href="mailto:info@rcfi.co.ke" className="text-gray-600 hover:text-primary-600 transition-colors">
                         info@rcfi.co.ke
                       </a>
                       <span className="text-sm text-gray-500 ml-2">(General)</span>
                     </div>
                     <div>
-                      <a href="mailto:sales@rcfi.co.ke" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      <a href="mailto:sales@rcfi.co.ke" className="text-gray-600 hover:text-primary-600 transition-colors">
                         sales@rcfi.co.ke
                       </a>
                       <span className="text-sm text-gray-500 ml-2">(Sales)</span>
                     </div>
                     <div>
-                      <a href="mailto:support@rcfi.co.ke" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      <a href="mailto:support@rcfi.co.ke" className="text-gray-600 hover:text-primary-600 transition-colors">
                         support@rcfi.co.ke
                       </a>
                       <span className="text-sm text-gray-500 ml-2">(Support)</span>
@@ -84,8 +84,8 @@ export default function OfficeLocations() {
             {/* Business Hours */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <FiClock className="w-6 h-6 text-orange-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <FiClock className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Business Hours</h3>
@@ -101,15 +101,15 @@ export default function OfficeLocations() {
 
           {/* Map Placeholder */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="bg-gradient-to-br from-blue-100 to-purple-100 h-full min-h-[500px] flex items-center justify-center">
+            <div className="bg-gradient-to-br from-primary-100 to-primary-100 h-full min-h-[500px] flex items-center justify-center">
               <div className="text-center p-8">
-                <FiMapPin className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <FiMapPin className="w-16 h-16 text-primary-600 mx-auto mb-4" />
                 <p className="text-gray-600 mb-4">Interactive map coming soon</p>
                 <a
                   href="https://maps.google.com/?q=Hifadhi+House+ICD+Road+Nairobi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all"
+                  className="inline-block px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold transition-all"
                 >
                   Open in Google Maps
                 </a>

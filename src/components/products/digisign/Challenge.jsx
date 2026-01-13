@@ -14,7 +14,7 @@ export default function DigiSignChallenge() {
     <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <FiAlertCircle /> The Problem
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -29,10 +29,10 @@ export default function DigiSignChallenge() {
           {challenges.map((challenge, index) => (
             <div 
               key={index} 
-              className="bg-red-50 border-2 border-red-200 rounded-xl p-6 hover:shadow-lg transition-all"
+              className="bg-primary-50 border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-red-600 rounded-full flex-shrink-0 mt-1"></div>
+                <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
                 <p className="text-gray-700">{challenge}</p>
               </div>
             </div>
@@ -41,16 +41,16 @@ export default function DigiSignChallenge() {
 
         {/* Stats */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
-          <div className="bg-red-50 rounded-xl p-6">
-            <div className="text-4xl font-bold text-red-600 mb-2">3-7 days</div>
+          <div className="bg-primary-50 rounded-xl p-6">
+            <div className="text-4xl font-bold text-primary-600 mb-2">3-7 days</div>
             <div className="text-gray-600">Average time for physical signature collection</div>
           </div>
-          <div className="bg-red-50 rounded-xl p-6">
-            <div className="text-4xl font-bold text-red-600 mb-2">40%</div>
+          <div className="bg-primary-50 rounded-xl p-6">
+            <div className="text-4xl font-bold text-primary-600 mb-2">40%</div>
             <div className="text-gray-600">Of business documents delayed by manual processes</div>
           </div>
-          <div className="bg-red-50 rounded-xl p-6">
-            <div className="text-4xl font-bold text-red-600 mb-2">KES 50M+</div>
+          <div className="bg-primary-50 rounded-xl p-6">
+            <div className="text-4xl font-bold text-primary-600 mb-2">KES 50M+</div>
             <div className="text-gray-600">Annual losses to invoice fraud in Kenya</div>
           </div>
         </div>

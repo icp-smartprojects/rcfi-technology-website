@@ -57,7 +57,7 @@ export default function Support() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             How Can We Help?
@@ -65,7 +65,7 @@ export default function Support() {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Our support team is here to ensure you get the most out of RCFI solutions
           </p>
-          <Link href="/resources/faq" className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold transition-all">
+          <Link href="/resources/faq" className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold transition-all">
             <FiHelpCircle /> View FAQ
           </Link>
         </div>
@@ -79,10 +79,10 @@ export default function Support() {
             {supportChannels.map((channel, index) => {
               const Icon = channel.icon
               const colorClasses = {
-                blue: { bg: 'bg-blue-100', icon: 'text-blue-600', btn: 'bg-blue-600 hover:bg-blue-700' },
-                green: { bg: 'bg-green-100', icon: 'text-green-600', btn: 'bg-green-600 hover:bg-green-700' },
-                purple: { bg: 'bg-purple-100', icon: 'text-purple-600', btn: 'bg-purple-600 hover:bg-purple-700' },
-                orange: { bg: 'bg-orange-100', icon: 'text-orange-600', btn: 'bg-orange-600 hover:bg-orange-700' }
+                blue: { bg: 'bg-primary-100', icon: 'text-primary-600', btn: 'bg-primary-600 hover:bg-primary-700' },
+                green: { bg: 'bg-primary-100', icon: 'text-primary-600', btn: 'bg-primary-600 hover:bg-primary-700' },
+                purple: { bg: 'bg-primary-100', icon: 'text-primary-600', btn: 'bg-primary-600 hover:bg-primary-700' },
+                orange: { bg: 'bg-primary-100', icon: 'text-primary-600', btn: 'bg-primary-600 hover:bg-primary-700' }
               }
               const colors = colorClasses[channel.color]
               return (
@@ -126,10 +126,10 @@ export default function Support() {
                   <tr key={index} className="border-t border-gray-200">
                     <td className="px-6 py-4">
                       <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                        level.priority === 'Critical' ? 'bg-red-100 text-red-600' :
-                        level.priority === 'High' ? 'bg-orange-100 text-orange-600' :
-                        level.priority === 'Medium' ? 'bg-yellow-100 text-yellow-600' :
-                        'bg-blue-100 text-blue-600'
+                        level.priority === 'Critical' ? 'bg-primary-100 text-primary-600' :
+                        level.priority === 'High' ? 'bg-primary-100 text-primary-600' :
+                        level.priority === 'Medium' ? 'bg-primary-100 text-primary-600' :
+                        'bg-primary-100 text-primary-600'
                       }`}>
                         {level.priority}
                       </span>
@@ -151,17 +151,17 @@ export default function Support() {
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Self-Service Resources</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/resources/documentation" className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all text-center">
-              <FiBook className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <FiBook className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Documentation</h3>
               <p className="text-gray-600">Complete technical guides and API references</p>
             </Link>
             <Link href="/resources/faq" className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all text-center">
-              <FiHelpCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
+              <FiHelpCircle className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">FAQ</h3>
               <p className="text-gray-600">Answers to frequently asked questions</p>
             </Link>
                         <Link href="/resources/blog" className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all text-center">
-                          <FiMessageSquare className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+                          <FiMessageSquare className="w-12 h-12 text-primary-600 mx-auto mb-4" />
                           <h3 className="text-xl font-bold text-gray-900 mb-2">Community Forum</h3>
                           <p className="text-gray-600">Connect with other users and share experiences</p>
                         </Link>

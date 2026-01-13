@@ -45,7 +45,7 @@ export default function Newsletter() {
         <p className="text-green-600 text-sm">Thanks for subscribing!</p>
       )}
       {status === 'error' && (
-        <p className="text-red-600 text-sm">Something went wrong. Please try again.</p>
+        <p className="text-primary-600 text-sm">Something went wrong. Please try again.</p>
       )}
     </form>
   )

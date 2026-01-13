@@ -149,8 +149,8 @@ export default function ContactPage() {
               {status.message && (
                 <div className={`mb-6 p-4 rounded-lg ${
                   status.type === 'success' 
-                    ? 'bg-green-50 text-green-800 border border-green-200' 
-                    : 'bg-red-50 text-red-800 border border-red-200'
+                    ? 'bg-primary-50 text-primary-800 border border-green-200' 
+                    : 'bg-primary-50 text-primary-800 border border-primary-200'
                 }`}>
                   <div className="flex items-start gap-3">
                     {status.type === 'success' ? (

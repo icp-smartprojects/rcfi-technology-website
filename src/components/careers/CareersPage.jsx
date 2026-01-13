@@ -19,7 +19,7 @@ export default function Careers() {
               <FiMapPin className="w-4 h-4" />
               {position.location}
             </div>
-            <div className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-semibold">
+            <div className="px-2 py-1 bg-primary-100 text-primary-700 rounded text-xs font-semibold">
               {position.type}
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Careers() {
       {position.status === 'available' && (
         <a 
           href={`mailto:careers@rcfi.co.ke?subject=Application for ${position.title}`}
-          className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+          className="inline-block px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-semibold"
         >
           Apply Now
         </a>
@@ -80,7 +80,7 @@ export default function Careers() {
             <FiCheckCircle className="w-8 h-8 text-green-600" />
             Currently Hiring
           </h2>
-          <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-12 text-center">
+          <div className="bg-primary-50 border-2 border-primary-200 rounded-lg p-12 text-center">
             <p className="text-xl text-gray-700">No open positions at the moment. Check back soon!</p>
           </div>
         </div>
@@ -88,12 +88,12 @@ export default function Careers() {
         {/* Unavailable Positions - Hidden when no jobs */}
 
         {/* CTA */}
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">Don't see your role?</h3>
-          <p className="text-blue-100 mb-6">Send your CV and we'll keep it on file for future opportunities</p>
+          <p className="text-primary-100 mb-6">Send your CV and we'll keep it on file for future opportunities</p>
           <a 
             href="mailto:careers@rcfi.co.ke"
-            className="inline-block px-8 py-3 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold transition-all"
+            className="inline-block px-8 py-3 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold transition-all"
           >
             Submit Your CV
           </a>

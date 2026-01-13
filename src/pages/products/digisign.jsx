@@ -47,15 +47,15 @@ export default function DigiSignPage() {
 
               <div className="flex flex-wrap gap-6 text-sm text-neutral-600">
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-green-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>CAK Licensed</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-green-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>ISO 27001 Certified</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-green-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Kenya DPA Compliant</span>
                 </div>
               </div>
@@ -93,8 +93,8 @@ export default function DigiSignPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {product.challenge.problems.map((problem, index) => (
               <div key={index} className="flex items-start gap-3 bg-white rounded-xl p-6">
-                <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-red-600 text-xl">✕</span>
+                <div className="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary-600 text-xl">✕</span>
                 </div>
                 <p className="text-neutral-700">{problem}</p>
               </div>

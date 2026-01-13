@@ -7,7 +7,7 @@ export default function DigiSignFeatures() {
       title: 'Digital Signature Certificates',
       description: 'Legally binding X.509 v3 certificates for individuals and organizations',
       badge: 'Core Feature',
-      badgeColor: 'bg-blue-100 text-blue-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: [
         'Advanced Electronic Signatures (AdES)',
         'Qualified Electronic Signatures (QES)',
@@ -37,7 +37,7 @@ export default function DigiSignFeatures() {
       title: 'e-KYC Identity Verification',
       description: 'Instant automated identity verification via government databases',
       badge: 'Identity Feature',
-      badgeColor: 'bg-purple-100 text-purple-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: [
         'NIIMS (Huduma Namba) integration',
         'NTSA driving license verification',
@@ -52,7 +52,7 @@ export default function DigiSignFeatures() {
       title: 'Blockchain Document Security',
       description: 'Immutable proof of document authenticity and integrity',
       badge: 'Security Feature',
-      badgeColor: 'bg-orange-100 text-orange-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: [
         'Hyperledger Fabric blockchain',
         'Cryptographic hash anchoring',
@@ -67,7 +67,7 @@ export default function DigiSignFeatures() {
       title: 'Mobile & Web Access',
       description: 'Sign and verify documents from any device, anywhere',
       badge: 'Access Feature',
-      badgeColor: 'bg-blue-100 text-blue-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: [
         'Android & iOS apps',
         'Web portal dashboard',
@@ -112,14 +112,14 @@ export default function DigiSignFeatures() {
                     <ul className="space-y-3">
                       {feature.items.map((item) => (
                         <li key={item} className="flex items-start gap-3">
-                          <FiCheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className={`bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl p-12 flex items-center justify-center ${!isEven ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                    <Icon className="w-48 h-48 text-blue-600 opacity-20" />
+                  <div className={`bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center ${!isEven ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                    <Icon className="w-48 h-48 text-primary-600 opacity-20" />
                   </div>
                 </div>
               </div>

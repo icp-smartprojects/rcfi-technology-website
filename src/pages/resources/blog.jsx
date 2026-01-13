@@ -70,7 +70,7 @@ export default function Blog() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Blog</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -86,7 +86,7 @@ export default function Blog() {
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-6 py-2 rounded-full border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 transition-all"
+                className="px-6 py-2 rounded-full border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600 transition-all"
               >
                 {category}
               </button>
@@ -101,9 +101,9 @@ export default function Blog() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post, index) => (
               <article key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100"></div>
+                <div className="h-48 bg-gradient-to-br from-primary-100 to-primary-100"></div>
                 <div className="p-6">
-                  <div className="text-sm font-semibold text-blue-600 mb-2">{post.category}</div>
+                  <div className="text-sm font-semibold text-primary-600 mb-2">{post.category}</div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{post.title}</h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
@@ -118,7 +118,7 @@ export default function Blog() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.date}</span>
-                    <Link href={`/resources/blog/${post.slug}`} className="text-blue-600 font-semibold hover:text-blue-700">
+                    <Link href={`/resources/blog/${post.slug}`} className="text-primary-600 font-semibold hover:text-primary-700">
                       Read More →
                     </Link>
                   </div>

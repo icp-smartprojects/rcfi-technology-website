@@ -11,11 +11,11 @@ export default function NGOSolution() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <FiUsers /> NGOs & Civil Society
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -25,16 +25,16 @@ export default function NGOSolution() {
                 Comprehensive solutions for managing multi-donor programs, tracking beneficiaries, and demonstrating impact
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact/demo" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
+                <Link href="/contact/demo" className="px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
                   Request Demo <FiArrowRight className="ml-2" />
                 </Link>
-                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all text-center">
+                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all text-center">
                   Contact Sales
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiUsers className="w-64 h-64 text-green-600 opacity-20" />
+            <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-2xl p-12 flex items-center justify-center">
+              <FiUsers className="w-64 h-64 text-primary-600 opacity-20" />
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@ export default function NGOSolution() {
               'Proving impact to donors requires extensive manual work',
               'Limited IT budgets prevent digital adoption'
             ].map((challenge, index) => (
-              <div key={index} className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
+              <div key={index} className="bg-primary-50 border-2 border-green-200 rounded-xl p-6">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
                   <p className="text-gray-700">{challenge}</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function NGOSolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiShield /> DigiSign
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -98,9 +98,9 @@ export default function NGOSolution() {
                   <p className="text-gray-600 mb-6">
                     Digital signatures for grant documents and instant beneficiary identity verification
                   </p>
-                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
-                    <div className="text-sm font-semibold text-green-600 mb-2">Special NGO Pricing</div>
-                    <div className="font-bold text-2xl text-green-600">KES 500/year</div>
+                  <div className="bg-primary-50 border-2 border-green-200 rounded-xl p-6 mb-6">
+                    <div className="text-sm font-semibold text-primary-600 mb-2">Special NGO Pricing</div>
+                    <div className="font-bold text-2xl text-primary-600">KES 500/year</div>
                     <div className="text-sm text-gray-600">per certificate for registered CSOs</div>
                   </div>
                   <ul className="space-y-3">
@@ -113,14 +113,14 @@ export default function NGOSolution() {
                       'Mobile-first for field operations'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiShield className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiShield className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -128,11 +128,11 @@ export default function NGOSolution() {
             {/* Elano for NGOs */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="order-2 lg:order-1 bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiTrendingUp className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="order-2 lg:order-1 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiTrendingUp className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiTrendingUp /> Elano
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -151,7 +151,7 @@ export default function NGOSolution() {
                       'Board governance workflows'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
@@ -164,7 +164,7 @@ export default function NGOSolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiAward /> Prezio
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -173,9 +173,9 @@ export default function NGOSolution() {
                   <p className="text-gray-600 mb-6">
                     Affordable accounting and invoicing for grassroots organizations
                   </p>
-                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
-                    <div className="text-sm font-semibold text-green-600 mb-2">Free for Small CSOs</div>
-                    <div className="font-bold text-2xl text-green-600">KES 0</div>
+                  <div className="bg-primary-50 border-2 border-green-200 rounded-xl p-6 mb-6">
+                    <div className="text-sm font-semibold text-primary-600 mb-2">Free for Small CSOs</div>
+                    <div className="font-bold text-2xl text-primary-600">KES 0</div>
                     <div className="text-sm text-gray-600">Up to 10 invoices/month for registered CSOs</div>
                   </div>
                   <ul className="space-y-3">
@@ -188,14 +188,14 @@ export default function NGOSolution() {
                       'Receipt management'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiAward className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiAward className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -204,13 +204,13 @@ export default function NGOSolution() {
       </section>
 
       {/* Success Story */}
-      <section className="py-24 px-4 bg-green-600 text-white">
+      <section className="py-24 px-4 bg-primary-600 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Success Story: Uasin Gishu CSO Network
             </h2>
-            <p className="text-xl text-green-100">
+            <p className="text-xl text-primary-100">
               Transforming civil society governance and accountability
             </p>
           </div>
@@ -219,19 +219,19 @@ export default function NGOSolution() {
             <div className="grid lg:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Challenge</h3>
-                <p className="text-green-100">
+                <p className="text-primary-100">
                   No centralized system for CSO accountability, making it difficult to track programs and demonstrate impact to donors
                 </p>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Solution</h3>
-                <p className="text-green-100">
+                <p className="text-primary-100">
                   Implemented Elano for network-wide governance, enabling digital registration, program tracking, and transparent reporting
                 </p>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Results</h3>
-                <ul className="space-y-2 text-green-100">
+                <ul className="space-y-2 text-primary-100">
                   <li>✓ 150+ member CSOs onboarded</li>
                   <li>✓ Transparent grant tracking</li>
                   <li>✓ Standardized M&E across network</li>
@@ -278,7 +278,7 @@ export default function NGOSolution() {
               const Icon = feature.icon
               return (
                 <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">
-                  <Icon className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                  <Icon className="w-12 h-12 text-primary-600 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
                 </div>
@@ -289,16 +289,16 @@ export default function NGOSolution() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
+      <section className="py-24 px-4 bg-gradient-to-r from-primary-600 to-primary-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Amplify Your Social Impact?
           </h2>
-          <p className="text-xl mb-8 text-green-100">
+          <p className="text-xl mb-8 text-primary-100">
             Join hundreds of CSOs using RCFI to improve governance, compliance, and impact reporting
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact/demo" className="px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all">
+            <Link href="/contact/demo" className="px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">
               Schedule a Demo
             </Link>
             <Link href="/contact" className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 font-semibold text-lg transition-all">

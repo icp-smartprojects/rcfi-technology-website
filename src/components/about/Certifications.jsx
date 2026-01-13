@@ -55,34 +55,34 @@ export default function Certifications() {
 
   const colorClasses = {
     blue: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      badge: 'bg-green-600'
+      bg: 'bg-primary-200',
+      text: 'text-primary-600',
+      badge: 'bg-primary-600'
     },
     green: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      badge: 'bg-green-600'
+      bg: 'bg-primary-200',
+      text: 'text-primary-600',
+      badge: 'bg-primary-600'
     },
     purple: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      badge: 'bg-green-600'
+      bg: 'bg-primary-200',
+      text: 'text-primary-600',
+      badge: 'bg-primary-600'
     },
     orange: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      badge: 'bg-green-600'
+      bg: 'bg-primary-200',
+      text: 'text-primary-600',
+      badge: 'bg-primary-600'
     },
     red: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      badge: 'bg-green-600'
+      bg: 'bg-primary-200',
+      text: 'text-primary-600',
+      badge: 'bg-primary-600'
     },
     indigo: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      badge: 'bg-green-600'
+      bg: 'bg-primary-200',
+      text: 'text-primary-600',
+      badge: 'bg-primary-600'
     }
   }
 
@@ -126,14 +126,14 @@ export default function Certifications() {
         </div>
 
         {/* Documentation CTA */}
-        <div className="bg-blue-600 rounded-2xl p-8 lg:p-12 text-center text-white">
+        <div className="bg-primary-900 rounded-2xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">
             Need Compliance Documentation?
           </h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Access our compliance certificates, audit reports, and security documentation
           </p>
-          <Link href="/resources/documentation" className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all">
+          <Link href="/resources/documentation" className="inline-block px-8 py-4 bg-white text-primary-900 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">
             View Documentation
           </Link>
         </div>

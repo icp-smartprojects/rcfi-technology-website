@@ -43,24 +43,24 @@ export default function SupportChannels() {
 
   const colorClasses = {
     blue: {
-      bg: 'bg-blue-100',
-      text: 'text-blue-600',
-      button: 'bg-blue-600 hover:bg-blue-700'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      button: 'bg-primary-600 hover:bg-primary-700'
     },
     purple: {
-      bg: 'bg-purple-100',
-      text: 'text-purple-600',
-      button: 'bg-purple-600 hover:bg-purple-700'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      button: 'bg-primary-600 hover:bg-primary-700'
     },
     green: {
-      bg: 'bg-green-100',
-      text: 'text-green-600',
-      button: 'bg-green-600 hover:bg-green-700'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      button: 'bg-primary-600 hover:bg-primary-700'
     },
     orange: {
-      bg: 'bg-orange-100',
-      text: 'text-orange-600',
-      button: 'bg-orange-600 hover:bg-orange-700'
+      bg: 'bg-primary-100',
+      text: 'text-primary-600',
+      button: 'bg-primary-600 hover:bg-primary-700'
     }
   }
 
@@ -105,7 +105,7 @@ export default function SupportChannels() {
         </div>
 
         {/* Enterprise Support */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 lg:p-12 text-white">
+        <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 lg:p-12 text-white">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="flex items-start gap-6">
               <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -113,12 +113,12 @@ export default function SupportChannels() {
               </div>
               <div>
                 <h3 className="text-3xl font-bold mb-3">Need Enterprise Support?</h3>
-                <p className="text-xl text-blue-100">
+                <p className="text-xl text-primary-100">
                   Get dedicated support with custom SLAs, priority response times, and a dedicated account manager
                 </p>
               </div>
             </div>
-            <Link href="/contact/sales" className="px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all whitespace-nowrap">
+            <Link href="/contact/sales" className="px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all whitespace-nowrap">
               Contact Sales
             </Link>
           </div>

@@ -11,11 +11,11 @@ export default function LegalSolution() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <FiCheckCircle /> Legal & Compliance
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -25,16 +25,16 @@ export default function LegalSolution() {
                 Court-admissible digital signatures, client verification, and case management for legal professionals
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact/demo" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
+                <Link href="/contact/demo" className="px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
                   Request Demo <FiArrowRight className="ml-2" />
                 </Link>
-                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all text-center">
+                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all text-center">
                   Contact Sales
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiCheckCircle className="w-64 h-64 text-green-600 opacity-20" />
+            <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-2xl p-12 flex items-center justify-center">
+              <FiCheckCircle className="w-64 h-64 text-primary-600 opacity-20" />
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@ export default function LegalSolution() {
               'Audit trails are manual and incomplete',
               'Remote work is difficult with paper documents'
             ].map((challenge, index) => (
-              <div key={index} className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
+              <div key={index} className="bg-primary-50 border-2 border-green-200 rounded-xl p-6">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
                   <p className="text-gray-700">{challenge}</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function LegalSolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiShield /> DigiSign
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -98,11 +98,11 @@ export default function LegalSolution() {
                   <p className="text-gray-600 mb-6">
                     CAK-licensed digital certificates with full legal validity under Kenyan law
                   </p>
-                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
+                  <div className="bg-primary-50 border-2 border-green-200 rounded-xl p-6 mb-6">
                     <div className="flex items-center gap-4">
-                      <FiAward className="w-8 h-8 text-green-600" />
+                      <FiAward className="w-8 h-8 text-primary-600" />
                       <div>
-                        <div className="font-bold text-lg text-green-600">Kenya Evidence Act Compliant</div>
+                        <div className="font-bold text-lg text-primary-600">Kenya Evidence Act Compliant</div>
                         <div className="text-sm text-gray-600">Court-admissible digital signatures</div>
                       </div>
                     </div>
@@ -117,14 +117,14 @@ export default function LegalSolution() {
                       'Multi-party signing workflows'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiShield className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiShield className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -132,11 +132,11 @@ export default function LegalSolution() {
             {/* Elano for Legal */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="order-2 lg:order-1 bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiFileText className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="order-2 lg:order-1 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiFileText className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiFileText /> Elano
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -155,7 +155,7 @@ export default function LegalSolution() {
                       'Matter-based file organization'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
@@ -168,13 +168,13 @@ export default function LegalSolution() {
       </section>
 
       {/* Legal Features */}
-      <section className="py-24 px-4 bg-green-600 text-white">
+      <section className="py-24 px-4 bg-primary-600 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Built for Legal Professionals
             </h2>
-            <p className="text-xl text-green-100">
+            <p className="text-xl text-primary-100">
               Features designed specifically for legal practice requirements
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function LegalSolution() {
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
                   <Icon className="w-10 h-10 mb-4" />
                   <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                  <p className="text-green-100">{feature.description}</p>
+                  <p className="text-primary-100">{feature.description}</p>
                 </div>
               )
             })}
@@ -282,7 +282,7 @@ export default function LegalSolution() {
                 <ul className="space-y-2">
                   {useCase.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <FiCheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <FiCheckCircle className="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -317,7 +317,7 @@ export default function LegalSolution() {
               'International Bar Association Standards'
             ].map((standard, index) => (
               <div key={index} className="bg-white rounded-xl p-6 text-center border-2 border-gray-200">
-                <FiAward className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                <FiAward className="w-8 h-8 text-primary-600 mx-auto mb-3" />
                 <div className="font-semibold text-gray-900">{standard}</div>
               </div>
             ))}
@@ -326,16 +326,16 @@ export default function LegalSolution() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
+      <section className="py-24 px-4 bg-gradient-to-r from-primary-600 to-primary-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Modernize Your Legal Practice?
           </h2>
-          <p className="text-xl mb-8 text-green-100">
+          <p className="text-xl mb-8 text-primary-100">
             Join leading law firms using RCFI for secure, compliant digital workflows
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact/demo" className="px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all">
+            <Link href="/contact/demo" className="px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">
               Schedule a Demo
             </Link>
             <Link href="/contact" className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 font-semibold text-lg transition-all">

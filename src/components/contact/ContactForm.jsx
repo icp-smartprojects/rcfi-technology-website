@@ -82,11 +82,7 @@ export default function ContactForm({ type = 'general' }) {
               type="text"
               id="name"
               name="name"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-              placeholder="John Doe"
+              className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
             />
           </div>
 
@@ -99,11 +95,7 @@ export default function ContactForm({ type = 'general' }) {
               type="email"
               id="email"
               name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-              placeholder="john@example.com"
+              className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
             />
           </div>
 
@@ -118,7 +110,7 @@ export default function ContactForm({ type = 'general' }) {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
               placeholder="+254 700 000 000"
             />
           </div>
@@ -134,7 +126,7 @@ export default function ContactForm({ type = 'general' }) {
               name="organization"
               value={formData.organization}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
               placeholder="Your Company Name"
             />
           </div>
@@ -149,7 +141,7 @@ export default function ContactForm({ type = 'general' }) {
               name="product"
               value={formData.product}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
             >
               <option value="all">All Products</option>
               <option value="digisign">DigiSign</option>
@@ -170,7 +162,7 @@ export default function ContactForm({ type = 'general' }) {
               rows="6"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all resize-none"
               placeholder="Tell us about your needs..."
             ></textarea>
           </div>
@@ -178,7 +170,7 @@ export default function ContactForm({ type = 'general' }) {
           {/* Status Message */}
           {status.message && (
             <div className={`p-4 rounded-lg flex items-start gap-3 ${
-              status.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
+              status.type === 'success' ? 'bg-primary-50 text-primary-800' : 'bg-primary-50 text-primary-800'
             }`}>
               {status.type === 'success' ? (
                 <FiCheck className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -193,7 +185,7 @@ export default function ContactForm({ type = 'general' }) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold text-lg transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold text-lg transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
               <>

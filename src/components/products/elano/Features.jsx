@@ -6,14 +6,14 @@ export function ElanoFeatures() {
       title: 'Organization Registration',
       description: 'Complete digital registry of organizational structure',
       badge: 'Foundation',
-      badgeColor: 'bg-purple-100 text-purple-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: ['Legal entity registration', 'Governance structure mapping', 'Leadership management', 'Regulatory compliance', 'Document repository']
     },
     {
       title: 'Strategic Planning',
       description: 'Align goals, programs, and resources',
       badge: 'Planning',
-      badgeColor: 'bg-blue-100 text-blue-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: ['Strategic plan development', 'Theory of Change mapping', 'Program & project management', 'Activity tracking', 'Milestone monitoring']
     },
     {
@@ -27,7 +27,7 @@ export function ElanoFeatures() {
       title: 'Financial Management',
       description: 'Budgeting, tracking, and approval workflows',
       badge: 'Finance',
-      badgeColor: 'bg-orange-100 text-orange-600',
+      badgeColor: 'bg-primary-100 text-primary-600',
       items: ['Budget creation', 'Expenditure tracking', 'Multi-currency support', 'Approval workflows', 'Financial reporting']
     }
   ]
@@ -49,7 +49,7 @@ export function ElanoFeatures() {
               <ul className="grid md:grid-cols-2 gap-3">
                 {feature.items.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <FiCheckCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-0.5" />
+                    <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

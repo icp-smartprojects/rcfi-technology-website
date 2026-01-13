@@ -75,7 +75,7 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               {/* Image placeholder */}
-              <div className="bg-gradient-to-br from-green-100 to-green-50 h-64 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-primary-200 to-primary-50 h-64 flex items-center justify-center">
                 <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center text-4xl font-bold text-gray-400">
                   {member.name.split(' ').map(n => n[0]).join('')}
                 </div>

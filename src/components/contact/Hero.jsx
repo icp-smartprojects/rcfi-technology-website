@@ -29,12 +29,12 @@ export default function ContactHero() {
   ]
 
   return (
-    <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Let's Talk About Your
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">
               Digital Transformation
             </span>
           </h1>
@@ -52,8 +52,8 @@ export default function ContactHero() {
                 href={option.href}
                 className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all group text-center"
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 transition-colors">
-                  <Icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-600 transition-colors">
+                  <Icon className="w-8 h-8 text-primary-600 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{option.title}</h3>
                 <p className="text-gray-600 text-sm">{option.description}</p>

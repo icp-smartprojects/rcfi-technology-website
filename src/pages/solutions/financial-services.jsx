@@ -11,11 +11,11 @@ export default function FinancialServicesSolution() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 🏦 Financial Services
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -25,15 +25,15 @@ export default function FinancialServicesSolution() {
                 Instant e-KYC verification, digital signatures, and compliance solutions for financial institutions
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact/demo" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
+                <Link href="/contact/demo" className="px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
                   Request Demo <FiArrowRight className="ml-2" />
                 </Link>
-                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all text-center">
+                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all text-center">
                   Contact Sales
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-2xl p-12 flex items-center justify-center">
               <div className="text-9xl opacity-20">🏦</div>
             </div>
           </div>
@@ -61,9 +61,9 @@ export default function FinancialServicesSolution() {
               'Digital lending requires instant verification',
               'Competition from fintech demands speed'
             ].map((challenge, index) => (
-              <div key={index} className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
+              <div key={index} className="bg-primary-50 border-2 border-green-200 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
                   <p className="text-gray-700">{challenge}</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function FinancialServicesSolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiShield /> DigiSign
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -98,11 +98,11 @@ export default function FinancialServicesSolution() {
                   <p className="text-gray-600 mb-6">
                     Onboard customers in seconds with automated identity verification and legally binding digital signatures
                   </p>
-                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
+                  <div className="bg-primary-50 border-2 border-green-200 rounded-xl p-6 mb-6">
                     <div className="flex items-center gap-4 mb-4">
-                      <FiZap className="w-8 h-8 text-green-600" />
+                      <FiZap className="w-8 h-8 text-primary-600" />
                       <div>
-                        <div className="font-bold text-2xl text-green-600">Under 10 seconds</div>
+                        <div className="font-bold text-2xl text-primary-600">Under 10 seconds</div>
                         <div className="text-sm text-gray-600">Average e-KYC verification time</div>
                       </div>
                     </div>
@@ -117,14 +117,14 @@ export default function FinancialServicesSolution() {
                       'Integration with core banking systems'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiShield className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiShield className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -132,11 +132,11 @@ export default function FinancialServicesSolution() {
             {/* Elano for Financial Services */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="order-2 lg:order-1 bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiUsers className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="order-2 lg:order-1 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiUsers className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiUsers /> Elano
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -155,7 +155,7 @@ export default function FinancialServicesSolution() {
                       'Risk assessment automation'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
@@ -168,7 +168,7 @@ export default function FinancialServicesSolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiAward /> Prezio
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -187,14 +187,14 @@ export default function FinancialServicesSolution() {
                       'Loan tracking'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiAward className="w-48 h-48 text-green-600 opacity-20" />
+                <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiAward className="w-48 h-48 text-primary-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function FinancialServicesSolution() {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-24 px-4 bg-green-600 text-white">
+      <section className="py-24 px-4 bg-primary-600 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -235,9 +235,9 @@ export default function FinancialServicesSolution() {
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                 <div className="text-3xl mb-4">✓</div>
                 <div className="text-3xl font-bold mb-2">{benefit.stat}</div>
-                <div className="text-sm text-green-100 mb-4">{benefit.statLabel}</div>
+                <div className="text-sm text-primary-100 mb-4">{benefit.statLabel}</div>
                 <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                <p className="text-green-100">{benefit.description}</p>
+                <p className="text-primary-100">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -276,16 +276,16 @@ export default function FinancialServicesSolution() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
+      <section className="py-24 px-4 bg-gradient-to-r from-primary-600 to-primary-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Transform Your Financial Services?
           </h2>
-          <p className="text-xl mb-8 text-green-100">
+          <p className="text-xl mb-8 text-primary-100">
             Join leading banks and SACCOs using RCFI for secure, compliant digital transformation
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact/demo" className="px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all">
+            <Link href="/contact/demo" className="px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">
               Schedule a Demo
             </Link>
             <Link href="/contact" className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 font-semibold text-lg transition-all">

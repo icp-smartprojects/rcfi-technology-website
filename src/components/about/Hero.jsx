@@ -2,7 +2,7 @@ import { FiAward, FiShield, FiUsers } from 'react-icons/fi'
 
 export default function AboutHero() {
   return (
-    <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
+    <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">

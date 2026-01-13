@@ -11,7 +11,7 @@ export function PrezioSolution() {
   ]
 
   return (
-    <section className="py-24 px-4 bg-orange-600 text-white">
+    <section className="py-24 px-4 bg-primary-600 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Simple, Affordable, Professional</h2>
@@ -23,7 +23,7 @@ export function PrezioSolution() {
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Icon className="w-10 h-10 mb-4" />
                 <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                <p className="text-orange-100">{benefit.description}</p>
+                <p className="text-primary-100">{benefit.description}</p>
               </div>
             )
           })}

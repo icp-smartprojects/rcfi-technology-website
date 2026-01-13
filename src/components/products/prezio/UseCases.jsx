@@ -22,7 +22,7 @@ export function PrezioUseCases() {
               <ul className="space-y-2">
                 {useCase.examples.map((example) => (
                   <li key={example} className="flex items-start gap-2 text-sm text-gray-600">
-                    <FiCheckCircle className="w-4 h-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                    <FiCheckCircle className="w-4 h-4 text-primary-600 flex-shrink-0 mt-0.5" />
                     <span>{example}</span>
                   </li>
                 ))}

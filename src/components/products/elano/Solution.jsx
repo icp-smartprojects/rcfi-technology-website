@@ -11,11 +11,11 @@ export function ElanoSolution() {
   ]
 
   return (
-    <section className="py-24 px-4 bg-purple-600 text-white">
+    <section className="py-24 px-4 bg-primary-600 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Unified Platform for Institutional Excellence</h2>
-          <p className="text-xl text-purple-100 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
             Everything you need to govern, plan, execute, and demonstrate impact
           </p>
         </div>
@@ -26,7 +26,7 @@ export function ElanoSolution() {
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Icon className="w-10 h-10 mb-4" />
                 <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                <p className="text-purple-100">{benefit.description}</p>
+                <p className="text-primary-100">{benefit.description}</p>
               </div>
             )
           })}
