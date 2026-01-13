@@ -22,13 +22,13 @@ export default function Timeline() {
       year: '2025',
       title: 'DigiSign Launch',
       description: 'Launched Kenya\'s first locally-hosted digital trust service',
-      color: 'orange'
+      color: 'green'
     },
     {
       year: '2026',
       title: 'Regional Expansion',
       description: 'Extending services across East Africa',
-      color: 'red'
+      color: 'green'
     }
   ]
 
@@ -36,8 +36,8 @@ export default function Timeline() {
     blue: 'bg-blue-600',
     green: 'bg-green-600',
     purple: 'bg-purple-600',
-    orange: 'bg-orange-600',
-    red: 'bg-red-600'
+    orange: 'bg-green-600',
+    red: 'bg-green-600'
   }
 
   return (
@@ -54,7 +54,7 @@ export default function Timeline() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-600 to-red-600"></div>
+          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-green-600 to-green-600"></div>
 
           {/* Timeline items */}
           <div className="space-y-12">

@@ -62,7 +62,7 @@ export default function CompanyOverview() {
                 <div className="text-sm text-gray-600">Industries</div>
               </div>
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-orange-600 mb-2">2+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">2+</div>
                 <div className="text-sm text-gray-600">Years</div>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default function Certifications() {
       description: 'Certificate Authority Standards',
       details: 'Adherence to global certificate authority best practices',
       status: 'Aligned',
-      color: 'orange'
+      color: 'green'
     },
     {
       icon: FiCheckCircle,
@@ -41,7 +41,7 @@ export default function Certifications() {
       description: 'Trust Service Providers',
       details: 'European standard for qualified trust service providers',
       status: 'Aligned',
-      color: 'red'
+      color: 'green'
     },
     {
       icon: FiFileText,
@@ -49,7 +49,7 @@ export default function Certifications() {
       description: 'CA Audit Standards',
       details: 'Industry-standard audit framework for certificate authorities',
       status: 'In Progress',
-      color: 'indigo'
+      color: 'green'
     }
   ]
 
@@ -70,19 +70,19 @@ export default function Certifications() {
       badge: 'bg-purple-600'
     },
     orange: {
-      bg: 'bg-orange-100',
-      text: 'text-orange-600',
-      badge: 'bg-orange-600'
+      bg: 'bg-green-100',
+      text: 'text-green-600',
+      badge: 'bg-green-600'
     },
     red: {
-      bg: 'bg-red-100',
-      text: 'text-red-600',
-      badge: 'bg-red-600'
+      bg: 'bg-green-100',
+      text: 'text-green-600',
+      badge: 'bg-green-600'
     },
     indigo: {
-      bg: 'bg-indigo-100',
-      text: 'text-indigo-600',
-      badge: 'bg-indigo-600'
+      bg: 'bg-green-100',
+      text: 'text-green-600',
+      badge: 'bg-green-600'
     }
   }
 
