@@ -61,9 +61,9 @@ export default function GovernmentSolution() {
               'Citizens demand digital services but infrastructure is lacking',
               'Budget constraints limit technology adoption'
             ].map((challenge, index) => (
-              <div key={index} className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
+              <div key={index} className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-red-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
                   <p className="text-gray-700">{challenge}</p>
                 </div>
               </div>
@@ -123,11 +123,11 @@ export default function GovernmentSolution() {
             {/* Elano for Government */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="order-2 lg:order-1 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiUsers className="w-48 h-48 text-purple-600 opacity-20" />
+                <div className="order-2 lg:order-1 bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiUsers className="w-48 h-48 text-green-600 opacity-20" />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiUsers /> Elano
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -146,7 +146,7 @@ export default function GovernmentSolution() {
                       'Inter-departmental collaboration'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
@@ -159,7 +159,7 @@ export default function GovernmentSolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiAward /> Prezio
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -178,14 +178,14 @@ export default function GovernmentSolution() {
                       'Budget variance analysis'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiAward className="w-48 h-48 text-orange-600 opacity-20" />
+                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiAward className="w-48 h-48 text-green-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -283,7 +283,7 @@ export default function GovernmentSolution() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Transform Public Service Delivery?

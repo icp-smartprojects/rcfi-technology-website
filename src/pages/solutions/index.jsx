@@ -37,7 +37,7 @@ export default function SolutionsIndex() {
       title: 'NGOs & Civil Society',
       description: 'Grant management, compliance, and impact tracking',
       icon: FiUsers,
-      color: 'purple',
+      color: 'green',
       benefits: [
         'Multi-donor tracking',
         'Beneficiary verification',
@@ -51,7 +51,7 @@ export default function SolutionsIndex() {
       title: 'SMEs & Enterprises',
       description: 'Digital transformation for growing businesses',
       icon: FiBarChart2,
-      color: 'orange',
+      color: 'green',
       benefits: [
         'Professional invoicing',
         'Contract automation',
@@ -65,7 +65,7 @@ export default function SolutionsIndex() {
       title: 'Legal & Compliance',
       description: 'Secure, legally binding digital workflows',
       icon: FiCheckCircle,
-      color: 'red',
+      color: 'green',
       benefits: [
         'Court-admissible signatures',
         'Client verification',
@@ -77,35 +77,11 @@ export default function SolutionsIndex() {
   ]
 
   const colorClasses = {
-    blue: {
-      bg: 'bg-blue-100',
-      text: 'text-blue-600',
-      hover: 'hover:bg-blue-600',
-      border: 'border-blue-200'
-    },
     green: {
       bg: 'bg-green-100',
       text: 'text-green-600',
       hover: 'hover:bg-green-600',
       border: 'border-green-200'
-    },
-    purple: {
-      bg: 'bg-purple-100',
-      text: 'text-purple-600',
-      hover: 'hover:bg-purple-600',
-      border: 'border-purple-200'
-    },
-    orange: {
-      bg: 'bg-orange-100',
-      text: 'text-orange-600',
-      hover: 'hover:bg-orange-600',
-      border: 'border-orange-200'
-    },
-    red: {
-      bg: 'bg-red-100',
-      text: 'text-red-600',
-      hover: 'hover:bg-red-600',
-      border: 'border-red-200'
     }
   }
 
@@ -117,7 +93,7 @@ export default function SolutionsIndex() {
       </Head>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Solutions for Every Industry
@@ -176,16 +152,16 @@ export default function SolutionsIndex() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Transform Your Industry?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-green-100">
             Let's discuss how RCFI solutions can address your specific needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact/demo" className="px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all">
+            <Link href="/contact/demo" className="px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all">
               Request a Demo
             </Link>
             <Link href="/contact" className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 font-semibold text-lg transition-all">

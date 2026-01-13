@@ -11,11 +11,11 @@ export default function SMESolution() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-orange-50 via-white to-orange-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <FiBarChart2 /> SMEs & Enterprises
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -25,16 +25,16 @@ export default function SMESolution() {
                 Professional invoicing, digital contracts, and business management solutions that scale with you
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact/demo" className="px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
+                <Link href="/contact/demo" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
                   Request Demo <FiArrowRight className="ml-2" />
                 </Link>
-                <Link href="/contact" className="px-8 py-4 border-2 border-orange-600 text-orange-600 rounded-lg hover:bg-orange-50 font-semibold text-lg transition-all text-center">
+                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all text-center">
                   Contact Sales
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-12 flex items-center justify-center">
-              <FiBarChart2 className="w-64 h-64 text-orange-600 opacity-20" />
+            <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 flex items-center justify-center">
+              <FiBarChart2 className="w-64 h-64 text-green-600 opacity-20" />
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@ export default function SMESolution() {
               'Customer data is scattered and unsecured',
               'No clear visibility into business performance'
             ].map((challenge, index) => (
-              <div key={index} className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-red-600 rounded-full flex-shrink-0 mt-1"></div>
+              <div key={index} className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
                   <p className="text-gray-700">{challenge}</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function SMESolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiAward /> Prezio
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -98,11 +98,11 @@ export default function SMESolution() {
                   <p className="text-gray-600 mb-6">
                     Create professional invoices, track clients, and manage finances without hiring an accountant
                   </p>
-                  <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-6">
+                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
                     <div className="flex items-center gap-4">
-                      <FiDollarSign className="w-8 h-8 text-orange-600" />
+                      <FiDollarSign className="w-8 h-8 text-green-600" />
                       <div>
-                        <div className="font-bold text-2xl text-orange-600">Free Tier Available</div>
+                        <div className="font-bold text-2xl text-green-600">Free Tier Available</div>
                         <div className="text-sm text-gray-600">Perfect for startups and freelancers</div>
                       </div>
                     </div>
@@ -117,14 +117,14 @@ export default function SMESolution() {
                       'Tax compliance automation'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiAward className="w-48 h-48 text-orange-600 opacity-20" />
+                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiAward className="w-48 h-48 text-green-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function SMESolution() {
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiUsers /> Elano
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -187,14 +187,14 @@ export default function SMESolution() {
                       'Board meeting workflows'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiUsers className="w-48 h-48 text-purple-600 opacity-20" />
+                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiUsers className="w-48 h-48 text-green-600 opacity-20" />
                 </div>
               </div>
             </div>
@@ -203,13 +203,13 @@ export default function SMESolution() {
       </section>
 
       {/* Success Metrics */}
-      <section className="py-24 px-4 bg-orange-600 text-white">
+      <section className="py-24 px-4 bg-green-600 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               The SME Advantage
             </h2>
-            <p className="text-xl text-orange-100">
+            <p className="text-xl text-green-100">
               See the impact on your business performance
             </p>
           </div>
@@ -240,7 +240,7 @@ export default function SMESolution() {
               <div key={index} className="text-center">
                 <div className="text-5xl font-bold mb-2">{metric.stat}</div>
                 <div className="text-lg font-semibold mb-2">{metric.label}</div>
-                <p className="text-orange-100 text-sm">{metric.description}</p>
+                <p className="text-green-100 text-sm">{metric.description}</p>
               </div>
             ))}
           </div>
@@ -275,25 +275,25 @@ export default function SMESolution() {
                   'PDF export'
                 ].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <FiCheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                    <FiCheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-700">{feature}</span>
                   </li>
-                ))}
+                ))
               </ul>
-              <Link href="/contact" className="block w-full px-6 py-3 border-2 border-orange-600 text-orange-600 rounded-lg hover:bg-orange-50 font-semibold text-center transition-all">
+              <Link href="/contact" className="block w-full px-6 py-3 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-center transition-all">
                 Get Started
               </Link>
             </div>
 
             {/* Professional */}
-            <div className="bg-orange-600 text-white rounded-2xl p-8 relative transform scale-105 shadow-xl">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-800 text-white px-4 py-1 rounded-full text-sm font-semibold">
+            <div className="bg-green-600 text-white rounded-2xl p-8 relative transform scale-105 shadow-xl">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-800 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Most Popular
               </div>
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold mb-2">Professional</h3>
                 <div className="text-4xl font-bold mb-2">KES 1,500</div>
-                <p className="text-orange-100">per month</p>
+                <p className="text-green-100">per month</p>
               </div>
               <ul className="space-y-3 mb-8">
                 {[
@@ -310,7 +310,7 @@ export default function SMESolution() {
                   </li>
                 ))}
               </ul>
-              <Link href="/contact/demo" className="block w-full px-6 py-3 bg-white text-orange-600 rounded-lg hover:bg-orange-50 font-semibold text-center transition-all">
+              <Link href="/contact/demo" className="block w-full px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-center transition-all">
                 Start Free Trial
               </Link>
             </div>
@@ -331,12 +331,12 @@ export default function SMESolution() {
                   'Dedicated support'
                 ].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <FiCheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                    <FiCheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-700">{feature}</span>
                   </li>
                 ))}
               </ul>
-              <Link href="/contact" className="block w-full px-6 py-3 border-2 border-orange-600 text-orange-600 rounded-lg hover:bg-orange-50 font-semibold text-center transition-all">
+              <Link href="/contact" className="block w-full px-6 py-3 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-center transition-all">
                 Contact Sales
               </Link>
             </div>
@@ -345,16 +345,16 @@ export default function SMESolution() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Scale Your Business?
           </h2>
-          <p className="text-xl mb-8 text-orange-100">
+          <p className="text-xl mb-8 text-green-100">
             Join thousands of SMEs using RCFI to grow faster and more professionally
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact/demo" className="px-8 py-4 bg-white text-orange-600 rounded-lg hover:bg-orange-50 font-semibold text-lg transition-all">
+            <Link href="/contact/demo" className="px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all">
               Start Free Trial
             </Link>
             <Link href="/contact" className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 font-semibold text-lg transition-all">
