@@ -81,7 +81,7 @@ export default function ResourcesIndex() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Knowledge Center
@@ -109,7 +109,7 @@ export default function ResourcesIndex() {
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{category.title}</h3>
                   <p className="text-gray-600 mb-4">{category.description}</p>
-                  <div className="text-sm font-semibold text-blue-600">{category.count}</div>
+                  <div className="text-sm font-semibold text-green-600">{category.count}</div>
                 </Link>
               )
             })}
@@ -124,9 +124,9 @@ export default function ResourcesIndex() {
           <div className="grid md:grid-cols-3 gap-8">
             {featured.map((resource, index) => (
               <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100"></div>
+                <div className="h-48 bg-gradient-to-br from-green-100 to-green-100"></div>
                 <div className="p-6">
-                  <div className="text-sm font-semibold text-blue-600 mb-2">{resource.type}</div>
+                  <div className="text-sm font-semibold text-green-600 mb-2">{resource.type}</div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{resource.title}</h3>
                   <p className="text-gray-600 mb-4">{resource.excerpt}</p>
                   <div className="flex items-center justify-between">

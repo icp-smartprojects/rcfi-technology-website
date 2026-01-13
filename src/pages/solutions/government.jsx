@@ -11,11 +11,11 @@ export default function GovernmentSolution() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 ⚖️ Government & Public Sector
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -25,10 +25,10 @@ export default function GovernmentSolution() {
                 Digital transformation solutions that ensure compliance, build citizen trust, and streamline government operations
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact/demo" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
+                <Link href="/contact/demo" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold text-lg transition-all inline-flex items-center justify-center">
                   Request Demo <FiArrowRight className="ml-2" />
                 </Link>
-                <Link href="/contact" className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all text-center">
+                <Link href="/contact" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all text-center">
                   Contact Sales
                 </Link>
               </div>

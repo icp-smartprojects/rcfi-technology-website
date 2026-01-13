@@ -42,7 +42,7 @@ export default function TestimonialCard({ testimonial }) {
           <img 
             src={testimonial.logo} 
             alt={testimonial.organization}
-            className="h-8 opacity-60"
+            className="h-12 opacity-60"
             onError={(e) => e.target.style.display = 'none'}
           />
         </div>

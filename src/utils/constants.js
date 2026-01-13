@@ -14,18 +14,18 @@ export const COMPANY = {
  * Designed for DigiSign KE: Digital Trust, E-Government, Digital Signatures
  */
 export const COLORS = {
-  // Primary: Deep Trust Blue - Navigation, headers, primary actions
-  PRIMARY: '#0A3D62',
-  PRIMARY_50: '#f0f5f9',
-  PRIMARY_100: '#d9e6f2',
-  PRIMARY_200: '#b3cde5',
-  PRIMARY_300: '#6fa3d1',
-  PRIMARY_400: '#3d7cb5',
-  PRIMARY_500: '#0A3D62',
-  PRIMARY_600: '#082f4e',
-  PRIMARY_700: '#062440',
-  PRIMARY_800: '#051a2d',
-  PRIMARY_900: '#030f1a',
+  // Primary: Dark Green Trust - Navigation, headers, primary actions
+  PRIMARY: '#1B6B3F',
+  PRIMARY_50: '#f0f7f4',
+  PRIMARY_100: '#d9f0e8',
+  PRIMARY_200: '#b3e0d1',
+  PRIMARY_300: '#6fbf9f',
+  PRIMARY_400: '#3d9f6d',
+  PRIMARY_500: '#1B6B3F',
+  PRIMARY_600: '#155a33',
+  PRIMARY_700: '#104829',
+  PRIMARY_800: '#0b361f',
+  PRIMARY_900: '#062415',
 
   // Secondary: Technology Teal - Links, icons, active states
   SECONDARY: '#1ABC9C',

@@ -18,7 +18,7 @@ export default function TrustBar() {
               <img 
                 src={partner.logo} 
                 alt={partner.name}
-                className="h-12 w-auto object-contain"
+                className="h-20 w-auto object-contain"
                 onError={(e) => {
                   // Fallback to text if logo fails to load
                   const parent = e.target.parentElement

@@ -59,7 +59,7 @@ export default function Header() {
             <img 
               src="/images/assets/logo-black.svg" 
               alt="RCFI Logo"
-              className="w-10 h-10 object-contain"
+              className="w-48 h-48 object-contain"
             />
             <div>
               <div className="font-display font-bold text-lg text-neutral-900">RCFI</div>

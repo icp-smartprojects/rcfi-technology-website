@@ -131,14 +131,31 @@ export const companyInfo = {
 export const teamMembers = [
   {
     name: "Kevin Tonui",
-    title: "Chief Compliance Officer",
-    role: "Digital Trust Services",
+    title: "Chief Compliance Officer (Digital Trust Services)",
+    role: "Cybersecurity/Compliance",
     email: "k.tonui@rcfi.co.ke",
     bio: "Leads compliance and regulatory strategy for all RCFI digital trust services",
     image: "/images/team/kevin-tonui.jpg",
     linkedin: "#"
   },
-  // Add more team members as needed
+  {
+    name: "Ian Ndoli",
+    title: "Chief Technology Officer",
+    role: "Technology/Engineering",
+    email: "i.ndoli@rcfi.co.ke",
+    bio: "Oversees technology strategy and engineering excellence across all RCFI platforms",
+    image: "/images/team/ian-ndoli.jpg",
+    linkedin: "#"
+  },
+  {
+    name: "Emmanuel Mariaria",
+    title: "Chief Operating Officer",
+    role: "Operations",
+    email: "e.mariaria@rcfi.co.ke",
+    bio: "Leads operational excellence and business development initiatives",
+    image: "/images/team/emmanuel-mariaria.jpg",
+    linkedin: "#"
+  },
 ];
 
 export const partners = [

@@ -149,7 +149,7 @@ export default function FAQ() {
       </Head>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-green-50 via-white to-green-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Frequently Asked Questions
@@ -166,7 +166,7 @@ export default function FAQ() {
               placeholder="Search for answers..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 rounded-lg border-2 border-gray-200 focus:border-blue-600 focus:outline-none"
+              className="w-full pl-12 pr-4 py-4 rounded-lg border-2 border-gray-200 focus:border-green-600 focus:outline-none"
             />
           </div>
         </div>
@@ -216,10 +216,10 @@ export default function FAQ() {
             Our team is here to help. Contact us and we'll get back to you within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold transition-all">
+            <Link href="/contact" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold transition-all">
               Contact Support
             </Link>
-            <Link href="/contact/demo" className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-semibold transition-all">
+            <Link href="/contact/demo" className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold transition-all">
               Schedule a Call
             </Link>
           </div>

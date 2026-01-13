@@ -128,11 +128,11 @@ export default function NGOSolution() {
             {/* Elano for NGOs */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="order-2 lg:order-1 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl p-12 flex items-center justify-center">
-                  <FiTrendingUp className="w-48 h-48 text-blue-600 opacity-20" />
+                <div className="order-2 lg:order-1 bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-12 flex items-center justify-center">
+                  <FiTrendingUp className="w-48 h-48 text-green-600 opacity-20" />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <FiTrendingUp /> Elano
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -151,7 +151,7 @@ export default function NGOSolution() {
                       'Board governance workflows'
                     ].map((benefit) => (
                       <li key={benefit} className="flex items-start gap-3">
-                        <FiCheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <FiCheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{benefit}</span>
                       </li>
                     ))}
@@ -289,12 +289,12 @@ export default function NGOSolution() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 bg-gradient-to-r from-purple-600 to-blue-600">
+      <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Amplify Your Social Impact?
           </h2>
-          <p className="text-xl mb-8 text-purple-100">
+          <p className="text-xl mb-8 text-green-100">
             Join hundreds of CSOs using RCFI to improve governance, compliance, and impact reporting
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

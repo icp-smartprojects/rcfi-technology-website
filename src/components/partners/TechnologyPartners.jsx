@@ -24,7 +24,7 @@ export default function TechnologyPartners() {
               <img 
                 src={partner.logo} 
                 alt={partner.name}
-                className="max-h-20 max-w-full object-contain"
+                className="max-h-32 max-w-full object-contain"
               />
             </div>
           ))}

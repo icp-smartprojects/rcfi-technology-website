@@ -13,13 +13,31 @@ export default function Team() {
       image: '/images/team/placeholder.jpg'
     },
     {
-      name: 'Ian Ndoli',
-      title: 'Software Engineer',
-      role: 'Software Development',
-      email: 'ian.ndoli@rcfi.co.ke',
-      bio: 'Building scalable, secure systems for digital transformation',
+      name: 'Emmanuel Mariaria',
+      title: 'Chief Operating Officer',
+      role: 'Operations',
+      email: 'e.mariaria@rcfi.co.ke',
+      bio: 'Leads operational excellence and business development initiatives',
       linkedin: '#',
-      image: '/images/team/placeholder.jpg'
+      image: '/images/team/emmanuel-mariaria.jpg'
+    },
+    {
+      name: 'Ian Ndoli',
+      title: 'Chief Technology Officer',
+      role: 'Technology/Engineering',
+      email: 'i.ndoli@rcfi.co.ke',
+      bio: 'Oversees technology strategy and engineering excellence across all RCFI platforms',
+      linkedin: '#',
+      image: '/images/team/ian-ndoli.jpg'
+    },
+    {
+      name: 'Kevin Tonui',
+      title: 'Chief Compliance Officer (Digital Trust Services)',
+      role: 'Cybersecurity/Compliance',
+      email: 'k.tonui@rcfi.co.ke',
+      bio: 'Leads compliance and regulatory strategy for all RCFI digital trust services',
+      linkedin: '#',
+      image: '/images/team/kevin-tonui.jpg'
     },
     {
       name: 'Muriu Mwangi',
