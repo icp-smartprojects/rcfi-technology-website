@@ -1,58 +1,41 @@
 import { FiLinkedin, FiMail } from 'react-icons/fi'
+import Link from 'next/link'
 
 export default function Team() {
   const teamMembers = [
     {
-      name: 'Kevin Tonui',
-      title: 'Chief Compliance Officer',
-      role: 'Digital Trust Services',
-      email: 'k.tonui@rcfi.co.ke',
-      bio: 'Leads compliance and regulatory strategy for all RCFI digital trust services',
-      linkedin: '#',
-      image: '/images/team/kevin-tonui.jpg'
-    },
-    {
-      name: 'John Doe',
-      title: 'Chief Executive Officer',
-      role: 'Strategic Leadership',
-      email: 'ceo@rcfi.co.ke',
-      bio: 'Visionary leader driving RCFI\'s mission across Kenya and East Africa',
+      name: 'Ian Kigen Kisorio',
+      title: 'Chief Executive Officer & Founder',
+      role: 'Leadership & Vision',
+      email: 'ian@rcfi.co.ke',
+      bio: 'Founder and CEO driving RCFI\'s mission across Kenya and East Africa',
       linkedin: '#',
       image: '/images/team/placeholder.jpg'
     },
     {
-      name: 'Jane Smith',
-      title: 'Chief Technology Officer',
-      role: 'Technology & Innovation',
-      email: 'cto@rcfi.co.ke',
-      bio: 'Leading technical architecture and product development initiatives',
-      linkedin: '#',
-      image: '/images/team/placeholder.jpg'
-    },
-    {
-      name: 'Sarah Johnson',
-      title: 'Head of Product',
-      role: 'Product Strategy',
-      email: 'product@rcfi.co.ke',
-      bio: 'Driving product vision and user experience across all platforms',
-      linkedin: '#',
-      image: '/images/team/placeholder.jpg'
-    },
-    {
-      name: 'Michael Brown',
-      title: 'Head of Engineering',
+      name: 'Ian Ndoli',
+      title: 'Software Engineer',
       role: 'Software Development',
-      email: 'engineering@rcfi.co.ke',
+      email: 'ian.ndoli@rcfi.co.ke',
       bio: 'Building scalable, secure systems for digital transformation',
       linkedin: '#',
       image: '/images/team/placeholder.jpg'
     },
     {
-      name: 'Emily Wilson',
-      title: 'Head of Business Development',
-      role: 'Partnerships & Growth',
-      email: 'bd@rcfi.co.ke',
-      bio: 'Expanding RCFI\'s reach across government, CSOs, and enterprises',
+      name: 'Muriu Mwangi',
+      title: 'Frontend & IoT Developer',
+      role: 'Frontend & IoT Development',
+      email: 'muriu@rcfi.co.ke',
+      bio: 'Developing modern, responsive frontend solutions and IoT integrations for RCFI\'s digital platforms',
+      linkedin: '#',
+      image: '/images/team/placeholder.jpg'
+    },
+    {
+      name: 'Virginia Maina',
+      title: 'UX/UI & Frontend Developer',
+      role: 'Design & Frontend',
+      email: 'virginia@rcfi.co.ke',
+      bio: 'Creating intuitive user experiences and building modern frontend solutions',
       linkedin: '#',
       image: '/images/team/placeholder.jpg'
     }
@@ -117,9 +100,9 @@ export default function Team() {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             We're always looking for talented individuals passionate about digital transformation
           </p>
-          <a href="mailto:careers@rcfi.co.ke" className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all">
+          <Link href="/about/careers" className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all">
             View Open Positions
-          </a>
+          </Link>
         </div>
       </div>
     </section>
