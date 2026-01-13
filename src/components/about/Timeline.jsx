@@ -33,9 +33,9 @@ export default function Timeline() {
   ]
 
   const colorClasses = {
-    blue: 'bg-blue-600',
+    blue: 'bg-green-600',
     green: 'bg-green-600',
-    purple: 'bg-purple-600',
+    purple: 'bg-green-600',
     orange: 'bg-green-600',
     red: 'bg-green-600'
   }

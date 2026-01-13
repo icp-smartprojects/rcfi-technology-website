@@ -3,16 +3,16 @@ import { FiArrowRight } from 'react-icons/fi'
 
 export default function AboutFinalCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
+    <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
       <div className="max-w-4xl mx-auto text-center text-white">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Join Us in Building Africa's Digital Future
         </h2>
-        <p className="text-xl text-blue-100 mb-8">
+        <p className="text-xl text-green-100 mb-8">
           Whether you're a government agency, enterprise, or civil society organization, we're here to help you succeed
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact/demo" className="px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 font-semibold text-lg transition-all inline-flex items-center justify-center">
+          <Link href="/contact/demo" className="px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all inline-flex items-center justify-center">
             Schedule a Demo
             <FiArrowRight className="ml-2" />
           </Link>
@@ -20,7 +20,7 @@ export default function AboutFinalCTA() {
             Get in Touch
           </Link>
         </div>
-        <div className="mt-8 text-blue-100">
+        <div className="mt-8 text-green-100">
           <p>Or email us at <a href="mailto:info@rcfi.co.ke" className="underline hover:text-white">info@rcfi.co.ke</a></p>
         </div>
       </div>

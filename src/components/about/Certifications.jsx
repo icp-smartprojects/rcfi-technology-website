@@ -55,9 +55,9 @@ export default function Certifications() {
 
   const colorClasses = {
     blue: {
-      bg: 'bg-blue-100',
-      text: 'text-blue-600',
-      badge: 'bg-blue-600'
+      bg: 'bg-green-100',
+      text: 'text-green-600',
+      badge: 'bg-green-600'
     },
     green: {
       bg: 'bg-green-100',
@@ -65,9 +65,9 @@ export default function Certifications() {
       badge: 'bg-green-600'
     },
     purple: {
-      bg: 'bg-purple-100',
-      text: 'text-purple-600',
-      badge: 'bg-purple-600'
+      bg: 'bg-green-100',
+      text: 'text-green-600',
+      badge: 'bg-green-600'
     },
     orange: {
       bg: 'bg-green-100',

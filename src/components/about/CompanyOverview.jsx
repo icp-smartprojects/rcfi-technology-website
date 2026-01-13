@@ -79,7 +79,7 @@ export default function CompanyOverview() {
               const Icon = strength.icon
               return (
                 <div key={index} className="bg-gray-50 rounded-xl p-8">
-                  <Icon className="w-12 h-12 text-blue-600 mb-4" />
+                  <Icon className="w-12 h-12 text-green-600 mb-4" />
                   <h4 className="text-xl font-bold text-gray-900 mb-3">{strength.title}</h4>
                   <p className="text-gray-600">{strength.description}</p>
                 </div>
