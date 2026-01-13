@@ -6,7 +6,7 @@ export default function PricingCard({ plan, featured = false }) {
         : 'bg-white border border-neutral-200 hover:border-primary-300 hover:shadow-xl'
     }`}>
       {featured && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
           Most Popular
         </div>
       )}

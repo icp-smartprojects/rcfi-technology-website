@@ -26,7 +26,7 @@ export default function ElanoPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
                 <FiShield className="w-4 h-4" />
                 {product?.tagline || 'E-KYC & Identity Verification'}
               </div>
@@ -47,15 +47,15 @@ export default function ElanoPage() {
 
               <div className="flex flex-wrap gap-6 text-sm text-neutral-600">
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-success-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Real-time Verification</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-success-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Compliance Ready</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-success-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Multi-factor Auth</span>
                 </div>
               </div>
@@ -63,8 +63,8 @@ export default function ElanoPage() {
 
             {/* Right: Image */}
             <div className="hidden lg:block">
-              <div className="bg-gradient-to-br from-secondary-100 to-secondary-50 rounded-2xl aspect-square flex items-center justify-center">
-                <FiGlobe className="w-32 h-32 text-secondary-300" />
+              <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-2xl aspect-square flex items-center justify-center">
+                <FiGlobe className="w-32 h-32 text-primary-300" />
               </div>
             </div>
           </div>
@@ -96,15 +96,15 @@ export default function ElanoPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary-900 text-white">
+      <section className="py-20 bg-primary-900 text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Streamline Your KYC Process?
           </h2>
-          <p className="text-lg text-secondary-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
             Schedule a demo with our team to see how Elano can accelerate your identity verification.
           </p>
-          <Link href="/contact/demo" className="inline-block bg-white text-secondary-900 px-8 py-4 rounded-lg font-semibold hover:bg-secondary-50 transition-colors">
+          <Link href="/contact/demo" className="inline-block bg-white text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
             Request a Demo
           </Link>
         </div>

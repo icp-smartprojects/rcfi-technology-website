@@ -8,10 +8,10 @@
   --primary-dark: #003d1a;
   --secondary: #006400;
   --secondary-dark: #003d1a;
-  --accent: #F39C12;
+  --accent: #006400;
   --success: #006400;
-  --warning: #F39C12;
-  --error: #E74C3C;
+  --warning: #006400;
+  --error: #006400;
   --neutral: #1C1C1C;
   --background: #FFFFFF;
   --surface: #F4F6F8;
@@ -23,15 +23,19 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
   }
+  
   body {
-    @apply font-sans text-neutral-900 antialiased;
-    @apply bg-white;
-    background-image: 
-      radial-gradient(circle at 20% 50%, rgba(10, 61, 98, 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, rgba(26, 188, 156, 0.03) 0%, transparent 50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1C1C1C;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: radial-gradient(circle at 20% 50%, rgba(10, 61, 98, 0.03) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(26, 188, 156, 0.03) 0%, transparent 50%);
   }
+  
   .bg-with-logo {
     background-image: url('/images/assets/logo-full.png');
     background-size: 300px 300px;
@@ -40,109 +44,168 @@
     background-attachment: fixed;
     opacity: 0.02;
   }
+  
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold;
+    font-weight: 700;
   }
+  
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
+  
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
+  
   h3 {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
+  
   h4 {
-    @apply text-xl md:text-2xl;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
+  
   h5 {
-    @apply text-lg md:text-xl;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
+  
   h6 {
-    @apply text-base md:text-lg;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
+  
   p {
-    @apply text-base leading-relaxed;
+    font-size: 1rem;
+    line-height: 1.625;
   }
+  
   a {
-    @apply transition-colors duration-200;
+    transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   button {
-    @apply transition-all duration-200;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-/* Component Styles */
 @layer components {
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   .btn {
-    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200;
-    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
   
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700;
-    @apply focus:ring-primary-500;
+    background-color: #006400;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #003d1a;
+  }
+  
+  .btn-primary:focus {
+    box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.5);
   }
   
   .btn-secondary {
-    @apply bg-secondary-600 text-white hover:bg-secondary-700;
-    @apply focus:ring-secondary-500;
+    background-color: #006400;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #003d1a;
   }
   
   .btn-outline {
-    @apply border-2 border-primary-600 text-primary-600;
-    @apply hover:bg-primary-600 hover:text-white;
-    @apply focus:ring-primary-500;
+    border: 2px solid #006400;
+    color: #006400;
+  }
+  
+  .btn-outline:hover {
+    background-color: #006400;
+    color: white;
   }
   
   .btn-ghost {
-    @apply text-primary-600 hover:bg-primary-50;
-    @apply focus:ring-primary-500;
+    color: #006400;
+  }
+  
+  .btn-ghost:hover {
+    background-color: rgba(0, 100, 0, 0.05);
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-soft p-6;
-    @apply transition-all duration-300;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .card-hover {
-    @apply hover:shadow-xl hover:-translate-y-1;
+  .card-hover:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-0.25rem);
   }
   
   .input {
-    @apply w-full px-4 py-3 rounded-lg border border-neutral-300;
-    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
-    @apply transition-all duration-200;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .input:focus {
+    outline: 2px solid #006400;
+    outline-offset: 2px;
+    border-color: transparent;
   }
   
   .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   
   .gradient-primary {
-    @apply bg-gradient-to-r from-primary-600 to-primary-400;
+    background-image: linear-gradient(to right, #006400, rgba(0, 100, 0, 0.7));
   }
   
   .gradient-secondary {
-    @apply bg-gradient-to-r from-secondary-600 to-secondary-400;
+    background-image: linear-gradient(to right, #006400, rgba(0, 100, 0, 0.7));
   }
   
   .gradient-accent {
-    @apply bg-gradient-to-r from-accent-600 to-accent-400;
+    background-image: linear-gradient(to right, #F39C12, rgba(243, 156, 18, 0.7));
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent;
-    @apply bg-gradient-to-r from-primary-600 to-secondary-600;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #006400, #006400);
   }
 }
 
-/* Utility Styles */
 @layer utilities {
   .animation-delay-100 {
     animation-delay: 100ms;
@@ -174,7 +237,6 @@
   }
 }
 
-/* Custom Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -228,7 +290,12 @@
   }
 }
 
-/* Loading Spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .spinner {
   border: 3px solid rgba(14, 165, 233, 0.1);
   border-top-color: #0ea5e9;
@@ -238,25 +305,49 @@
   animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Smooth Scroll Offset for Fixed Header */
-html {
-  scroll-padding-top: 80px;
-}
-
-/* Selection Color */
 ::selection {
   background-color: rgba(14, 165, 233, 0.2);
   color: #0369a1;
 }
 
-/* Focus Visible */
 *:focus-visible {
   outline: 2px solid #0ea5e9;
   outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 { font-size: 3rem; line-height: 1; }
+  h2 { font-size: 2.25rem; line-height: 2.5rem; }
+  h3 { font-size: 1.875rem; line-height: 2.25rem; }
+  h4 { font-size: 1.5rem; line-height: 2rem; }
+  h5 { font-size: 1.25rem; line-height: 1.75rem; }
+  h6 { font-size: 1.125rem; line-height: 1.75rem; }
+  
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  h1 { font-size: 3.75rem; line-height: 1; }
+  h2 { font-size: 3rem; line-height: 1; }
+  h3 { font-size: 2.25rem; line-height: 2.5rem; }
+  
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }

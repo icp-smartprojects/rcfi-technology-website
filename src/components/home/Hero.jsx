@@ -12,8 +12,8 @@ export default function Hero() {
       {/* Animated Background Shapes */}
       <div className="absolute inset-0 overflow-hidden -z-10">
         <div className="absolute top-1/4 -left-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
-        <div className="absolute top-1/3 -right-10 w-72 h-72 bg-secondary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float animation-delay-300"></div>
-        <div className="absolute -bottom-32 left-1/3 w-72 h-72 bg-accent-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float animation-delay-500"></div>
+        <div className="absolute top-1/3 -right-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float animation-delay-300"></div>
+        <div className="absolute -bottom-32 left-1/3 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float animation-delay-500"></div>
       </div>
 
       <div className="container-custom">

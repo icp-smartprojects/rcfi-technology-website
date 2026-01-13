@@ -26,7 +26,7 @@ export default function PrezioPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
                 <FiShield className="w-4 h-4" />
                 {product?.tagline || 'Business Automation Platform'}
               </div>
@@ -47,15 +47,15 @@ export default function PrezioPage() {
 
               <div className="flex flex-wrap gap-6 text-sm text-neutral-600">
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-success-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Workflow Automation</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-success-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Document Management</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FiCheckCircle className="w-5 h-5 text-success-600" />
+                  <FiCheckCircle className="w-5 h-5 text-primary-600" />
                   <span>Real-time Analytics</span>
                 </div>
               </div>
@@ -63,8 +63,8 @@ export default function PrezioPage() {
 
             {/* Right: Image */}
             <div className="hidden lg:block">
-              <div className="bg-gradient-to-br from-accent-100 to-accent-50 rounded-2xl aspect-square flex items-center justify-center">
-                <FiGlobe className="w-32 h-32 text-accent-300" />
+              <div className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-2xl aspect-square flex items-center justify-center">
+                <FiGlobe className="w-32 h-32 text-primary-300" />
               </div>
             </div>
           </div>
@@ -96,15 +96,15 @@ export default function PrezioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-accent-900 text-white">
+      <section className="py-20 bg-primary-900 text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Transform Your Business Processes
           </h2>
-          <p className="text-lg text-accent-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
             Schedule a demo with our team to see how Prezio can streamline your operations.
           </p>
-          <Link href="/contact/demo" className="inline-block bg-white text-accent-900 px-8 py-4 rounded-lg font-semibold hover:bg-accent-50 transition-colors">
+          <Link href="/contact/demo" className="inline-block bg-white text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
             Request a Demo
           </Link>
         </div>

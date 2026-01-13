@@ -11,18 +11,18 @@ export default function ProductCard({ product }) {
       button: 'bg-primary-600 hover:bg-primary-700 text-white'
     },
     secondary: {
-      bg: 'bg-secondary-50',
-      border: 'border-secondary-200 hover:border-secondary-300',
-      text: 'text-secondary-600',
-      badge: 'bg-secondary-100 text-secondary-700',
-      button: 'bg-secondary-600 hover:bg-secondary-700 text-white'
+      bg: 'bg-primary-50',
+      border: 'border-primary-200 hover:border-primary-300',
+      text: 'text-primary-600',
+      badge: 'bg-primary-100 text-primary-700',
+      button: 'bg-primary-600 hover:bg-primary-700 text-white'
     },
     accent: {
-      bg: 'bg-accent-50',
-      border: 'border-accent-200 hover:border-accent-300',
-      text: 'text-accent-600',
-      badge: 'bg-accent-100 text-accent-700',
-      button: 'bg-accent-600 hover:bg-accent-700 text-white'
+      bg: 'bg-primary-50',
+      border: 'border-primary-200 hover:border-primary-300',
+      text: 'text-primary-600',
+      badge: 'bg-primary-100 text-primary-700',
+      button: 'bg-primary-600 hover:bg-primary-700 text-white'
     }
   }
 
