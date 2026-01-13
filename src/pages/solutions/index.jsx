@@ -9,7 +9,7 @@ export default function SolutionsIndex() {
       title: 'Government & Public Sector',
       description: 'Modernize service delivery, ensure compliance, and build citizen trust',
       icon: FiTrendingUp,
-      color: 'blue',
+      color: 'green',
       benefits: [
         'Digital citizen services',
         'Inter-agency collaboration',

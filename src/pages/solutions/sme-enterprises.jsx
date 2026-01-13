@@ -278,7 +278,7 @@ export default function SMESolution() {
                     <FiCheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-700">{feature}</span>
                   </li>
-                ))
+                ))}
               </ul>
               <Link href="/contact" className="block w-full px-6 py-3 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-semibold text-center transition-all">
                 Get Started
