@@ -3,7 +3,7 @@ import { FiArrowRight } from 'react-icons/fi'
 
 export default function AboutFinalCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-r from-green-600 to-green-700">
+    <section className="py-24 px-4 bg-gradient-to-r from-primary-600 to-primary-700">
       <div className="max-w-4xl mx-auto text-center text-white">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Join Us in Building Africa's Digital Future

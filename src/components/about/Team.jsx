@@ -84,7 +84,7 @@ export default function Team() {
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                <p className="text-green-600 font-semibold mb-2">{member.title}</p>
+                <p className="text-primary-600 font-semibold mb-2">{member.title}</p>
                 <p className="text-sm text-gray-600 mb-4">{member.role}</p>
                 <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
                 
@@ -92,7 +92,7 @@ export default function Team() {
                 <div className="flex items-center gap-4">
                   <a 
                     href={member.linkedin} 
-                    className="text-gray-400 hover:text-green-600 transition-colors"
+                    className="text-gray-400 hover:text-primary-600 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -100,7 +100,7 @@ export default function Team() {
                   </a>
                   <a 
                     href={`mailto:${member.email}`} 
-                    className="text-gray-400 hover:text-green-600 transition-colors"
+                    className="text-gray-400 hover:text-primary-600 transition-colors"
                   >
                     <FiMail className="w-5 h-5" />
                   </a>
@@ -111,14 +111,14 @@ export default function Team() {
         </div>
 
         {/* Join Team CTA */}
-        <div className="mt-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 lg:p-12 text-center text-white">
+        <div className="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">
             Join Our Team
           </h3>
-          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             We're always looking for talented individuals passionate about digital transformation
           </p>
-          <Link href="/about/careers" className="inline-block px-8 py-4 bg-white text-green-600 rounded-lg hover:bg-green-50 font-semibold text-lg transition-all">
+          <Link href="/about/careers" className="inline-block px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">
             View Open Positions
           </Link>
         </div>

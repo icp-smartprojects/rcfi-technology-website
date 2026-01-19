@@ -4,14 +4,14 @@
 
 /* Custom CSS Variables */
 :root {
-  --primary: #006400;
-  --primary-dark: #003d1a;
-  --secondary: #006400;
-  --secondary-dark: #003d1a;
-  --accent: #006400;
-  --success: #006400;
-  --warning: #006400;
-  --error: #006400;
+  --primary: #235e43;
+  --primary-dark: #153828;
+  --secondary: #235e43;
+  --secondary-dark: #153828;
+  --accent: #235e43;
+  --success: #235e43;
+  --warning: #235e43;
+  --error: #235e43;
   --neutral: #1C1C1C;
   --background: #FFFFFF;
   --surface: #F4F6F8;
@@ -33,7 +33,7 @@
     background-color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: radial-gradient(circle at 20% 50%, rgba(10, 61, 98, 0.03) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(26, 188, 156, 0.03) 0%, transparent 50%);
+    background-image: radial-gradient(circle at 20% 50%, rgba(35, 94, 67, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(47, 118, 82, 0.04) 0%, transparent 50%);
   }
   
   .bg-with-logo {
@@ -115,43 +115,43 @@
   }
   
   .btn-primary {
-    background-color: #006400;
+    background-color: #235e43;
     color: white;
   }
   
   .btn-primary:hover {
-    background-color: #003d1a;
+    background-color: #153828;
   }
   
   .btn-primary:focus {
-    box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.5);
+    box-shadow: 0 0 0 3px rgba(47, 118, 82, 0.45);
   }
   
   .btn-secondary {
-    background-color: #006400;
+    background-color: #235e43;
     color: white;
   }
   
   .btn-secondary:hover {
-    background-color: #003d1a;
+    background-color: #153828;
   }
   
   .btn-outline {
-    border: 2px solid #006400;
-    color: #006400;
+    border: 2px solid #235e43;
+    color: #235e43;
   }
   
   .btn-outline:hover {
-    background-color: #006400;
+    background-color: #235e43;
     color: white;
   }
   
   .btn-ghost {
-    color: #006400;
+    color: #235e43;
   }
   
   .btn-ghost:hover {
-    background-color: rgba(0, 100, 0, 0.05);
+    background-color: rgba(35, 94, 67, 0.08);
   }
   
   .card {
@@ -176,7 +176,7 @@
   }
   
   .input:focus {
-    outline: 2px solid #006400;
+    outline: 2px solid #2f7652;
     outline-offset: 2px;
     border-color: transparent;
   }
@@ -187,11 +187,11 @@
   }
   
   .gradient-primary {
-    background-image: linear-gradient(to right, #006400, rgba(0, 100, 0, 0.7));
+    background-image: linear-gradient(to right, #235e43, rgba(47, 118, 82, 0.8));
   }
   
   .gradient-secondary {
-    background-image: linear-gradient(to right, #006400, rgba(0, 100, 0, 0.7));
+    background-image: linear-gradient(to right, #235e43, rgba(47, 118, 82, 0.8));
   }
   
   .gradient-accent {
@@ -202,7 +202,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, #006400, #006400);
+    background-image: linear-gradient(to right, #235e43, #153828);
   }
 }
 
@@ -297,8 +297,8 @@
 }
 
 .spinner {
-  border: 3px solid rgba(14, 165, 233, 0.1);
-  border-top-color: #0ea5e9;
+  border: 3px solid rgba(47, 118, 82, 0.12);
+  border-top-color: #2f7652;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -306,12 +306,12 @@
 }
 
 ::selection {
-  background-color: rgba(14, 165, 233, 0.2);
-  color: #0369a1;
+  background-color: rgba(47, 118, 82, 0.2);
+  color: #0e241b;
 }
 
 *:focus-visible {
-  outline: 2px solid #0ea5e9;
+  outline: 2px solid #2f7652;
   outline-offset: 2px;
 }
 

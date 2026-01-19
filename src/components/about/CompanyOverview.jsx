@@ -50,19 +50,19 @@ export default function CompanyOverview() {
           <div className="bg-gradient-to-br from-primary-200 to-primary-200 rounded-2xl p-12 flex items-center justify-center">
             <div className="grid grid-cols-2 gap-4 w-full">
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">3</div>
+                <div className="text-3xl font-bold text-primary-700 mb-2">3</div>
                 <div className="text-sm text-gray-600">Products</div>
               </div>
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">47</div>
+                <div className="text-3xl font-bold text-primary-700 mb-2">47</div>
                 <div className="text-sm text-gray-600">Counties</div>
               </div>
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">5</div>
+                <div className="text-3xl font-bold text-primary-700 mb-2">5</div>
                 <div className="text-sm text-gray-600">Industries</div>
               </div>
               <div className="bg-white rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">2+</div>
+                <div className="text-3xl font-bold text-primary-700 mb-2">2+</div>
                 <div className="text-sm text-gray-600">Years</div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function CompanyOverview() {
               const Icon = strength.icon
               return (
                 <div key={index} className="bg-gray-50 rounded-xl p-8">
-                  <Icon className="w-12 h-12 text-green-600 mb-4" />
+                  <Icon className="w-12 h-12 text-primary-600 mb-4" />
                   <h4 className="text-xl font-bold text-gray-900 mb-3">{strength.title}</h4>
                   <p className="text-gray-600">{strength.description}</p>
                 </div>
