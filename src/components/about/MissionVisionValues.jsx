@@ -36,8 +36,8 @@ export default function MissionVisionValues() {
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {/* Mission */}
           <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
-            <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-              <FiTarget className="w-8 h-8 text-green-600" />
+            <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+              <FiTarget className="w-8 h-8 text-primary-600" />
             </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -72,7 +72,7 @@ export default function MissionVisionValues() {
               return (
                 <div key={index} className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary-200 to-primary-200 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-green-600" />
+                    <Icon className="w-8 h-8 text-primary-600" />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h4>
                   <p className="text-gray-600">{value.description}</p>

@@ -67,19 +67,19 @@ export default function ContactSales() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <div className="bg-primary-50 rounded-xl p-6 text-center">
+            <div className="bg-neutral-50 border border-primary-200 rounded-xl p-6 text-center">
               <FiPhone className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600 mb-2">+254 754 134 704</p>
               <p className="text-sm text-gray-500">Mon-Fri, 8am-6pm EAT</p>
             </div>
-            <div className="bg-primary-50 rounded-xl p-6 text-center">
+            <div className="bg-neutral-50 border border-primary-200 rounded-xl p-6 text-center">
               <FiMail className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Email Us</h3>
               <p className="text-gray-600 mb-2">sales@rcfi.co.ke</p>
               <p className="text-sm text-gray-500">Response within 24 hours</p>
             </div>
-            <div className="bg-primary-50 rounded-xl p-6 text-center">
+            <div className="bg-neutral-50 border border-primary-200 rounded-xl p-6 text-center">
               <FiMessageSquare className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Live Chat</h3>
               <p className="text-gray-600 mb-2">Available Now</p>

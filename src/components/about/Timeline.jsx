@@ -33,11 +33,11 @@ export default function Timeline() {
   ]
 
   const colorClasses = {
-    blue: 'bg-green-600',
-    green: 'bg-green-600',
-    purple: 'bg-green-600',
-    orange: 'bg-green-600',
-    red: 'bg-green-600'
+    blue: 'bg-primary-600',
+    green: 'bg-primary-600',
+    purple: 'bg-primary-600',
+    orange: 'bg-primary-600',
+    red: 'bg-primary-600'
   }
 
   return (
@@ -54,7 +54,7 @@ export default function Timeline() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-green-600 to-green-600"></div>
+          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-600 to-primary-600"></div>
 
           {/* Timeline items */}
           <div className="space-y-12">
