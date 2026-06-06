@@ -1,13 +1,15 @@
 export const productsData = {
-  digisign: {
-    id: 'digisign',
-    name: 'DigiSign',
-    tagline: 'Digital Trust & Security',
-    shortDescription: 'Legally binding digital signatures, e-KYC, and blockchain-secured documents',
-    longDescription: 'DigiSign is Kenya\'s first locally-hosted digital trust service, providing legally binding digital signatures, electronic identity verification, invoice authentication, and blockchain-based document security.',
+  certysign: {
+    id: 'certysign',
+    name: 'CertySign',
+    tagline: 'Digital Trust Platform',
+    shortDescription: 'Kenya\'s first full-stack digital signing, PKI, and document certification platform',
+    longDescription: 'CertySign is Kenya\'s first locally-hosted digital trust platform, providing legally binding digital signatures backed by a nationally recognised Certificate Authority, e-KYC identity verification, blockchain-anchored document security, and a full PKI infrastructure — all built to comply with the Kenya Data Protection Act 2019 and CAK e-Certification Guidelines.',
     icon: 'shield-check',
     color: 'primary',
-    heroImage: '/images/products/digisign-hero.jpg',
+    heroImage: '/images/products/certysign-hero.jpg',
+    href: 'https://certysign.io',
+    appHref: 'https://app.certysign.io',
     
     challenge: {
       title: 'Traditional Document Signing is Broken',
@@ -42,7 +44,7 @@ export const productsData = {
           'Certificate lifecycle management',
           'Multi-factor authentication'
         ],
-        image: '/images/products/digisign-dsc.jpg',
+        image: '/images/products/certysign-dsc.jpg',
         icon: 'certificate'
       },
       {
@@ -55,7 +57,7 @@ export const productsData = {
           'Fraud prevention',
           'Audit trail logging'
         ],
-        image: '/images/products/digisign-invoice.jpg',
+        image: '/images/products/certysign-invoice.jpg',
         icon: 'file-invoice'
       },
       {
@@ -68,7 +70,7 @@ export const productsData = {
           'Facial recognition & liveness detection',
           'Real-time fraud detection'
         ],
-        image: '/images/products/digisign-ekyc.jpg',
+        image: '/images/products/certysign-ekyc.jpg',
         icon: 'user-check'
       },
       {
@@ -81,7 +83,7 @@ export const productsData = {
           'Independent verification portal',
           'Audit trail transparency'
         ],
-        image: '/images/products/digisign-blockchain.jpg',
+        image: '/images/products/certysign-blockchain.jpg',
         icon: 'link'
       },
       {
@@ -94,7 +96,7 @@ export const productsData = {
           'OAuth2/SAML SSO',
           'Offline signing capability'
         ],
-        image: '/images/products/digisign-mobile.jpg',
+        image: '/images/products/certysign-mobile.jpg',
         icon: 'mobile-alt'
       }
     ],
@@ -255,16 +257,16 @@ export const productsData = {
     
     faqs: [
       {
-        question: 'Is DigiSign legally recognized in Kenya?',
-        answer: 'Yes. DigiSign is fully compliant with Kenya\'s Data Protection Act 2019 and CAK e-Certification Guidelines. Our digital signatures have the same legal standing as handwritten signatures under Kenyan law.'
+        question: 'Is CertySign legally recognized in Kenya?',
+        answer: 'Yes. CertySign is fully compliant with Kenya\'s Data Protection Act 2019 and CAK e-Certification Guidelines. Our digital signatures have the same legal standing as handwritten signatures under Kenyan law.'
       },
       {
-        question: 'How secure are DigiSign certificates?',
-        answer: 'DigiSign uses FIPS 140-2 Level 3 certified Hardware Security Modules (HSMs) to protect cryptographic keys. All certificates are X.509 v3 compliant and use industry-standard encryption.'
+        question: 'How secure are CertySign certificates?',
+        answer: 'CertySign uses FIPS 140-2 Level 3 certified Hardware Security Modules (HSMs) to protect cryptographic keys. All certificates are X.509 v3 compliant and use industry-standard encryption.'
       },
       {
-        question: 'Can I use DigiSign with existing software?',
-        answer: 'Yes. DigiSign works with Adobe Acrobat, Microsoft Office, and major ERP/CRM systems via our RESTful APIs.'
+        question: 'Can I use CertySign with existing software?',
+        answer: 'Yes. CertySign works with Adobe Acrobat, Microsoft Office, and major ERP/CRM systems via our RESTful APIs.'
       },
       {
         question: 'How long does e-KYC verification take?',

@@ -14,7 +14,7 @@ export default function Footer() {
       { name: 'Contact', href: '/contact' },
     ],
     products: [
-      { name: 'DigiSign', href: '/products/digisign' },
+      { name: 'CertySign', href: '/products/certysign' },
       { name: 'Elano', href: '/products/elano' },
       { name: 'Prezio', href: '/products/prezio' },
     ],

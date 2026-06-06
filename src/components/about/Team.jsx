@@ -7,7 +7,7 @@ export default function Team() {
       name: 'Ian Kigen Kisorio',
       title: 'Chief Executive Officer & Founder',
       role: 'Leadership & Vision',
-      email: 'ian@rcfi.co.ke',
+      email: 'k.kisorio@rcfi.co.ke',
       bio: 'Founder and CEO driving RCFI\'s mission across Kenya and East Africa',
       linkedin: '#',
       image: '/images/team/placeholder.jpg'
@@ -25,7 +25,7 @@ export default function Team() {
       name: 'Ian Ndoli',
       title: 'Chief Technology Officer',
       role: 'Technology/Engineering',
-      email: 'i.ndoli@rcfi.co.ke',
+      email: 'ian.mathews@rcfi.co.ke',
       bio: 'Oversees technology strategy and engineering excellence across all RCFI platforms',
       linkedin: '#',
       image: '/images/team/ian-ndoli.jpg'
@@ -41,10 +41,10 @@ export default function Team() {
     },
     {
       name: 'Muriu Mwangi',
-      title: 'Frontend & IoT Developer',
-      role: 'Frontend & IoT Development',
-      email: 'muriu@rcfi.co.ke',
-      bio: 'Developing modern, responsive frontend solutions and IoT integrations for RCFI\'s digital platforms',
+      title: 'Senior Backend Engineer & IoT Developer',
+      role: 'Backend Engineering & IoT',
+      email: 'jotham.mwangi@rcfi.co.ke',
+      bio: 'Leads backend engineering and IoT integrations powering RCFI\'s live platforms — CertySign, Elano, and Prezio',
       linkedin: '#',
       image: '/images/team/placeholder.jpg'
     },
@@ -74,9 +74,19 @@ export default function Team() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              {/* Image placeholder */}
-              <div className="bg-gradient-to-br from-primary-200 to-primary-50 h-64 flex items-center justify-center">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center text-4xl font-bold text-gray-400">
+              {/* Avatar */}
+              <div className={`h-48 flex items-center justify-center relative overflow-hidden
+                ${index === 0 ? 'gradient-primary' :
+                  index === 1 ? 'bg-gradient-to-br from-slate-600 to-slate-800' :
+                  index === 2 ? 'gradient-secondary' :
+                  index === 3 ? 'bg-gradient-to-br from-purple-600 to-indigo-700' :
+                  index === 4 ? 'bg-gradient-to-br from-teal-600 to-emerald-700' :
+                  'bg-gradient-to-br from-rose-500 to-pink-600'}`}>
+                <div className="absolute inset-0 opacity-10" style={{
+                  backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+                  backgroundSize: '24px 24px'
+                }} />
+                <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-3xl font-extrabold text-white border-4 border-white/40 shadow-lg relative z-10">
                   {member.name.split(' ').map(n => n[0]).join('')}
                 </div>
               </div>

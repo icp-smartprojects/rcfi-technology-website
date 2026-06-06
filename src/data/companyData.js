@@ -117,8 +117,8 @@ export const companyInfo = {
     },
     {
       year: "2025",
-      title: "DigiSign Launch",
-      description: "Launched Kenya's first locally-hosted digital trust service"
+      title: "CertySign Launch",
+      description: "Launched CertySign — Kenya's first locally-hosted digital trust platform with PKI, digital signatures, and e-KYC"
     },
     {
       year: "2026",

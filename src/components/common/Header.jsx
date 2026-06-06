@@ -21,7 +21,7 @@ export default function Header() {
     products: {
       name: 'Products',
       items: [
-        { name: 'DigiSign', href: '/products/digisign', description: 'Digital Trust & Security' },
+        { name: 'CertySign', href: '/products/certysign', description: 'Digital Trust Platform' },
         { name: 'Elano', href: '/products/elano', description: 'Governance & Intelligence' },
         { name: 'Prezio', href: '/products/prezio', description: 'Business Management' },
       ]

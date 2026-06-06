@@ -11,7 +11,7 @@ export const COMPANY = {
 
 /**
  * Color Constants - Government-grade, trust-focused color system
- * Designed for DigiSign KE: Digital Trust, E-Government, Digital Signatures
+ * Designed for CertySign: Digital Trust, E-Government, Digital Signatures
  */
 export const COLORS = {
   // Primary: Dark Green Trust - Navigation, headers, primary actions
@@ -234,7 +234,7 @@ export const SOCIAL_LINKS = {
 // Navigation Links
 export const NAV_LINKS = {
   products: [
-    { name: 'DigiSign', href: '/products/digisign', description: 'Digital Trust & Security' },
+    { name: 'CertySign', href: '/products/certysign', description: 'Digital Trust Platform' },
     { name: 'Elano', href: '/products/elano', description: 'Governance & Intelligence' },
     { name: 'Prezio', href: '/products/prezio', description: 'Business Management' }
   ],
@@ -262,12 +262,12 @@ export const NAV_LINKS = {
 
 // Products
 export const PRODUCTS = {
-  digisign: {
-    id: 'digisign',
-    name: 'DigiSign',
-    tagline: 'Digital Trust & Security',
+  certysign: {
+    id: 'certysign',
+    name: 'CertySign',
+    tagline: 'Digital Trust Platform',
     color: 'blue',
-    href: '/products/digisign'
+    href: '/products/certysign'
   },
   elano: {
     id: 'elano',

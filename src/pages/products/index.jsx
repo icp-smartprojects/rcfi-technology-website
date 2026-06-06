@@ -5,11 +5,11 @@ import SEO from '@/components/common/SEO'
 
 const products = [
   {
-    id: 'digisign',
-    name: 'DigiSign',
-    description: 'Government-grade digital signature platform for e-government and corporate authentication',
-    features: ['PKIX Compliant', 'CAK Licensed', 'ISO 27001 Certified'],
-    image: '/images/products/digisign.jpg'
+    id: 'certysign',
+    name: 'CertySign',
+    description: 'Kenya\'s first full-stack digital signing and PKI platform for legally binding digital signatures, e-KYC, and document certification.',
+    features: ['PKI & CAK Licensed CA', 'ISO 27001 Certified', 'Kenya DPA Compliant', 'Blockchain-Anchored'],
+    image: '/images/products/certysign.jpg'
   },
   {
     id: 'elano',
@@ -32,8 +32,8 @@ export default function Products() {
     <>
       <Head>
         <title>Products | RCFI Technology</title>
-        <meta name="description" content="Discover RCFI's suite of digital transformation products: DigiSign, Elano, and Prezio. Trusted by enterprises across East Africa." />
-        <meta name="keywords" content="products, digital signatures, e-KYC, workflow automation, DigiSign, Elano, Prezio" />
+        <meta name="description" content="Discover RCFI's suite of digital transformation products: CertySign, Elano, and Prezio. Trusted by enterprises across East Africa." />
+        <meta name="keywords" content="products, digital signatures, e-KYC, workflow automation, CertySign, Elano, Prezio" />
         <meta property="og:title" content="Products | RCFI Technology" />
         <meta property="og:description" content="Digital transformation solutions for Kenya and East Africa" />
         <meta property="og:type" content="website" />
