@@ -1,6 +1,6 @@
 import { FiCheckCircle } from 'react-icons/fi'
 
-export function DigiSignUseCases() {
+export function CertySignUseCases() {
   const useCases = [
     {
       title: 'Government & Public Sector',
@@ -38,7 +38,7 @@ export function DigiSignUseCases() {
     <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Who Uses DigiSign?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Who Uses CertySign?</h2>
           <p className="text-xl text-gray-600">Trusted across sectors for secure digital transactions</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

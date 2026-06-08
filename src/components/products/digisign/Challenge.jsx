@@ -1,6 +1,6 @@
 import { FiAlertCircle } from 'react-icons/fi'
 
-export default function DigiSignChallenge() {
+export default function CertySignChallenge() {
   const challenges = [
     'Physical signatures require in-person meetings, causing delays',
     'Paper documents are easily forged or tampered with',

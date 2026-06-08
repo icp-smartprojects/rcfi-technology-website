@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-export function DigiSignFinalCTA() {
+export function CertySignFinalCTA() {
   return (
     <section className="py-24 px-4 bg-gradient-to-r from-primary-600 to-primary-700">
       <div className="max-w-4xl mx-auto text-center text-white">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Go Digital?</h2>
         <p className="text-xl mb-8 text-primary-100">
-          Join thousands using DigiSign for secure, legally binding digital transactions
+          Join thousands using CertySign for secure, legally binding digital transactions
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact/demo" className="px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-primary-50 font-semibold text-lg transition-all">

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FiCheckCircle } from 'react-icons/fi'
 
-export function DigiSignPricing() {
+export function CertySignPricing() {
   const plans = [
     {
       name: 'Individual',

@@ -129,7 +129,7 @@ export default function SMESolution() {
               </div>
             </div>
 
-            {/* DigiSign for SMEs */}
+            {/* CertySign for SMEs */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="order-2 lg:order-1 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl p-12 flex items-center justify-center">
@@ -137,7 +137,7 @@ export default function SMESolution() {
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    <FiShield /> DigiSign
+                    <FiShield /> CertySign
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
                     Professional Digital Signatures for Business

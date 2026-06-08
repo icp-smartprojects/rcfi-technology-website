@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FiShield, FiArrowRight, FiCheckCircle, FiLock } from 'react-icons/fi'
 
-export default function DigiSignHero() {
+export default function CertySignHero() {
   return (
     <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
       <div className="max-w-7xl mx-auto">
@@ -12,7 +12,7 @@ export default function DigiSignHero() {
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-slide-up">
-              DigiSign
+              CertySign
             </h1>
             
             <p className="text-2xl text-primary-600 font-semibold mb-4">

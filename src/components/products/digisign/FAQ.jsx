@@ -1,21 +1,21 @@
 import { useState } from 'react'
 import { FiChevronDown } from 'react-icons/fi'
 
-export function DigiSignFAQ() {
+export function CertySignFAQ() {
   const [openIndex, setOpenIndex] = useState(null)
   
   const faqs = [
     {
-      question: 'Is DigiSign legally recognized in Kenya?',
-      answer: 'Yes. DigiSign is fully compliant with Kenya\'s Data Protection Act 2019 and CAK e-Certification Guidelines. Our digital signatures have the same legal standing as handwritten signatures under Kenyan law.'
+      question: 'Is CertySign legally recognized in Kenya?',
+      answer: 'Yes. CertySign is fully compliant with Kenya\'s Data Protection Act 2019 and CAK e-Certification Guidelines. Our digital signatures have the same legal standing as handwritten signatures under Kenyan law.'
     },
     {
-      question: 'How secure are DigiSign certificates?',
-      answer: 'DigiSign uses FIPS 140-2 Level 3 certified Hardware Security Modules (HSMs) to protect cryptographic keys. All certificates are X.509 v3 compliant and use industry-standard encryption.'
+      question: 'How secure are CertySign certificates?',
+      answer: 'CertySign uses FIPS 140-2 Level 3 certified Hardware Security Modules (HSMs) to protect cryptographic keys. All certificates are X.509 v3 compliant and use industry-standard encryption.'
     },
     {
-      question: 'Can I use DigiSign with existing software?',
-      answer: 'Yes. DigiSign works with Adobe Acrobat, Microsoft Office, and major ERP/CRM systems via our RESTful APIs.'
+      question: 'Can I use CertySign with existing software?',
+      answer: 'Yes. CertySign works with Adobe Acrobat, Microsoft Office, and major ERP/CRM systems via our RESTful APIs.'
     },
     {
       question: 'How long does e-KYC verification take?',
@@ -32,7 +32,7 @@ export function DigiSignFAQ() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600">Everything you need to know about DigiSign</p>
+          <p className="text-xl text-gray-600">Everything you need to know about CertySign</p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

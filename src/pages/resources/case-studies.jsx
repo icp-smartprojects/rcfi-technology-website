@@ -24,14 +24,14 @@ export default function CaseStudies() {
       industry: 'Financial Services',
       logo: '🏦',
       challenge: 'Slow manual KYC process causing loan processing delays',
-      solution: 'Implemented DigiSign e-KYC for instant verification',
+      solution: 'Implemented CertySign e-KYC for instant verification',
       results: [
         'Under 10 seconds verification time',
         '90% reduction in fraud attempts',
         '5x faster loan processing',
         '95% customer satisfaction increase'
       ],
-      products: ['DigiSign'],
+      products: ['CertySign'],
       year: '2025'
     },
     {
@@ -46,7 +46,7 @@ export default function CaseStudies() {
         'Standardized M&E across network',
         'Real-time impact dashboards'
       ],
-      products: ['Elano', 'DigiSign'],
+      products: ['Elano', 'CertySign'],
       year: '2025'
     },
     {
@@ -69,14 +69,14 @@ export default function CaseStudies() {
       industry: 'Legal & Compliance',
       logo: '⚖️',
       challenge: 'Physical signatures delaying time-sensitive court filings',
-      solution: 'Deployed DigiSign for legally binding digital signatures',
+      solution: 'Deployed CertySign for legally binding digital signatures',
       results: [
         'Same-day document execution',
         'Court-admissible signatures',
         'Remote client signing capability',
         '60% reduction in courier costs'
       ],
-      products: ['DigiSign'],
+      products: ['CertySign'],
       year: '2025'
     },
     {
@@ -84,14 +84,14 @@ export default function CaseStudies() {
       industry: 'Government & Public Sector',
       logo: '🏥',
       challenge: 'Paper-based health worker verification causing delays',
-      solution: 'Implemented DigiSign e-KYC for instant credential verification',
+      solution: 'Implemented CertySign e-KYC for instant credential verification',
       results: [
         'Instant license verification',
         '100% fraud prevention',
         'Digital certificate management',
         'Compliance with MOH standards'
       ],
-      products: ['DigiSign'],
+      products: ['CertySign'],
       year: '2025'
     }
   ]
@@ -100,7 +100,7 @@ export default function CaseStudies() {
     <>
       <Head>
         <title>Case Studies - Real Success Stories | RCFI Technology</title>
-        <meta name="description" content="Read how organizations across Kenya are transforming with DigiSign, Elano, and Prezio" />
+        <meta name="description" content="Read how organizations across Kenya are transforming with CertySign, Elano, and Prezio" />
       </Head>
 
       {/* Hero */}

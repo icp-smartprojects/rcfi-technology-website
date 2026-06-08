@@ -242,7 +242,7 @@ export default function ContactPage() {
                   >
                     <option value="general">General Inquiry</option>
                     <option value="demo">Request a Demo</option>
-                    <option value="digisign">DigiSign</option>
+                    <option value="certysign">CertySign</option>
                     <option value="elano">Elano</option>
                     <option value="prezio">Prezio</option>
                     <option value="partnership">Partnership</option>

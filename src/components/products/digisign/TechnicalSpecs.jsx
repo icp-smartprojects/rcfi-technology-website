@@ -1,4 +1,4 @@
-export function DigiSignTechnicalSpecs() {
+export function CertySignTechnicalSpecs() {
   const specs = {
     security: [
       'FIPS 140-2 Level 3 HSM',

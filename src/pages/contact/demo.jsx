@@ -56,7 +56,7 @@ export default function RequestDemo() {
     <>
       <Head>
         <title>Request a Demo | RCFI Technology</title>
-        <meta name="description" content="Schedule a personalized demo of DigiSign, Elano, or Prezio with our team" />
+        <meta name="description" content="Schedule a personalized demo of CertySign, Elano, or Prezio with our team" />
       </Head>
 
       {/* Hero */}
@@ -190,7 +190,7 @@ export default function RequestDemo() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent"
                   >
                     <option value="">Select a product</option>
-                    <option value="digisign">DigiSign - Digital Trust & Security</option>
+                    <option value="certysign">CertySign - Digital Trust Platform</option>
                     <option value="elano">Elano - Governance & Intelligence</option>
                     <option value="prezio">Prezio - Business Management</option>
                     <option value="multiple">Multiple Products</option>

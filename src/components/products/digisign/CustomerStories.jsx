@@ -1,10 +1,10 @@
-export function DigiSignCustomerStories() {
+export function CertySignCustomerStories() {
   return (
     <section className="py-24 px-4 bg-primary-600 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Trusted by Leading Organizations</h2>
-          <p className="text-xl text-primary-100">See how DigiSign transforms digital operations</p>
+          <p className="text-xl text-primary-100">See how CertySign transforms digital operations</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">

@@ -85,12 +85,12 @@ export default function NGOSolution() {
           </div>
 
           <div className="space-y-12">
-            {/* DigiSign for NGOs */}
+            {/* CertySign for NGOs */}
             <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    <FiShield /> DigiSign
+                    <FiShield /> CertySign
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
                     Secure Grant Agreements & Beneficiary Verification

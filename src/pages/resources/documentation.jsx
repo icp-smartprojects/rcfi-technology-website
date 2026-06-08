@@ -19,7 +19,7 @@ export default function Documentation() {
       icon: FiCode,
       items: [
         { name: 'Authentication', href: '#' },
-        { name: 'DigiSign API', href: '#' },
+        { name: 'CertySign API', href: '#' },
         { name: 'e-KYC API', href: '#' },
         { name: 'Webhooks', href: '#' }
       ]

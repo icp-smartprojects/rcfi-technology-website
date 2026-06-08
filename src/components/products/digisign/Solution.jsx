@@ -1,6 +1,6 @@
 import { FiZap, FiLock, FiUserCheck, FiLink, FiCheckCircle, FiGlobe } from 'react-icons/fi'
 
-export default function DigiSignSolution() {
+export default function CertySignSolution() {
   const benefits = [
     {
       icon: FiZap,
@@ -42,7 +42,7 @@ export default function DigiSignSolution() {
             Secure, Legal, and Instant Digital Trust
           </h2>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            DigiSign makes digital transformation simple, secure, and legally compliant
+            CertySign makes digital transformation simple, secure, and legally compliant
           </p>
         </div>
 
