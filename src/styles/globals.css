@@ -6,8 +6,8 @@
 :root {
   --primary: #235e43;
   --primary-dark: #153828;
-  --secondary: #2563eb;
-  --secondary-dark: #1d4ed8;
+  --secondary: #235e43;
+  --secondary-dark: #1c4a35;
   --accent: #d97706;
   --accent-dark: #b45309;
   --success: #22c55e;
@@ -140,23 +140,23 @@
   }
 
   .btn-secondary {
-    background-color: #2563eb;
+    background-color: #235e43;
     color: white;
-    box-shadow: 0 4px 14px rgba(37,99,235,0.30);
+    box-shadow: 0 4px 14px rgba(35,94,67,0.30);
   }
   .btn-secondary:hover {
-    background-color: #1d4ed8;
-    box-shadow: 0 6px 20px rgba(37,99,235,0.40);
+    background-color: #1c4a35;
+    box-shadow: 0 6px 20px rgba(35,94,67,0.40);
     transform: translateY(-1px);
   }
 
   .btn-accent {
-    background-color: #d97706;
+    background-color: #235e43;
     color: white;
-    box-shadow: 0 4px 14px rgba(217,119,6,0.30);
+    box-shadow: 0 4px 14px rgba(35,94,67,0.30);
   }
   .btn-accent:hover {
-    background-color: #b45309;
+    background-color: #1c4a35;
     transform: translateY(-1px);
   }
 
@@ -198,7 +198,7 @@
     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   }
   .btn-white:hover {
-    background-color: #f0fdf4;
+    background-color: #e9f2ec;
     transform: translateY(-1px);
   }
   
@@ -224,7 +224,7 @@
   }
   
   .input:focus {
-    outline: 2px solid #2f7652;
+    outline: 2px solid #235e43;
     outline-offset: 2px;
     border-color: transparent;
   }
@@ -235,11 +235,11 @@
   }
   
   .gradient-primary {
-    background-image: linear-gradient(135deg, #235e43 0%, #2f7652 100%);
+    background-image: linear-gradient(135deg, #235e43 0%, #1c4a35 100%);
   }
 
   .gradient-secondary {
-    background-image: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    background-image: linear-gradient(135deg, #1c4a35 0%, #235e43 100%);
   }
 
   .gradient-accent {
@@ -247,11 +247,11 @@
   }
 
   .gradient-hero {
-    background: linear-gradient(135deg, #0e241b 0%, #153828 40%, #1c4a35 70%, #235e43 100%);
+    background: linear-gradient(135deg, #0e241b 0%, #153828 35%, #1c4a35 70%, #235e43 100%);
   }
 
   .gradient-dark {
-    background: linear-gradient(135deg, #0e241b 0%, #1c4a35 100%);
+    background: linear-gradient(135deg, #0e241b 0%, #153828 100%);
   }
 
   .glass {
@@ -272,21 +272,21 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(135deg, #235e43 0%, #56916e 100%);
+    background-image: linear-gradient(135deg, #235e43 0%, #2f7652 100%);
   }
 
   .text-gradient-gold {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    background-image: linear-gradient(135deg, #9f6109 0%, #F39C12 100%);
   }
 
   .text-gradient-blue {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+    background-image: linear-gradient(135deg, #235e43 0%, #2f7652 100%);
   }
 
   .card-elevated {
@@ -305,8 +305,8 @@
     align-items: center;
     gap: 0.375rem;
     padding: 0.25rem 0.75rem;
-    background: #d4e5d9;
-    color: #1c4a35;
+    background: #d9f2e3;
+    color: #1e7a43;
     border-radius: 9999px;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -316,8 +316,8 @@
     align-items: center;
     gap: 0.375rem;
     padding: 0.25rem 0.75rem;
-    background: #dbeafe;
-    color: #1d4ed8;
+    background: #d9e6f2;
+    color: #153828;
     border-radius: 9999px;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -327,8 +327,8 @@
     align-items: center;
     gap: 0.375rem;
     padding: 0.25rem 0.75rem;
-    background: #fef3c7;
-    color: #b45309;
+    background: #fff4dd;
+    color: #9f6109;
     border-radius: 9999px;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -426,8 +426,8 @@
 }
 
 .spinner {
-  border: 3px solid rgba(47, 118, 82, 0.12);
-  border-top-color: #2f7652;
+  border: 3px solid rgba(10, 61, 98, 0.12);
+  border-top-color: #235e43;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -435,12 +435,12 @@
 }
 
 ::selection {
-  background-color: rgba(47, 118, 82, 0.2);
+  background-color: rgba(10, 61, 98, 0.2);
   color: #0e241b;
 }
 
 *:focus-visible {
-  outline: 2px solid #2f7652;
+  outline: 2px solid #235e43;
   outline-offset: 2px;
 }
 

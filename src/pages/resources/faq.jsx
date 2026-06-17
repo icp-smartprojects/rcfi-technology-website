@@ -26,23 +26,23 @@ export default function FAQ() {
       ]
     },
     {
-      category: 'DigiSign',
+      category: 'CertySign',
       questions: [
         {
-          q: 'Is DigiSign legally recognized in Kenya?',
-          a: 'Yes. DigiSign is CAK-licensed and our digital signatures have the same legal standing as handwritten signatures under Kenyan law.'
+          q: 'Is CertySign legally recognized in Kenya?',
+          a: 'Yes. CertySign is CAK-licensed and our digital signatures have the same legal standing as handwritten signatures under Kenyan law.'
         },
         {
-          q: 'How secure are DigiSign certificates?',
-          a: 'DigiSign uses FIPS 140-2 Level 3 certified Hardware Security Modules (HSMs) and X.509 v3 compliant certificates with industry-standard encryption.'
+          q: 'How secure are CertySign certificates?',
+          a: 'CertySign uses FIPS 140-2 Level 3 certified Hardware Security Modules (HSMs) and X.509 v3 compliant certificates with industry-standard encryption.'
         },
         {
           q: 'How long does e-KYC verification take?',
           a: 'Most e-KYC verifications complete in under 10 seconds via our integrations with NIIMS, NTSA, and other government databases.'
         },
         {
-          q: 'Can I use DigiSign offline?',
-          a: 'Yes. DigiSign supports offline signing with synchronization when you reconnect to the internet.'
+          q: 'Can I use CertySign offline?',
+          a: 'Yes. CertySign supports offline signing with synchronization when you reconnect to the internet.'
         }
       ]
     },
@@ -145,7 +145,7 @@ export default function FAQ() {
     <>
       <Head>
         <title>FAQ - Frequently Asked Questions | RCFI Technology</title>
-        <meta name="description" content="Find answers to common questions about DigiSign, Elano, Prezio, and RCFI services" />
+        <meta name="description" content="Find answers to common questions about CertySign, Elano, Prezio, and RCFI services" />
       </Head>
 
       {/* Hero */}

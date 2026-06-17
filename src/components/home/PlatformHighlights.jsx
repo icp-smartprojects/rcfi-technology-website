@@ -1,75 +1,42 @@
 import Link from 'next/link'
-import { FiShield, FiCheckCircle, FiExternalLink } from 'react-icons/fi'
+import { useState } from 'react'
+import { FiPlay } from 'react-icons/fi'
 
 export default function PlatformHighlights() {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
+
   const highlights = [
-    'Legally binding digital signatures — X.509 v3, CAK-licensed CA',
-    'Blockchain-anchored documents for tamper-proof long-term integrity',
-    'Real-time e-KYC via NIIMS, NTSA, and government databases',
-    'PKI infrastructure fully compliant with Kenya DPA 2019',
-    'Mobile & web access — sign from anywhere, instantly',
-    'Enterprise-grade security — FIPS 140-2 HSM, ISO 27001 certified'
+    'Integrated digital trust ecosystem across all products',
+    'Blockchain-secured documents for long-term integrity',
+    'Real-time e-KYC via government database integrations',
+    'Multi-currency support for regional operations',
+    'Mobile-first design for accessibility anywhere',
+    'Enterprise-grade security with ISO 27001 certification'
   ]
 
   return (
     <section className="section-padding bg-neutral-50">
       <div className="container-custom">
-
-        {/* CertySign Live Banner */}
-        <div className="mb-12 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-700 p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-              <FiShield className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                <span className="text-green-300 text-xs font-semibold uppercase tracking-widest">Now Live</span>
-              </div>
-              <h3 className="text-2xl font-bold text-white">CertySign</h3>
-              <p className="text-primary-100 text-sm mt-0.5">
-                Kenya's first locally-hosted digital trust platform — digital signatures, PKI, e-KYC & blockchain security
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-            <Link
-              href="https://app.certysign.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-700 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-            >
-              Launch App <FiExternalLink className="w-4 h-4" />
-            </Link>
-            <Link
-              href="/products/certysign"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold hover:bg-white/20 transition-colors"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
-              What CertySign Does
+              Platform Overview
             </div>
 
             <h2 className="text-4xl md:text-5xl font-display font-bold text-neutral-900 mb-6">
-              Digital Trust, Built for Kenya
+              See Our Platforms in Action
             </h2>
 
             <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-              CertySign is the only Kenyan-built, locally-hosted platform that combines legally binding digital signatures,
-              a nationally recognised Certificate Authority, real-time identity verification, and blockchain document security — in one place.
+              Comprehensive digital transformation solutions built for Africa, 
+              trusted by government agencies, financial institutions, and enterprises across Kenya.
             </p>
 
             <ul className="space-y-4 mb-8">
               {highlights.map((highlight, index) => (
-                <li
-                  key={index}
+                <li 
+                  key={index} 
                   className="flex items-start gap-3 animate-slide-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
@@ -84,31 +51,67 @@ export default function PlatformHighlights() {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="https://app.certysign.io" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                Get Started Free
-              </Link>
-              <Link href="/contact/demo" className="btn btn-outline">
+              <Link href="/contact/demo" className="btn btn-primary">
                 Schedule a Demo
+              </Link>
+              <Link href="/resources/documentation" className="btn btn-outline">
+                View Documentation
               </Link>
             </div>
           </div>
 
-          {/* Right: CertySign feature cards */}
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              { icon: '🔏', title: 'Digital Signatures', desc: 'Legally binding, PKI-backed', bg: 'bg-primary-600', light: 'bg-primary-50 border-primary-200', text: 'text-primary-700' },
-              { icon: '🪪', title: 'e-KYC Verification', desc: 'NIIMS & NTSA integration', bg: 'bg-secondary-600', light: 'bg-secondary-50 border-secondary-200', text: 'text-secondary-700' },
-              { icon: '⛓️', title: 'Blockchain Anchoring', desc: 'Immutable document proof', bg: 'bg-accent-600', light: 'bg-accent-50 border-accent-200', text: 'text-accent-700' },
-              { icon: '📜', title: 'PKI Infrastructure', desc: 'CAK-licensed CA', bg: 'bg-purple-600', light: 'bg-purple-50 border-purple-200', text: 'text-purple-700' },
-              { icon: '📱', title: 'Mobile & Web', desc: 'Sign from any device', bg: 'bg-teal-600', light: 'bg-teal-50 border-teal-200', text: 'text-teal-700' },
-              { icon: '🛡️', title: 'Compliance-Ready', desc: 'Kenya DPA 2019 & ISO 27001', bg: 'bg-rose-600', light: 'bg-rose-50 border-rose-200', text: 'text-rose-700' },
-            ].map((card, i) => (
-              <div key={i} className={`rounded-xl p-5 border ${card.light} hover:shadow-md transition-all hover:-translate-y-0.5`}>
-                <div className={`w-10 h-10 ${card.bg} rounded-lg flex items-center justify-center text-lg mb-3`}>{card.icon}</div>
-                <div className={`font-semibold text-sm mb-1 ${card.text}`}>{card.title}</div>
-                <div className="text-xs text-neutral-500">{card.desc}</div>
+          {/* Right: Video/Image */}
+          <div className="relative">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+              {!isVideoPlaying ? (
+                <>
+                  <img 
+                    src="/images/platform/demo-thumbnail.jpg" 
+                    alt="Platform Demo"
+                    className="w-full h-auto"
+                    onError={(e) => {
+                      e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect fill="%23f3f4f6" width="800" height="600"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" fill="%239ca3af"%3EPlatform Demo%3C/text%3E%3C/svg%3E'
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 to-transparent flex items-center justify-center">
+                    <button
+                      onClick={() => setIsVideoPlaying(true)}
+                      className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-primary-600 hover:scale-110 transition-transform duration-300 shadow-xl group-hover:bg-primary-600 group-hover:text-white"
+                      aria-label="Play video"
+                    >
+                      <FiPlay className="w-8 h-8 ml-1" />
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <div className="aspect-video bg-neutral-900">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                    title="RCFI Platform Demo"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
+            </div>
+
+            {/* Floating Stats */}
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 animate-float">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-neutral-900">10K+</div>
+                  <div className="text-sm text-neutral-600">Active Users</div>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>

@@ -144,7 +144,7 @@ export default function ContactForm({ type = 'general' }) {
               className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
             >
               <option value="all">All Products</option>
-              <option value="digisign">DigiSign</option>
+              <option value="certysign">CertySign</option>
               <option value="elano">Elano</option>
               <option value="prezio">Prezio</option>
             </select>

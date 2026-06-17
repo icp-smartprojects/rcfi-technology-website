@@ -20,7 +20,7 @@ export default function Timeline() {
     },
     {
       year: '2025',
-      title: 'DigiSign Launch',
+      title: 'CertySign Launch',
       description: 'Launched Kenya\'s first locally-hosted digital trust service',
       color: 'green'
     },

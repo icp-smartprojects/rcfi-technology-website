@@ -15,7 +15,7 @@ export default function Testimonials() {
       logo: "/images/clients/uasin-gishu.png"
     },
     {
-      quote: "DigiSign has revolutionized our customer onboarding process. The e-KYC integration with government databases is seamless, and we've reduced verification time from days to seconds. Absolutely essential for modern banking.",
+      quote: "CertySign has revolutionized our customer onboarding process. The e-KYC integration with government databases is seamless, and we've reduced verification time from days to seconds. Absolutely essential for modern banking.",
       name: "Michael Odhiambo",
       title: "Head of Digital Banking",
       organization: "Kenya Commercial Bank",
@@ -29,14 +29,14 @@ export default function Testimonials() {
       logo: null
     },
     {
-      quote: "The blockchain document security in DigiSign gives our donors the confidence they need. Every grant agreement, report, and financial document is timestamped and tamper-proof. It's accountability made easy.",
+      quote: "The blockchain document security in CertySign gives our donors the confidence they need. Every grant agreement, report, and financial document is timestamped and tamper-proof. It's accountability made easy.",
       name: "James Mwangi",
       title: "Executive Director",
       organization: "Kenya Education Network",
       logo: "/images/clients/ken.png"
     },
     {
-      quote: "RCFI understood our needs as a growing fintech. Their team worked with us to customize the solution, and the support has been outstanding. DigiSign is now integral to our compliance workflow.",
+      quote: "RCFI understood our needs as a growing fintech. Their team worked with us to customize the solution, and the support has been outstanding. CertySign is now integral to our compliance workflow.",
       name: "Amina Hassan",
       title: "Compliance Officer",
       organization: "PesaPay Digital",

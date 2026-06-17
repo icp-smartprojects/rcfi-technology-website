@@ -139,7 +139,7 @@ export const copyToClipboard = async (text) => {
 // Get color class by product
 export const getProductColor = (productId) => {
   const colors = {
-    digisign: 'blue',
+    certysign: 'blue',
     elano: 'purple',
     prezio: 'orange'
   }

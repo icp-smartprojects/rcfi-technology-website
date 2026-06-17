@@ -1,6 +1,6 @@
 import { FiFileText, FiUserCheck, FiLink, FiSmartphone, FiCheckCircle } from 'react-icons/fi'
 
-export default function DigiSignFeatures() {
+export default function CertySignFeatures() {
   const features = [
     {
       icon: FiFileText,

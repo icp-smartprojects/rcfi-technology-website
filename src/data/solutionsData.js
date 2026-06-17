@@ -16,7 +16,7 @@ export const solutionsData = {
     
     howWeHelp: [
       {
-        product: 'DigiSign',
+        product: 'CertySign',
         description: 'Secure digital signatures for citizen services and e-TIMS compliance',
         benefits: [
           'Digitally signed permits and licenses',
@@ -91,7 +91,7 @@ export const solutionsData = {
     
     howWeHelp: [
       {
-        product: 'DigiSign',
+        product: 'CertySign',
         description: 'Instant e-KYC and secure digital signatures',
         benefits: [
           'Automated KYC via NIIMS, NTSA, CRB',
@@ -151,7 +151,7 @@ export const solutionsData = {
     
     howWeHelp: [
       {
-        product: 'DigiSign',
+        product: 'CertySign',
         description: 'Secure grant agreements and beneficiary verification',
         benefits: [
           'Digital grant agreement signing',
@@ -226,7 +226,7 @@ export const solutionsData = {
     
     howWeHelp: [
       {
-        product: 'DigiSign',
+        product: 'CertySign',
         description: 'Professional digital signatures for business',
         benefits: [
           'Digital contract signing',
@@ -286,7 +286,7 @@ export const solutionsData = {
     
     howWeHelp: [
       {
-        product: 'DigiSign',
+        product: 'CertySign',
         description: 'Legally binding digital signatures',
         benefits: [
           'CAK-licensed digital certificates',

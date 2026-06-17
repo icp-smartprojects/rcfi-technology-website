@@ -1,4 +1,4 @@
-export function DigiSignIntegrations() {
+export function CertySignIntegrations() {
   const integrations = [
     'NIIMS (Huduma)', 'NTSA', 'KRA e-TIMS', 'eCitizen',
     'Adobe Acrobat', 'Microsoft Office', 'SAP', 'Zoho',

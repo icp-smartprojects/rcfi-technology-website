@@ -1,4 +1,4 @@
-const deepGreen = {
+const armyGreen = {
   50: '#e9f2ec',
   100: '#d4e5d9',
   200: '#abcbb7',
@@ -12,34 +12,6 @@ const deepGreen = {
   950: '#07160f',
 }
 
-const royalBlue = {
-  50: '#eff6ff',
-  100: '#dbeafe',
-  200: '#bfdbfe',
-  300: '#93c5fd',
-  400: '#60a5fa',
-  500: '#3b82f6',
-  600: '#2563eb',
-  700: '#1d4ed8',
-  800: '#1e40af',
-  900: '#1e3a8a',
-  950: '#172554',
-}
-
-const amber = {
-  50: '#fffbeb',
-  100: '#fef3c7',
-  200: '#fde68a',
-  300: '#fcd34d',
-  400: '#fbbf24',
-  500: '#f59e0b',
-  600: '#d97706',
-  700: '#b45309',
-  800: '#92400e',
-  900: '#78350f',
-  950: '#451a03',
-}
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -50,9 +22,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: deepGreen,
-        secondary: royalBlue,
-        accent: amber,
+        primary: armyGreen,
+        secondary: armyGreen,
+        accent: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+          950: '#451a03',
+        },
         success: {
           50: '#f0fdf4',
           100: '#dcfce7',
@@ -121,7 +105,6 @@ module.exports = {
       boxShadow: {
         'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
         'glow': '0 0 30px rgba(35, 94, 67, 0.25)',
-        'glow-blue': '0 0 30px rgba(37, 99, 235, 0.25)',
         'glow-amber': '0 0 30px rgba(217, 119, 6, 0.25)',
         'card': '0 4px 24px -4px rgba(0,0,0,0.10), 0 2px 8px -2px rgba(0,0,0,0.06)',
       },

@@ -10,7 +10,7 @@ export const productsData = {
     heroImage: '/images/products/certysign-hero.jpg',
     href: 'https://certysign.io',
     appHref: 'https://app.certysign.io',
-    
+
     challenge: {
       title: 'Traditional Document Signing is Broken',
       problems: [
@@ -21,7 +21,7 @@ export const productsData = {
         'No legal framework for digital transactions'
       ]
     },
-    
+
     solution: {
       title: 'Secure, Legal, and Instant Digital Trust',
       benefits: [
@@ -32,7 +32,7 @@ export const productsData = {
         'Full compliance with Kenya Data Protection Act 2019'
       ]
     },
-    
+
     features: [
       {
         title: 'Digital Signature Certificates',
@@ -72,35 +72,9 @@ export const productsData = {
         ],
         image: '/images/products/certysign-ekyc.jpg',
         icon: 'user-check'
-      },
-      {
-        title: 'Blockchain Document Security',
-        description: 'Immutable proof of document authenticity and integrity',
-        details: [
-          'Hyperledger Fabric architecture',
-          'Timestamp anchoring',
-          'Long-term validation (LTV)',
-          'Independent verification portal',
-          'Audit trail transparency'
-        ],
-        image: '/images/products/certysign-blockchain.jpg',
-        icon: 'link'
-      },
-      {
-        title: 'Mobile & Web Access',
-        description: 'Sign and verify documents from any device',
-        details: [
-          'Android & iOS apps',
-          'Web portal dashboard',
-          'RESTful API access',
-          'OAuth2/SAML SSO',
-          'Offline signing capability'
-        ],
-        image: '/images/products/certysign-mobile.jpg',
-        icon: 'mobile-alt'
       }
     ],
-    
+
     useCases: [
       {
         title: 'Government & Public Sector',
@@ -163,18 +137,7 @@ export const productsData = {
         icon: 'building'
       }
     ],
-    
-    integrations: [
-      { name: 'NIIMS (Huduma Namba)', logo: '/images/integrations/niims.png' },
-      { name: 'NTSA', logo: '/images/integrations/ntsa.png' },
-      { name: 'KRA e-TIMS', logo: '/images/integrations/kra.png' },
-      { name: 'eCitizen', logo: '/images/integrations/ecitizen.png' },
-      { name: 'Adobe Acrobat', logo: '/images/integrations/adobe.png' },
-      { name: 'Microsoft Office', logo: '/images/integrations/microsoft.png' },
-      { name: 'SAP', logo: '/images/integrations/sap.png' },
-      { name: 'Zoho', logo: '/images/integrations/zoho.png' }
-    ],
-    
+
     technicalSpecs: {
       security: [
         'FIPS 140-2 Level 3 HSM',
@@ -198,63 +161,7 @@ export const productsData = {
         '99.95% uptime SLA'
       ]
     },
-    
-    pricing: {
-      tiers: [
-        {
-          name: 'Individual',
-          price: 'KES 500',
-          period: 'per year',
-          features: [
-            '1 Digital Signature Certificate',
-            'Unlimited document signing',
-            'Mobile & web access',
-            'Basic e-KYC verification',
-            'Email support'
-          ],
-          cta: 'Get Started',
-          popular: false
-        },
-        {
-          name: 'Business',
-          price: 'KES 2,000',
-          period: 'per user/year',
-          features: [
-            'Organization certificates',
-            'Invoice signing (e-TIMS ready)',
-            'API access',
-            'Advanced e-KYC (1000 checks/month)',
-            'Priority support',
-            'Blockchain timestamping'
-          ],
-          cta: 'Start Free Trial',
-          popular: true
-        },
-        {
-          name: 'Enterprise',
-          price: 'Custom',
-          period: 'contact sales',
-          features: [
-            'Unlimited certificates',
-            'Dedicated HSM instance',
-            'Custom integrations',
-            'SLA guarantees',
-            '24/7 phone support',
-            'On-site training',
-            'White-labeling options'
-          ],
-          cta: 'Contact Sales',
-          popular: false
-        }
-      ],
-      addOns: [
-        { name: 'e-KYC Verification', price: 'KES 20 per check' },
-        { name: 'Blockchain Timestamp', price: 'KES 5 per document' },
-        { name: 'Long-term Validation', price: 'KES 10 per document' },
-        { name: 'API Overage', price: 'KES 1-2 per call' }
-      ]
-    },
-    
+
     faqs: [
       {
         question: 'Is CertySign legally recognized in Kenya?',

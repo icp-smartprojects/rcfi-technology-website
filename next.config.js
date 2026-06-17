@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: true,
   images: {
     domains: ['rcfi.co.ke', 'localhost'],
     formats: ['image/avif', 'image/webp'],

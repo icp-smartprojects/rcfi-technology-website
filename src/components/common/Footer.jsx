@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { FiPhone, FiMail, FiMapPin, FiLinkedin, FiTwitter, FiFacebook } from 'react-icons/fi'
+import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 import { companyInfo } from '@/data/companyData'
 
 export default function Footer() {
@@ -34,6 +35,15 @@ export default function Footer() {
     ],
   }
 
+  const socialLinks = [
+    { name: 'Facebook', href: companyInfo.social.facebook, icon: FaFacebookF },
+    { name: 'Instagram', href: companyInfo.social.instagram, icon: FaInstagram },
+    { name: 'LinkedIn', href: companyInfo.social.linkedin, icon: FaLinkedinIn },
+    { name: 'TikTok', href: companyInfo.social.tiktok, icon: FaTiktok },
+    { name: 'X', href: companyInfo.social.twitter, icon: FaXTwitter },
+    { name: 'YouTube', href: companyInfo.social.youtube, icon: FaYoutube },
+  ]
+
   return (
     <footer className="bg-neutral-900 text-white">
       <div className="container-custom section-padding">
@@ -52,31 +62,26 @@ export default function Footer() {
             <p className="text-neutral-400 mb-6 leading-relaxed">
               {companyInfo.tagline}
             </p>
-            <div className="flex gap-4">
-              <a 
-                href={companyInfo.social.linkedin} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-              >
-                <FiLinkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href={companyInfo.social.twitter} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-              >
-                <FiTwitter className="w-5 h-5" />
-              </a>
-              <a 
-                href={companyInfo.social.facebook} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-              >
-                <FiFacebook className="w-5 h-5" />
-              </a>
+            <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-neutral-500">
+              Follow CertySign
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              {socialLinks.map((item) => {
+                const Icon = item.icon
+                return (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Follow CertySign on ${item.name}`}
+                    title={item.name}
+                    className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center hover:bg-secondary-600 transition-colors"
+                  >
+                    <Icon className="w-5 h-5" />
+                  </a>
+                )
+              })}
             </div>
           </div>
 

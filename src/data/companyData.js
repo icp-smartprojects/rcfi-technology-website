@@ -21,9 +21,12 @@ export const companyInfo = {
   },
   
   social: {
-    linkedin: "https://linkedin.com/company/rcfi-technology",
-    twitter: "https://twitter.com/rcfi_tech",
-    facebook: "https://facebook.com/rcfitechnology",
+    linkedin: "https://www.linkedin.com/company/certysign/",
+    twitter: "https://x.com/CertySign",
+    facebook: "https://web.facebook.com/certysign/",
+    instagram: "https://www.instagram.com/certysign/",
+    tiktok: "https://www.tiktok.com/@certysign?lang=en",
+    youtube: "https://www.youtube.com/@CertySign-SWC",
   },
   
   mission: "To drive digital transformation that fosters inclusive development, strengthens public institutions, and promotes equitable access to essential services across Kenya and the region.",
