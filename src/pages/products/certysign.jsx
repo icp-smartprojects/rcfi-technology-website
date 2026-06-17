@@ -54,12 +54,36 @@ const revealStyle = (delay = 0) => ({
 });
 
 
+
 function HeroSection() {
+  const heroAnimations = `
+    @keyframes pulseNode {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+    @keyframes networkFloat {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-14px); }
+    }
+    @keyframes dashFlow {
+      from { stroke-dashoffset: 100; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes backgroundMove {
+      0% { transform: translate(0,0) scale(1); }
+      100% { transform: translate(-3%, -2%) scale(1.05); }
+    }
+    @keyframes floatCard {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+  `;
+
   return (
     <section
       style={{
         position: "relative",
-        minHeight: 700,
+        minHeight: 820,
         display: "flex",
         alignItems: "center",
         padding: "80px 64px",
@@ -67,43 +91,72 @@ function HeroSection() {
         background: t.surfaceLowest,
       }}
     >
+      <style>{heroAnimations}</style>
 
-      <div   
-         className="hero-grid"
-         style={{
-         maxWidth: 1280,
-         margin: "0 auto",
-         display: "grid",
-         gridTemplateColumns: "7fr 5fr",
-         gap: 24,
-         alignItems: "center",
-         width: "100%",
-       }} 
+      {/* BACKGROUND */}
+      <div style={{ position: "absolute", inset: 0, zIndex: 0, overflow: "hidden" }}>
+  
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "110%",
+            height: "110%",
+            opacity: 0.18,
+            backgroundImage:
+              "radial-gradient(circle at 20% 30%, rgba(22,163,74,0.35) 0, transparent 8%), radial-gradient(circle at 70% 60%, rgba(22,163,74,0.3) 0, transparent 7%), radial-gradient(circle at 45% 80%, rgba(22,163,74,0.25) 0, transparent 6%)",
+            backgroundSize: "180px 180px",
+            animation: "backgroundMove 25s ease-in-out infinite alternate",
+          }}
+        />
+        {/* White Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(90deg, rgba(248,250,252,0.98) 0%, rgba(248,250,252,0.92) 45%, rgba(248,250,252,0.75) 100%)",
+          }}
+        />
+        {/* Glow */}
+        <div
+          style={{
+            position: "absolute",
+            right: "-200px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            width: 700,
+            height: 700,
+            borderRadius: "50%",
+            background: "rgba(22,163,74,0.12)",
+            filter: "blur(120px)",
+          }}
+        />
+      </div>
+
+      <div
+        className="hero-grid"
+        style={{
+          maxWidth: 1280,
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "7fr 5fr",
+          gap: 40,
+          alignItems: "center",
+          width: "100%",
+          position: "relative",
+          zIndex: 2,
+        }}
       >
-
-        {/* Left copy */}
+        {/* LEFT SIDE */}
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          
-         <h1
-            style={{
-              fontFamily: "'Hanken Grotesk', sans-serif",
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 700,
-              lineHeight: 1.15,
-              letterSpacing: "-0.02em",
-              color: t.onSurface,
-              margin: 0,
-            }}
-          >
-            CertySign
-          </h1>
-
+          <h1>CertiSign</h1>
           <span
             style={{
               color: t.primary,
               fontSize: 12,
-              fontWeight: 600,
-              letterSpacing: "0.1em",
+              fontWeight: 700,
+              letterSpacing: "0.15em",
               textTransform: "uppercase",
               fontFamily: "Inter, sans-serif",
             }}
@@ -114,392 +167,401 @@ function HeroSection() {
           <h1
             style={{
               fontFamily: "'Hanken Grotesk', sans-serif",
-              fontSize: "clamp(32px, 5vw, 48px)",
+              fontSize: "clamp(38px, 5vw, 42px)",
               fontWeight: 700,
-              lineHeight: 1.15,
-              letterSpacing: "-0.02em",
+              lineHeight: 1.02,
+              letterSpacing: "-0.05em",
               color: t.onSurface,
               margin: 0,
             }}
           >
-            Secure Digital Workflows.{" "}
-            <span style={{ color: t.primary }}>Verified Identities.</span>
+            Secure Digital
+            <br />
+            Workflows.
+            <span style={{ color: t.primary }}>
+              {" "}
+              Verified
+              <br />
+              Identities.
+            </span>
           </h1>
 
           <p
             style={{
               fontFamily: "Inter, sans-serif",
               fontSize: 18,
-              lineHeight: 1.6,
+              lineHeight: 1.8,
               color: t.secondary,
-              maxWidth: 520,
+              maxWidth: 560,
               margin: 0,
             }}
           >
             Replace paper with secure digital trust. The leading platform in
-            Kenya for legally binding signatures and identity verification,
-            compliant with the Data Protection Act.
+            Kenya for legally binding signatures and identity verification.
           </p>
 
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
-         <a href="https://certysign.io" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-            <button
-                 style={{
-                         background: t.primary,
-                         color: t.onPrimary,
-                         padding: "14px 32px",
-                         borderRadius: 12,
-                         border: "none",
-                         fontFamily: "'Hanken Grotesk', sans-serif",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        cursor: "pointer",
-                        transition: "filter 0.2s, transform 0.1s",
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.filter = "brightness(1.1)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.filter = "none")}
-                    >
-                   Start Your Digital Journey
-                  </button>
-                 </a>
+          {/* STATS */}
+          <div style={{ display: "flex", gap: 40, flexWrap: "wrap", marginTop: 8 }}>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 700, color: t.primary }}>
+                99.9%
+              </div>
+              <div style={{ fontSize: 13, color: t.secondary }}>
+                Verification Accuracy
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 700, color: t.primary }}>
+                DPA
+              </div>
+              <div style={{ fontSize: 13, color: t.secondary }}>Compliant</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 700, color: t.primary }}>
+                24/7
+              </div>
+              <div style={{ fontSize: 13, color: t.secondary }}>Secure Access</div>
+            </div>
+          </div>
 
-
-            <button
-                   style={{
-                           background: t.surfaceLowest,
-                           color: t.onSurface,
-                           padding: "14px 32px",
-                           borderRadius: 12,
-                           border: `1px solid ${t.outlineVariant}`,
-                           fontFamily: "'Hanken Grotesk', sans-serif",
-                           fontSize: 16, 
-                           fontWeight: 600,
-                           cursor: "pointer",
-                           transition: "background 0.2s",
-                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = t.surfaceLow)}
-                onMouseLeave={(e) => (e.currentTarget.style.background = t.surfaceLowest)}
-                onClick={() => window.location.assign("/contact/demo")}
-                >
-                Request Demo
+          {/* BUTTONS */}
+          <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginTop: 8 }}>
+            <a href="https://certysign.io" style={{ textDecoration: "none" }}>
+              <button
+                style={{
+                  background: t.primary,
+                  color: t.onPrimary,
+                  padding: "16px 34px",
+                  borderRadius: 14,
+                  border: "none",
+                  fontFamily: "'Hanken Grotesk', sans-serif",
+                  fontSize: 16,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                }}
+              >
+                Start Your Digital Journey
               </button>
-
-            
+            </a>
+            <button
+              style={{
+                background: "#fff",
+                color: t.onSurface,
+                padding: "16px 34px",
+                borderRadius: 14,
+                border: `1px solid ${t.outlineVariant}`,
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                fontSize: 16,
+                fontWeight: 600,
+                cursor: "pointer",
+              }}
+              onClick={() => window.location.assign("/contact/demo")}
+            >
+              Request Demo
+            </button>
           </div>
         </div>
 
-        {/* Right card */}
-        <div style={{ position: "relative" }}>
+        {/* RIGHT SIDE — Phone mockup with floating trust cards */}
+        <div
+          className="hero-stage"
+          style={{
+            position: "relative",
+            minHeight: 600,
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+
+          {/* Ambient glow */}
           <div
             style={{
               position: "absolute",
-              inset: 0,
-              background: t.surfaceContainer,
+              width: 420,
+              height: 420,
+              right: 20,
               borderRadius: "50%",
-              top: -48,
-              right: -48,
-              zIndex: 0,
-              opacity: 0.5,
+              background:
+                "radial-gradient(circle, rgba(22,163,74,0.16) 0%, rgba(22,163,74,0) 70%)",
+              filter: "blur(30px)",
             }}
           />
 
+          {/* Connector lines (drawn behind everything) */}
+          <svg
+            viewBox="0 0 520 600"
+            width="100%"
+            style={{
+              position: "absolute",
+              inset: 0,
+              zIndex: 0,
+              overflow: "visible",
+            }}
+            preserveAspectRatio="xMidYMid meet"
+          >
+            {/* award card -> phone */}
+            <path
+              d="M150 150 H210 a14 14 0 0 1 14 14 V250"
+              fill="none"
+              stroke={t.outlineVariant}
+              strokeWidth="2"
+            />
+            {/* latency card -> phone */}
+            <path
+              d="M120 300 H200 a14 14 0 0 1 14 14 V340"
+              fill="none"
+              stroke={t.outlineVariant}
+              strokeWidth="2"
+            />
+            {/* phone -> users card (bottom) */}
+            <path
+              d="M300 470 V520 a14 14 0 0 1 -14 14 H250"
+              fill="none"
+              stroke={t.outlineVariant}
+              strokeWidth="2"
+            />
+          </svg>
+
+          {/* PHONE */}
           <div
             style={{
               position: "relative",
-              zIndex: 1,
-              background: t.surfaceLowest,
-              border: `1px solid ${t.outlineVariant}`,
-              borderRadius: 16,
-              padding: 32,
-              boxShadow: "0 20px 60px rgba(0,0,0,0.1)",
-              transition: "transform 0.5s",
+              zIndex: 2,
+              width: 270,
+              height: 552,
+              borderRadius: 46,
+              background: "#0B0F14",
+              padding: 11,
+              boxShadow:
+                "0 40px 90px rgba(2,17,8,0.28), 0 12px 30px rgba(2,17,8,0.18)",
+              animation: "networkFloat 8s ease-in-out infinite",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
 
-            {/* Card header */}
+            {/* Side buttons */}
+            <div style={{ position: "absolute", left: -2, top: 130, width: 3, height: 56, borderRadius: 3, background: "#0B0F14" }} />
+            <div style={{ position: "absolute", left: -2, top: 196, width: 3, height: 40, borderRadius: 3, background: "#0B0F14" }} />
+            <div style={{ position: "absolute", right: -2, top: 160, width: 3, height: 70, borderRadius: 3, background: "#0B0F14" }} />
+
+            {/* Screen */}
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: `1px solid ${t.outlineVariant}`,
-                paddingBottom: 16,
-                marginBottom: 24,
+                position: "relative",
+                width: "100%",
+                height: "100%",
+                borderRadius: 36,
+                overflow: "hidden",
+                background: "#F1F5F9",
+                fontFamily: "Inter, sans-serif",
               }}
             >
-
-              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                <span className="material-symbols-outlined" style={{ color: t.primary }}>verified</span>
-                <span style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: "0.05em" }}>
-                  Digital_Identity_Certificate
-                </span>
-              </div>
-
-              <span
+              {/* Dynamic Island */}
+              <div
                 style={{
-                  background: t.primaryDim,
-                  color: t.onPrimaryFixedVariant,
-                  fontSize: 11,
-                  padding: "4px 10px",
-                  borderRadius: 999,
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 600,
+                  position: "absolute",
+                  top: 12,
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  width: 92,
+                  height: 26,
+                  borderRadius: 14,
+                  background: "#0B0F14",
+                  zIndex: 5,
                 }}
-              >
-                DPA Compliant
-              </span>
-              
+              />
+
+              {/* App content */}
+              <div style={{ padding: "44px 14px 14px", height: "100%", boxSizing: "border-box", overflow: "hidden" }}>
+                {/* Top bar */}
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
+                  <div>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: t.onSurface, display: "flex", alignItems: "center", gap: 6 }}>
+                      Welcome back, CertySign
+                      <span style={{ fontSize: 8, fontWeight: 700, color: t.primary, background: "rgba(22,163,74,0.12)", padding: "2px 6px", borderRadius: 6 }}>
+                        Owner
+                      </span>
+                    </div>
+                    <div style={{ fontSize: 8.5, color: t.secondary, marginTop: 2 }}>Last login: Today at 11:18 AM</div>
+                  </div>
+                </div>
+
+                {/* Hero gradient card */}
+                <div
+                  style={{
+                    borderRadius: 18,
+                    padding: 14,
+                    background: "linear-gradient(150deg, #0E3B2E 0%, #16A34A 100%)",
+                    color: "#fff",
+                    marginBottom: 12,
+                  }}
+                >
+                  <div style={{ width: 30, height: 30, borderRadius: 9, background: "rgba(255,255,255,0.16)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3 2" />
+                    </svg>
+                  </div>
+                  <div style={{ fontSize: 16, fontWeight: 700, fontStyle: "italic", letterSpacing: "-0.02em" }}>Timestamp Authority</div>
+                  <div style={{ fontSize: 8.5, lineHeight: 1.5, opacity: 0.9, marginTop: 5, fontStyle: "italic" }}>
+                    RFC 3161 compliant · Post-Quantum ready · Legally binding timestamps
+                  </div>
+                  <div style={{ display: "inline-flex", alignItems: "center", gap: 5, marginTop: 10, background: "rgba(255,255,255,0.14)", padding: "3px 8px", borderRadius: 8, fontSize: 8.5, fontWeight: 600 }}>
+                    <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#7CFFB0" }} />
+                    Operational
+                  </div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 9 }}>
+                    {["RFC 3161", "Post-Quantum", "Hybrid Signatures", "HSM Backed", "eIDAS Compliant"].map((c) => (
+                      <span key={c} style={{ fontSize: 7.5, fontWeight: 600, background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.18)", padding: "3px 7px", borderRadius: 7 }}>
+                        {c}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Stat grid */}
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginBottom: 10 }}>
+                  {[
+                    { label: "Total Timest...", value: "0", accent: "#3B82F6", bg: "#F8FAFC", glyph: "#" },
+                    { label: "Success Rate", value: "100.0%", accent: "#16A34A", bg: "#ECFDF3", glyph: "✓" },
+                    { label: "Avg Latency", value: "1000ms", accent: "#F59E0B", bg: "#FFFBEB", glyph: "⚡" },
+                    { label: "Uptime", value: "1134.5h", accent: "#8B5CF6", bg: "#F5F3FF", glyph: "∿" },
+                  ].map((s) => (
+                    <div key={s.label} style={{ background: "#fff", border: `1px solid ${t.outlineVariant}`, borderRadius: 12, padding: "9px 10px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 5 }}>
+                        <span style={{ width: 18, height: 18, borderRadius: 6, background: s.bg, color: s.accent, fontSize: 10, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                          {s.glyph}
+                        </span>
+                        <span style={{ fontSize: 7.5, color: t.secondary }}>{s.label}</span>
+                      </div>
+                      <div style={{ fontSize: 14, fontWeight: 800, fontStyle: "italic", color: t.onSurface }}>{s.value}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Tabs */}
+                <div style={{ display: "flex", gap: 12, fontSize: 9, paddingBottom: 8, borderBottom: `1px solid ${t.outlineVariant}`, marginBottom: 10 }}>
+                  <span style={{ fontWeight: 700, color: t.onSurface }}>Timestamp</span>
+                  <span style={{ color: t.secondary }}>Verify</span>
+                  <span style={{ color: t.secondary }}>Explorer</span>
+                  <span style={{ color: t.secondary }}>Developer</span>
+                </div>
+
+                {/* Request panel */}
+                <div style={{ background: "#fff", border: `1px solid ${t.outlineVariant}`, borderRadius: 12, padding: 11 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 7, fontSize: 11, fontWeight: 700, color: t.onSurface }}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={t.primary} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z" />
+                      <path d="M5 13a7 7 0 0 0 14 0" />
+                    </svg>
+                    Request a Timestamp
+                  </div>
+                  <div style={{ fontSize: 8.5, color: t.secondary, marginTop: 5, lineHeight: 1.5, fontStyle: "italic" }}>
+                    Hash your data and receive a cryptographically signed RFC 3161 timestamp.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          {/* FLOATING CARD: Award (top-left) */}
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              top: 70,
+              zIndex: 3,
+              width: 150,
+              background: "#fff",
+              borderRadius: 16,
+              padding: "12px 14px",
+              boxShadow: "0 20px 45px rgba(0,0,0,.10)",
+              border: `1px solid ${t.outlineVariant}`,
+              animation: "floatCard 7s ease-in-out infinite",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
+              <span style={{ fontSize: 16 }}>🏆</span>
+              <span style={{ fontSize: 16, fontWeight: 800, color: t.onSurface }}>#1</span>
+            </div>
+            <div style={{ fontSize: 11, fontWeight: 600, color: t.onSurface, lineHeight: 1.4 }}>
+              Trusted e-signature platform in Kenya
+            </div>
+          </div>
+
+          {/* FLOATING CARD: Latency (left) */}
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              top: 240,
+              zIndex: 3,
+              width: 160,
+              background: "linear-gradient(160deg, #0E3B2E 0%, #123524 100%)",
+              borderRadius: 16,
+              padding: 14,
+              color: "#fff",
+              boxShadow: "0 20px 45px rgba(0,0,0,.16)",
+              animation: "floatCard 6s ease-in-out infinite",
+              animationDelay: "0.4s",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 8 }}>
+              <span style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(255,255,255,0.14)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11 }}>⚡</span>
+              <span style={{ fontSize: 10, fontWeight: 600 }}>Sign Time</span>
             </div>
 
+            {/* mini waveform */}
+            <svg width="100%" height="34" viewBox="0 0 130 34" style={{ display: "block", marginBottom: 6 }}>
+              <path d="M0 24 L18 16 L34 22 L52 8 L70 18 L88 12 L106 22 L130 14" fill="none" stroke="#7CFFB0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
 
+            <div style={{ display: "flex", alignItems: "baseline", gap: 5 }}>
+              <span style={{ fontSize: 26, fontWeight: 800, fontStyle: "italic" }}>30</span>
+              <span style={{ fontSize: 10, opacity: 0.85 }}>seconds</span>
+            </div>
 
-            {/* Signature area */}
- 
-<div
-  style={{
-    position: "relative",
-    height: 192,
-    background: t.surfaceLow,
-    borderRadius: 8,
-    marginBottom: 24,
-    display: "flex",
-    alignItems: "flex-end",
-    padding: 16,
-    overflow: "hidden",
-  }}
->
-  <style>
-    {`
-      @keyframes fadeVerify {
-        0%, 35% {
-          opacity: 0;
-          transform: translateY(4px);
-        }
+          </div>
 
-        45%, 80% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        100% {
-          opacity: 0;
-          transform: translateY(4px);
-        }
-      }
-    `}
-  </style>
-
-  {/* Signature Animation */}
-  <svg
-    viewBox="0 0 300 100"
-    style={{
-      position: "absolute",
-      top: "40%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      marginTop:"90px",
-      width: "250px",
-      height: "50px",
-      pointerEvents: "none",
-    }}
-  >
-    <defs>
-    <path
-    id="signaturePath"
-    d="
-      M 25 65
-      C 35 30, 50 30, 55 58
-      C 58 75, 68 75, 78 45
-      C 88 15, 105 20, 108 52
-      C 110 75, 125 72, 138 35
-      C 145 18, 155 18, 160 45
-      C 165 70, 180 68, 190 40
-      C 198 20, 208 20, 215 42
-      C 222 62, 236 60, 246 36
-      C 255 16, 270 20, 285 38
-     "
-      />
-    </defs>
-
-    <use
-      href="#signaturePath"
-      fill="none"
-      stroke={t.secondary || "#334155"}
-      strokeWidth="3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeDasharray="1000"
-      strokeDashoffset="1000"
-      filter="drop-shadow(0 2px 4px rgba(0,0,0,0.12))"
-    >
-      <animate
-        attributeName="stroke-dashoffset"
-        values="1000;0;0;1000"
-        keyTimes="0;0.4;0.8;1"
-        dur="8s"
-        repeatCount="indefinite"
-      />
-
-      <animate
-        attributeName="opacity"
-        values="1;1;1;0"
-        keyTimes="0;0.4;0.8;1"
-        dur="8s"
-        repeatCount="indefinite"
-      />
-    </use>
-  </svg>
-
-  {/* Verification Badge */}
-  <div
-    style={{
-      position: "absolute",
-      top: 18,
-      right: 18,
-      padding: "6px 12px",
-      borderRadius: 999,
-      background: "rgba(34,197,94,0.1)",
-      color: "#16A34A",
-      fontSize: 12,
-      fontWeight: 600,
-      display: "flex",
-      alignItems: "center",
-      gap: 6,
-      border: "1px solid rgba(34,197,94,0.2)",
-      animation: "fadeVerify 8s infinite",
-      zIndex: 3,
-    }}
-  >
-    <span>✓</span>
-    <span>Verified</span>
-  </div>
-
-
-  {/* Original Signature Line Section */}
-  <div
-    style={{
-      width: "100%",
-      height: 48,
-      backgroundImage:
-        "linear-gradient(to right, #CBD5E1 50%, transparent 0%)",
-      backgroundPosition: "bottom",
-      backgroundSize: "8px 1px",
-      backgroundRepeat: "repeat-x",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      position: "relative",
-      zIndex: 2,
-    }}
-     >
-      
-     <span
-        style={{
-         fontFamily: "Inter, sans-serif",
-         fontSize: 14,
-          color: t.secondary,
-           opacity: 0.4,
-            fontStyle: "italic",
-            letterSpacing: "0.5px",
-             }}
-           >
-           Authenticated Digital Signature
-        </span>
-         </div> 
-     </div>
-
-
-   
-            {/* Action stubs */}
-            {/* Certificate Trust Indicators */}
+          {/* FLOATING CARD: Users (bottom-center) */}
           <div
-              style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              paddingTop: 20,
-               borderTop: `1px solid ${t.outlineVariant}`,
+            style={{
+              position: "absolute",
+              bottom: 10,
+              left: "42%",
+              transform: "translateX(-50%)",
+              zIndex: 3,
+              width: 170,
+              background: "#fff",
+              borderRadius: 16,
+              padding: "14px 16px",
+              textAlign: "center",
+              boxShadow: "0 20px 45px rgba(0,0,0,.10)",
+              border: `1px solid ${t.outlineVariant}`,
+              animation: "floatCard 7s ease-in-out infinite",
+              animationDelay: "0.8s",
             }}
-            >
-
-          <div
-              style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-           }}
           >
-
-        <span
-             className="material-symbols-outlined"
-             style={{
-             color: "#22c55e",
-            fontSize: 18,
-          }}
-         >
-           verified_user
-          </span>
-
-        <div>
-      <div
-        style={{
-          fontSize: 12,
-          fontWeight: 600,
-          color: t.onSurface,
-          fontFamily: "Inter, sans-serif",
-        }}
-      >
-        Verified Identity
-      </div>
-
-      <div
-        style={{
-          fontSize: 11,
-          color: t.secondary,
-          fontFamily: "Inter, sans-serif",
-        }}
-      >
-        KYC Approved
-      </div>
-
-    </div>
-
-  </div>
-
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: 6,
-      background: `${t.primary}12`,
-      color: t.primary,
-      padding: "8px 12px",
-      borderRadius: 999,
-      fontSize: 11,
-      fontWeight: 600,
-      fontFamily: "Inter, sans-serif",
-    }}
-  >
-    <span
-      className="material-symbols-outlined"
-      style={{
-        fontSize: 16,
-      }}
-    >
-      lock
-    </span>
-
-    Encrypted
-  </div>
-</div>
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: 8 }}>
+              {["#16A34A", "#0E3B2E", "#3B82F6"].map((c, i) => (
+                <span key={i} style={{ width: 26, height: 26, borderRadius: "50%", background: c, border: "2px solid #fff", marginLeft: i ? -8 : 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="8" r="4" /><path d="M4 20c0-4 4-6 8-6s8 2 8 6" /></svg>
+                </span>
+              ))}
+            </div>
+            <div style={{ fontSize: 20, fontWeight: 800, fontStyle: "italic", color: t.onSurface }}>50K+</div>
+            <div style={{ fontSize: 9, letterSpacing: "0.08em", textTransform: "uppercase", color: t.secondary, marginTop: 2 }}>
+              Verified Signatures
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 
 const features = [
@@ -584,6 +646,136 @@ const benefits = [
 ];
 
 
+ function ProductShowcaseSection() {
+  return (
+    <section
+      style={{
+        padding: "120px 64px",
+        background: t.surfaceLowest,
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: 1280,
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      >
+        <div
+          data-reveal
+          style={{
+            ...revealStyle(0),
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 10,
+            marginBottom: 16,
+          }}
+        >
+          <div
+            style={{
+              width: 24,
+              height: 2,
+              background: t.primary,
+              borderRadius: 2,
+            }}
+          />
+
+          <span
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontSize: 11,
+              fontWeight: 700,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              color: t.primary,
+            }}
+          >
+            Product Experience
+          </span>
+        </div>
+
+        <div
+          data-reveal
+          style={{
+            ...revealStyle(80),
+          }}
+        >
+          <h2
+            style={{
+              fontFamily: "'Hanken Grotesk', sans-serif",
+              fontSize: "clamp(36px, 5vw, 56px)",
+              fontWeight: 700,
+              lineHeight: 1.1,
+              marginBottom: 20,
+              color: t.onSurface,
+            }}
+          >
+            One Platform.
+            <br />
+            Every Device.
+          </h2>
+
+          <p
+            style={{
+              maxWidth: 720,
+              margin: "0 auto 60px",
+              fontFamily: "Inter, sans-serif",
+              fontSize: 18,
+              lineHeight: 1.8,
+              color: t.secondary,
+            }}
+          >
+            Access digital signatures, identity verification,
+            timestamping, and compliance workflows seamlessly
+            across desktop, tablet, and mobile devices.
+          </p>
+        </div>
+
+        <div
+          data-reveal
+          style={{
+            ...revealStyle(160),
+            position: "relative",
+          }}
+        >
+          {/* Glow */}
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              width: 600,
+              height: 600,
+              borderRadius: "50%",
+              background: `${t.primary}15`,
+              transform: "translate(-50%, -50%)",
+              filter: "blur(90px)",
+              zIndex: 0,
+            }}
+          />
+
+          <img
+            src="/images/mockups/Certysign mockups.png"
+            alt="CertySign Platform"
+            style={{
+              width: "100%",
+              maxWidth: 1100,
+              display: "block",
+              margin: "0 auto",
+              position: "relative",
+              zIndex: 1,
+              animation: "showcaseFloat 8s ease-in-out infinite",
+              filter:
+                "drop-shadow(0 30px 60px rgba(0,0,0,0.12))",
+            }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 function BenefitsSection() {
   return (
@@ -595,8 +787,6 @@ function BenefitsSection() {
         position: "relative",
         overflow: "hidden",
       }}
-
-   
     >
       {/* Decorative blurred orbs */}
       <div style={{ position: "absolute", top: -80, left: -80, width: 320, height: 320, borderRadius: "50%", background: `${t.primary}`, opacity: 0.06, filter: "blur(80px)", pointerEvents: "none" }} />
@@ -726,6 +916,7 @@ const sectors = [
   { icon: "school",             label: "Educational Institutions" },
 ];
 
+
 function SectorsSection() {
   return (
     <section id="sectors" style={{ padding: "80px 64px", background: t.surfaceContainer }}>
@@ -771,6 +962,8 @@ function SectorsSection() {
 }
 
 
+
+
 const complianceItems = [
   { icon: "verified_user", title: "Data Protection Act", desc: "Every workflow is fully compliant with Kenya's DPA — your data stays sovereign." },
   { icon: "workspace_premium", title: "ISO 27001 Certified", desc: "Our infrastructure meets the gold standard for information security management." },
@@ -783,139 +976,156 @@ const certBadges = [
   { label: "CAK",       sub: "Regulated",     note: "Kenya" },
 ];
 
+
+
 function SecuritySection() {
-  return (
-    <section
-      id="security"
-      style={{ padding: "88px 64px", background: t.primary, color: t.onPrimary, position: "relative", overflow: "hidden" }}
-    >
-      {/* Subtle radial glow top-right */}
-      <div style={{ position: "absolute", top: -120, right: -120, width: 500, height: 500, borderRadius: "50%", background: "rgba(255,255,255,0.06)", filter: "blur(60px)", pointerEvents: "none" }} />
+ return (
+   <section
+     id="security"
+     style={{ padding: "88px 64px", background: t.primary, color: t.onPrimary, position: "relative", overflow: "hidden" }}
+   >
+     {/* Subtle radial glow top-right */}
+     <div style={{ position: "absolute", top: -120, right: -120, width: 500, height: 500, borderRadius: "50%", background: "rgba(255,255,255,0.06)", filter: "blur(60px)", pointerEvents: "none" }} />
+     {/* Fine dot grid overlay */}
+     <div style={{
+       position: "absolute", inset: 0, pointerEvents: "none",
+       backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px)",
+       backgroundSize: "28px 28px",
+     }} />
 
-      <div style={{
-        position: "absolute", inset: 0, pointerEvents: "none",
-        backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px)",
-        backgroundSize: "28px 28px",
-      }} />
 
-      <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
+     <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
 
-        {/* ── Full-width header ── */}
-        <div data-reveal style={{ ...revealStyle(0), display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-          <div style={{ width: 24, height: 2, background: t.primaryDim, borderRadius: 2 }} />
-          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: t.primaryDim }}>
-            Trust & Compliance
-          </span>
-        </div>
 
-        <div
-            className="security-header-grid"
-            data-reveal
-            style={{
-              ...revealStyle(60),
-               display: "grid",
-               gridTemplateColumns: "1fr 1fr",
-               gap: 48,
-               alignItems: "end",
-               marginBottom: 48,
-             }}
+       {/* ── Full-width header ── */}
+       <div data-reveal style={{ ...revealStyle(0), display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
+         <div style={{ width: 24, height: 2, background: t.primaryDim, borderRadius: 2 }} />
+         <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: t.primaryDim }}>
+           Trust & Compliance
+         </span>
+       </div>
+
+
+
+       <div
+       className="security-header-grid"
+       data-reveal
+       style={{
+       ...revealStyle(60),
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gap: 48,
+         alignItems: "end",
+         marginBottom: 48,
+         }}
+         >
+
+         <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 40, fontWeight: 700, lineHeight: 1.15, margin: 0 }}>
+           Uncompromising<br />
+           <span style={{ color: t.primaryDim }}>Compliance.</span>
+         </h2>
+         <p style={{ fontFamily: "Inter, sans-serif", fontSize: 16, lineHeight: 1.7, opacity: 0.75, margin: 0 }}>
+           Every transaction on Certisign is secure, verifiable, and legally binding — under Kenyan and International law.
+         </p>
+       </div>
+
+
+       {/* ── Two-column body ── */}
+       <div   className="security-body-grid"
+       style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "start" }}>
+
+
+         {/* Left — compliance items */}
+         <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+           {complianceItems.map((item, i) => (
+             <div
+               key={item.title}
+               data-reveal
+               style={{
+                 ...revealStyle(120 + i * 80),
+                 display: "flex", gap: 16, alignItems: "flex-start",
+                 padding: "20px 0",
+                 borderBottom: i < complianceItems.length - 1 ? "1px solid rgba(255,255,255,0.12)" : "none",
+               }}
              >
 
-          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 40, fontWeight: 700, lineHeight: 1.15, margin: 0 }}>
-            Uncompromising<br />
-            <span style={{ color: t.primaryDim }}>Compliance.</span>
-          </h2>
+               <div style={{ width: 40, height: 40, borderRadius: 10, background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                 <span className="material-symbols-outlined" style={{ fontSize: 20, color: t.primaryDim }}>{item.icon}</span>
+               </div>
 
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 16, lineHeight: 1.7, opacity: 0.75, margin: 0 }}>
-            Every transaction on Certisign is secure, verifiable, and legally binding — under Kenyan and International law.
-          </p>
-        </div>
+               <div>
+                 <h4 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 15, fontWeight: 700, margin: "0 0 4px", color: "#fff" }}>{item.title}</h4>
+                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, lineHeight: 1.6, opacity: 0.65, margin: 0 }}>{item.desc}</p>
+               </div>
+               
+             </div>
+           ))}
+         </div>
 
-        {/* ── Two-column body ── */}
-        <div   className="security-body-grid"
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "start" }}>
 
-          {/* Left — compliance items */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-            {complianceItems.map((item, i) => (
-              <div
-                key={item.title}
-                data-reveal
-                style={{
-                  ...revealStyle(120 + i * 80),
-                  display: "flex", gap: 16, alignItems: "flex-start",
-                  padding: "20px 0",
-                  borderBottom: i < complianceItems.length - 1 ? "1px solid rgba(255,255,255,0.12)" : "none",
-                }}
-              >
-                <div style={{ width: 40, height: 40, borderRadius: 10, background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <span className="material-symbols-outlined" style={{ fontSize: 20, color: t.primaryDim }}>{item.icon}</span>
-                </div>
-                <div>
-                  <h4 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 15, fontWeight: 700, margin: "0 0 4px", color: "#fff" }}>{item.title}</h4>
-                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: 13, lineHeight: 1.6, opacity: 0.65, margin: 0 }}>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+         {/* Right — certification cards */}
+         <div data-reveal style={{ ...revealStyle(160), display: "flex", flexDirection: "column", gap: 16 }}>
 
-          {/* Right — certification cards */}
-          <div data-reveal style={{ ...revealStyle(160), display: "flex", flexDirection: "column", gap: 16 }}>
 
-            {/* Big trust statement card */}
-            <div style={{
-              background: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(255,255,255,0.14)",
-              borderRadius: 20,
-              padding: "28px 28px 24px",
-            }}>
-              <span className="material-symbols-outlined" style={{ fontSize: 28, color: t.primaryDim, display: "block", marginBottom: 12 }}>shield</span>
-              <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 18, fontWeight: 600, lineHeight: 1.45, margin: "0 0 8px", color: "#fff" }}>
-                "Trusted by enterprises across Kenya for secure, paperless workflows."
-              </p>
-              <span style={{ fontFamily: "Inter, sans-serif", fontSize: 12, opacity: 0.5 }}>Digisign Security Guarantee</span>
-            </div>
+           {/* Big trust statement card */}
+           <div style={{
+             background: "rgba(255,255,255,0.08)",
+             border: "1px solid rgba(255,255,255,0.14)",
+             borderRadius: 20,
+             padding: "28px 28px 24px",
+           }}>
+             <span className="material-symbols-outlined" style={{ fontSize: 28, color: t.primaryDim, display: "block", marginBottom: 12 }}>shield</span>
+             <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 18, fontWeight: 600, lineHeight: 1.45, margin: "0 0 8px", color: "#fff" }}>
+               "Trusted by enterprises across Kenya for secure, paperless workflows."
+             </p>
+             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 12, opacity: 0.5 }}>Digisign Security Guarantee</span>
+           </div>
 
-            {/* Badge row */}
-            <div   className="security-body-grid"
-           style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-              {certBadges.map((b) => (
-                <div
-                  key={b.label}
-                  style={{
-                    background: "rgba(255,255,255,0.06)",
-                    border: "1px solid rgba(255,255,255,0.12)",
-                    borderRadius: 14,
-                    padding: "16px 12px",
-                    textAlign: "center",
-                    cursor: "default",
-                    transition: "background 0.25s, border-color 0.25s",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.12)"; e.currentTarget.style.borderColor = `${t.primaryDim}55`; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; }}
-                >
-                  <div style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 16, fontWeight: 800, color: t.primaryDim, letterSpacing: "-0.02em" }}>{b.label}</div>
-                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: 10, fontWeight: 600, color: "#fff", opacity: 0.7, textTransform: "uppercase", letterSpacing: "0.08em", marginTop: 2 }}>{b.sub}</div>
-                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "#fff", opacity: 0.4, marginTop: 2 }}>{b.note}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+
+           {/* Badge row */}
+           <div   className="security-body-grid"
+            style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+             {certBadges.map((b) => (
+               <div
+                 key={b.label}
+                 style={{
+                   background: "rgba(255,255,255,0.06)",
+                   border: "1px solid rgba(255,255,255,0.12)",
+                   borderRadius: 14,
+                   padding: "16px 12px",
+                   textAlign: "center",
+                   cursor: "default",
+                   transition: "background 0.25s, border-color 0.25s",
+                 }}
+                 onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.12)"; e.currentTarget.style.borderColor = `${t.primaryDim}55`; }}
+                 onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; }}
+               >
+                 <div style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 16, fontWeight: 800, color: t.primaryDim, letterSpacing: "-0.02em" }}>{b.label}</div>
+                 <div style={{ fontFamily: "Inter, sans-serif", fontSize: 10, fontWeight: 600, color: "#fff", opacity: 0.7, textTransform: "uppercase", letterSpacing: "0.08em", marginTop: 2 }}>{b.sub}</div>
+                 <div style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "#fff", opacity: 0.4, marginTop: 2 }}>{b.note}</div>
+               </div>
+             ))}
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+ );
 }
+
 
 
 function CTASection() {
   return (
-    <section style={{ padding: "80px 64px", background: t.surfaceLowest }}>
+    <section 
+    style={{ padding: "80px 64px", background: t.surfaceLowest }
+    
+    }>
       <div
         data-reveal
         style={{
           ...revealStyle(0),
-          maxWidth: 900,
+          maxWidth: 1000,
           margin: "0 auto",
           background: t.inverseSurface,
           color: t.inverseText,
@@ -926,6 +1136,31 @@ function CTASection() {
           overflow: "hidden",
         }}
       >
+       
+
+   <img
+     className="cta-phone"
+     src="/images/mockups/mock-3.png"
+     alt="CertySign TSA"
+     style={{
+      position: "absolute",
+      width: 510,
+      right: "-140px",
+      bottom: "-30px",
+      }}
+      />
+
+
+    <style>{`
+    @media (max-width: 768px) {
+      .cta-phone {
+      display: none !important;
+       }
+       }
+      `}</style>
+
+       <div style={{ position: "relative", zIndex: 1 }}></div>
+
 
         <div style={{ position: "relative", zIndex: 1 }}>
           <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 32, fontWeight: 600, marginBottom: 16 }}>
@@ -936,10 +1171,13 @@ function CTASection() {
           </p>
 
 
-
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
-            <a href="https://app.certysign.io" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-              <button
+            <a
+              href="https://app.certysign.io"
+              style={{ textDecoration: "none" }}   
+              >   
+
+                <button
                 style={{
                   background: t.primary,
                   color: t.onPrimary,
@@ -1137,6 +1375,8 @@ export default function Certisign() {
           grid-template-columns: 1fr !important;
         }
       }
+
+      
     `
   }}
 />
@@ -1144,6 +1384,7 @@ export default function Certisign() {
       <div ref={root}>
         <HeroSection />
         <FeaturesSection />
+        <ProductShowcaseSection />
         <BenefitsSection />
         <SectorsSection />
         <SecuritySection />
