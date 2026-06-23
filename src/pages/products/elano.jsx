@@ -342,17 +342,13 @@ export default function ElanoPage() {
                           backgroundSize: '24px 24px',
                         }}
                       />
-                      <img
-                        src={productsData.elano.heroImage}
-                        alt="Elano governance dashboard"
-                        className="absolute inset-0 w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.src =
-                            'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop'
-                        }}
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="relative w-24 h-24">
+                      <div className="relative flex flex-col items-center justify-center h-full">
+                        <img
+                          src={productsData.elano.heroImage}
+                          alt="Elano institution registration"
+                          className="w-20 h-20 rounded-full object-cover border-2 border-green-400 shadow-lg shadow-green-500/30"
+                        />
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 pointer-events-none">
                           <div className="absolute -top-3 -left-3 w-5 h-5 border-t-2 border-l-2 border-green-400 rounded-tl-md" />
                           <div className="absolute -top-3 -right-3 w-5 h-5 border-t-2 border-r-2 border-green-400 rounded-tr-md" />
                           <div className="absolute -bottom-3 -left-3 w-5 h-5 border-b-2 border-l-2 border-green-400 rounded-bl-md" />
@@ -606,16 +602,6 @@ export default function ElanoPage() {
                       src={feature.image}
                       alt={feature.title}
                       className="w-full h-[400px] object-cover"
-                      onError={(e) => {
-                        const fallbacks = [
-                          'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop',
-                          'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop',
-                          'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
-                          'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop',
-                          'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop',
-                        ]
-                        e.currentTarget.src = fallbacks[index % fallbacks.length]
-                      }}
                     />
                   </div>
                 </div>

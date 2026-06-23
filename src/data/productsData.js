@@ -194,7 +194,7 @@ export const productsData = {
     longDescription: 'Elano digitizes how organizations are structured, governed, funded, monitored, and evaluated. It unifies governance, strategy, finance, and performance management into one secure system.',
     icon: 'chart-network',
     color: 'secondary',
-    heroImage: '/images/products/elano-hero.jpg',
+    heroImage: '/images/mockups/1000921678.jpg',
     
     challenge: {
       title: 'Institutional Management is Fragmented and Opaque',
@@ -229,7 +229,7 @@ export const productsData = {
           'Regulatory compliance tracking',
           'Document repository'
         ],
-        image: '/images/products/elano-registration.jpg',
+        image: '/images/mockups/network-trust.png',
         icon: 'sitemap'
       },
       {
@@ -242,7 +242,7 @@ export const productsData = {
           'Activity tracking',
           'Milestone monitoring'
         ],
-        image: '/images/products/elano-planning.jpg',
+        image: '/images/mockups/mock-3.png',
         icon: 'tasks'
       },
       {
@@ -255,7 +255,7 @@ export const productsData = {
           'Impact assessment',
           'Learning management'
         ],
-        image: '/images/products/elano-mearl.jpg',
+        image: '/images/mockups/mock-1.png',
         icon: 'chart-line'
       },
       {
@@ -268,7 +268,7 @@ export const productsData = {
           'Approval workflows',
           'Financial reporting'
         ],
-        image: '/images/products/elano-finance.jpg',
+        image: '/images/mockups/mock%201.png',
         icon: 'coins'
       },
       {
@@ -281,7 +281,7 @@ export const productsData = {
           'Visual dashboards',
           'Export to Excel/PDF'
         ],
-        image: '/images/products/elano-reporting.jpg',
+        image: '/images/mockups/mock%204.png',
         icon: 'file-chart-line'
       }
     ],
