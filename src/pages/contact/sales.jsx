@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { useState } from 'react'
 import { FiMail, FiPhone, FiMessageSquare, FiCheckCircle } from 'react-icons/fi'
@@ -29,9 +29,7 @@ export default function ContactSales() {
   if (submitted) {
     return (
       <>
-        <Head>
-          <title>Thank You | RCFI Technology</title>
-        </Head>
+        <SEO title="Thank You" noIndex url="/contact/sales" />
         <section className="pt-32 pb-20 px-4 min-h-screen flex items-center justify-center">
           <div className="max-w-2xl mx-auto text-center">
             <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -52,10 +50,11 @@ export default function ContactSales() {
 
   return (
     <>
-      <Head>
-        <title>Contact Sales | RCFI Technology</title>
-        <meta name="description" content="Get in touch with our sales team for pricing, custom solutions, and enterprise inquiries" />
-      </Head>
+      <SEO
+        title="Contact Sales"
+        description="Get in touch with our sales team for pricing, custom solutions, and enterprise inquiries"
+        url="/contact/sales"
+      />
 
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto">

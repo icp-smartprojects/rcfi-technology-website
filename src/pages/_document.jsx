@@ -14,7 +14,12 @@ export default function Document() {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         
         {/* Meta Tags */}
-        <meta name="theme-color" content="#0ea5e9" />
+        <meta name="theme-color" content="#0A3D62" />
+        <meta name="author" content="RCFI Technology" />
+        <meta name="application-name" content="RCFI Technology" />
+        <meta property="og:site_name" content="RCFI Technology" />
+        <meta property="og:locale" content="en_KE" />
+        <meta name="twitter:site" content="@CertySign" />
         
         {/* Google Analytics */}
         {process.env.NEXT_PUBLIC_GA_ID && (

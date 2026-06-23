@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import { FiArrowRight } from 'react-icons/fi'
 import SEO from '@/components/common/SEO'
@@ -14,8 +13,8 @@ const products = [
   {
     id: 'elano',
     name: 'Elano',
-    description: 'Comprehensive e-KYC and identity verification solution for financial services',
-    features: ['Real-time Verification', 'Multi-factor Authentication', 'Compliance Ready'],
+    description: 'Digital governance platform for Kenyan NGOs and CSOs — registration, board management, M&E, and compliance.',
+    features: ['PBO / CBO / CGRA Registration', 'Board & Meeting Management', 'Strategic Planning & M&E', 'Public Certificate Verification'],
     image: '/images/products/elano.jpg'
   },
   {
@@ -30,19 +29,12 @@ const products = [
 export default function Products() {
   return (
     <>
-      <Head>
-        <title>Products | RCFI Technology</title>
-        <meta name="description" content="Discover RCFI's suite of digital transformation products: CertySign, Elano, and Prezio. Trusted by enterprises across East Africa." />
-        <meta name="keywords" content="products, digital signatures, e-KYC, workflow automation, CertySign, Elano, Prezio" />
-        <meta property="og:title" content="Products | RCFI Technology" />
-        <meta property="og:description" content="Digital transformation solutions for Kenya and East Africa" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rcfi.co.ke/products" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://rcfi.co.ke/products" />
-      </Head>
-
-      <SEO title="Our Products" description="Explore our comprehensive suite of digital solutions" />
+      <SEO
+        title="Products"
+        description="Discover RCFI's suite of digital transformation products: CertySign, Elano, and Prezio. Trusted by enterprises across East Africa."
+        keywords="products, digital signatures, e-KYC, workflow automation, CertySign, Elano, Prezio"
+        url="/products"
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-primary-50 to-white">

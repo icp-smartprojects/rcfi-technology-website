@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { useState } from 'react'
 import { FiCheckCircle, FiCalendar, FiClock, FiVideo } from 'react-icons/fi'
@@ -31,9 +31,7 @@ export default function RequestDemo() {
   if (submitted) {
     return (
       <>
-        <Head>
-          <title>Demo Request Submitted | RCFI Technology</title>
-        </Head>
+        <SEO title="Demo Request Submitted" noIndex url="/contact/demo" />
         <section className="pt-32 pb-20 px-4 min-h-screen flex items-center justify-center">
           <div className="max-w-2xl mx-auto text-center">
             <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -54,10 +52,11 @@ export default function RequestDemo() {
 
   return (
     <>
-      <Head>
-        <title>Request a Demo | RCFI Technology</title>
-        <meta name="description" content="Schedule a personalized demo of CertySign, Elano, or Prezio with our team" />
-      </Head>
+      <SEO
+        title="Request a Demo"
+        description="Schedule a personalized demo of CertySign, Elano, or Prezio with our team"
+        url="/contact/demo"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

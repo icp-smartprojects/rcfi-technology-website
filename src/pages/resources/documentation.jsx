@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiBook, FiCode, FiSettings, FiShield } from 'react-icons/fi'
 
@@ -48,10 +48,11 @@ export default function Documentation() {
 
   return (
     <>
-      <Head>
-        <title>Documentation - Technical Guides | RCFI Technology</title>
-        <meta name="description" content="Complete technical documentation, API references, and integration guides" />
-      </Head>
+      <SEO
+        title="Documentation"
+        description="Complete technical documentation, API references, and integration guides"
+        url="/resources/documentation"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

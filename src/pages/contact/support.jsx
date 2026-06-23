@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiMessageSquare, FiMail, FiPhone, FiBook, FiHelpCircle } from 'react-icons/fi'
 
@@ -51,10 +51,11 @@ export default function Support() {
 
   return (
     <>
-      <Head>
-        <title>Support - Get Help | RCFI Technology</title>
-        <meta name="description" content="Get technical support, troubleshooting, and answers to your questions" />
-      </Head>
+      <SEO
+        title="Support"
+        description="Get technical support, troubleshooting, and answers to your questions"
+        url="/contact/support"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

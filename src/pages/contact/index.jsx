@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiPhone, FiMail, FiMapPin, FiClock, FiSend, FiCheckCircle } from 'react-icons/fi'
 import { companyInfo } from '@/data/companyData'
@@ -89,11 +89,11 @@ export default function ContactPage() {
 
   return (
     <>
-      <Head>
-        <title>Contact Us | RCFI Technology</title>
-        <meta name="description" content="Get in touch with RCFI Technology. Request a demo, talk to sales, or get support for our digital transformation solutions." />
-        <link rel="canonical" href="https://rcfi.co.ke/contact" />
-      </Head>
+      <SEO
+        title="Contact Us"
+        description="Get in touch with RCFI Technology. Request a demo, talk to sales, or get support for our digital transformation solutions."
+        url="/contact"
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary-50 via-white to-primary-50">

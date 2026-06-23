@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { useState } from 'react'
 import { FiChevronDown, FiSearch } from 'react-icons/fi'
@@ -143,10 +143,11 @@ export default function FAQ() {
 
   return (
     <>
-      <Head>
-        <title>FAQ - Frequently Asked Questions | RCFI Technology</title>
-        <meta name="description" content="Find answers to common questions about CertySign, Elano, Prezio, and RCFI services" />
-      </Head>
+      <SEO
+        title="FAQ"
+        description="Find answers to common questions about CertySign, Elano, Prezio, and RCFI services"
+        url="/resources/faq"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

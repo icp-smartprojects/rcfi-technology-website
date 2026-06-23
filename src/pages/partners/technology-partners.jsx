@@ -1,13 +1,14 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import TechnologyPartners from '@/components/partners/TechnologyPartners'
 
 export default function TechnologyPartnersPage() {
   return (
     <>
-      <Head>
-        <title>Technology Partners - RCFI</title>
-        <meta name="description" content="Our trusted technology partners and ecosystem" />
-      </Head>
+      <SEO
+        title="Technology Partners"
+        description="Our trusted technology partners and ecosystem"
+        url="/partners/technology-partners"
+      />
       <TechnologyPartners />
     </>
   )

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import { FiFileText, FiDownload } from 'react-icons/fi'
 
 export default function WhitePapers() {
@@ -55,10 +55,11 @@ export default function WhitePapers() {
 
   return (
     <>
-      <Head>
-        <title>White Papers - In-Depth Reports | RCFI Technology</title>
-        <meta name="description" content="Download comprehensive reports on digital transformation, compliance, and technology trends in Kenya" />
-      </Head>
+      <SEO
+        title="White Papers"
+        description="Download comprehensive reports on digital transformation, compliance, and technology trends in Kenya"
+        url="/resources/white-papers"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

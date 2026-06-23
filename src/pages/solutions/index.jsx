@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiTrendingUp, FiDollarSign, FiUsers, FiBarChart2, FiCheckCircle, FiArrowRight } from 'react-icons/fi'
 
@@ -87,10 +87,11 @@ export default function SolutionsIndex() {
 
   return (
     <>
-      <Head>
-        <title>Solutions by Industry | RCFI Technology</title>
-        <meta name="description" content="Digital transformation solutions tailored for government, financial services, NGOs, SMEs, and legal sectors in Kenya and East Africa" />
-      </Head>
+      <SEO
+        title="Solutions by Industry"
+        description="Digital transformation solutions tailored for government, financial services, NGOs, SMEs, and legal sectors in Kenya and East Africa"
+        url="/solutions"
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

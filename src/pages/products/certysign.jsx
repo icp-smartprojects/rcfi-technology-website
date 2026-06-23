@@ -1,6 +1,6 @@
-
-"use client";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import SEO from "@/components/common/SEO";
 const t = {
   primary:        "#235e43",
   primaryLight:   "#b3f0cd",
@@ -149,56 +149,83 @@ function HeroSection() {
         }}
       >
         {/* LEFT SIDE */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          <h1>CertiSign</h1>
+        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <a href="https://certysign.io/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 12, textDecoration: "none", width: "fit-content" }}>
+            <img
+              src="/images/assets/logo-green.svg"
+              alt="CertySign"
+              style={{ height: 44, width: "auto" }}
+            />
+            <span
+              style={{
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                fontSize: "clamp(32px, 4vw, 42px)",
+                fontWeight: 700,
+                letterSpacing: "-0.03em",
+                color: t.onSurface,
+              }}
+            >
+              CertySign
+            </span>
+          </a>
+
           <span
             style={{
               color: t.primary,
-              fontSize: 12,
+              fontSize: 13,
               fontWeight: 700,
-              letterSpacing: "0.15em",
+              letterSpacing: "0.12em",
               textTransform: "uppercase",
               fontFamily: "Inter, sans-serif",
             }}
           >
-            Transition to Digital Trust
+            ECSP · Communications Authority of Kenya
           </span>
 
           <h1
             style={{
               fontFamily: "'Hanken Grotesk', sans-serif",
-              fontSize: "clamp(38px, 5vw, 42px)",
+              fontSize: "clamp(44px, 6vw, 64px)",
               fontWeight: 700,
-              lineHeight: 1.02,
-              letterSpacing: "-0.05em",
+              lineHeight: 1.08,
+              letterSpacing: "-0.03em",
               color: t.onSurface,
               margin: 0,
             }}
           >
-            Secure Digital
-            <br />
-            Workflows.
-            <span style={{ color: t.primary }}>
-              {" "}
-              Verified
-              <br />
-              Identities.
-            </span>
+            Sign with{" "}
+            <span style={{ color: t.primary }}>certainty</span>
           </h1>
 
           <p
             style={{
               fontFamily: "Inter, sans-serif",
-              fontSize: 18,
-              lineHeight: 1.8,
+              fontSize: 22,
+              lineHeight: 1.5,
               color: t.secondary,
-              maxWidth: 560,
+              maxWidth: 520,
               margin: 0,
+              fontWeight: 500,
             }}
           >
-            Replace paper with secure digital trust. The leading platform in
-            Kenya for legally binding signatures and identity verification.
+            Create legally binding digital signatures, verify identities, and manage documents — on one platform.
           </p>
+
+          <a
+            href="https://certysign.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontSize: 17,
+              fontWeight: 600,
+              color: t.primary,
+              textDecoration: "none",
+              width: "fit-content",
+            }}
+          >
+            certysign.io →
+          </a>
 
           {/* STATS */}
           <div style={{ display: "flex", gap: 40, flexWrap: "wrap", marginTop: 8 }}>
@@ -226,7 +253,7 @@ function HeroSection() {
 
           {/* BUTTONS */}
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginTop: 8 }}>
-            <a href="https://certysign.io" style={{ textDecoration: "none" }}>
+            <a href="https://certysign.io/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
               <button
                 style={{
                   background: t.primary,
@@ -235,30 +262,31 @@ function HeroSection() {
                   borderRadius: 14,
                   border: "none",
                   fontFamily: "'Hanken Grotesk', sans-serif",
+                  fontSize: 18,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                }}
+              >
+                Start Free
+              </button>
+            </a>
+            <a href="https://app.certysign.io" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              <button
+                style={{
+                  background: "#fff",
+                  color: t.onSurface,
+                  padding: "16px 34px",
+                  borderRadius: 14,
+                  border: `1px solid ${t.outlineVariant}`,
+                  fontFamily: "'Hanken Grotesk', sans-serif",
                   fontSize: 16,
                   fontWeight: 600,
                   cursor: "pointer",
                 }}
               >
-                Start Your Digital Journey
+                Sign In
               </button>
             </a>
-            <button
-              style={{
-                background: "#fff",
-                color: t.onSurface,
-                padding: "16px 34px",
-                borderRadius: 14,
-                border: `1px solid ${t.outlineVariant}`,
-                fontFamily: "'Hanken Grotesk', sans-serif",
-                fontSize: 16,
-                fontWeight: 600,
-                cursor: "pointer",
-              }}
-              onClick={() => window.location.assign("/contact/demo")}
-            >
-              Request Demo
-            </button>
           </div>
         </div>
 
@@ -565,10 +593,12 @@ function HeroSection() {
 
 
 const features = [
-  { icon: "badge",                  title: "Digital Signature Certificates", desc: "Legally recognized certificates with secure authentication and full regulatory compliance." },
-  { icon: "receipt_long",           title: "Invoice Authentication",          desc: "Protect your revenue with advanced fraud prevention and automated financial validation." },
-  { icon: "person_search",          title: "e-KYC Identity Verification",     desc: "Faster onboarding through electronic KYC processes that verify identities instantly." },
-  { icon: "account_balance_wallet", title: "Blockchain-Secured Documents",    desc: "Immutable records providing long-term auditability and cryptographic document integrity." },
+  { icon: "draw", title: "Make Digital Signatures", desc: "Create legally binding signatures in seconds." },
+  { icon: "badge", title: "Digital Signature Certificates", desc: "X.509 certificates for individuals and organizations." },
+  { icon: "verified_user", title: "PKI Digital Signatures", desc: "Cryptographically secure. Non-repudiation." },
+  { icon: "lock", title: "Tamper-Proof Verification", desc: "Detect any change after signing." },
+  { icon: "schedule", title: "Trusted Timestamp Authority", desc: "Proof of exact signing time." },
+  { icon: "account_tree", title: "Workflow Automation", desc: "Multi-level approvals in real time." },
 ];
 
 function FeaturesSection() {
@@ -576,15 +606,15 @@ function FeaturesSection() {
     <section id="features" style={{ padding: "80px 64px", background: t.surfaceLow }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <div data-reveal style={{ ...revealStyle(0), textAlign: "center", marginBottom: 56 }}>
-          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 32, fontWeight: 600, color: t.onSurface, marginBottom: 12 }}>
-            Engineered for Digital Precision
+          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 700, color: t.onSurface, marginBottom: 16 }}>
+            Core Platform Capabilities
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 16, color: t.secondary }}>
-            Comprehensive tools for modern, secure enterprise workflows.
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 20, color: t.secondary, maxWidth: 640, margin: "0 auto" }}>
+            Make signatures. Verify documents. Enterprise-grade PKI.
           </p>
         </div>
 
-        <div  className="features-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24 }}>
+        <div className="features-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
           {features.map((f, i) => (
             <div
               key={f.title}
@@ -603,10 +633,10 @@ function FeaturesSection() {
               <div style={{ width: 48, height: 48, background: `${t.primary}1a`, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 24 }}>
                 <span className="material-symbols-outlined" style={{ color: t.primary }}>{f.icon}</span>
               </div>
-              <h3 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 20, fontWeight: 600, color: t.onSurface, marginBottom: 12 }}>
+              <h3 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 22, fontWeight: 700, color: t.onSurface, marginBottom: 10 }}>
                 {f.title}
               </h3>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 14, color: t.onSurfaceVariant, lineHeight: 1.6 }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: 16, color: t.onSurfaceVariant, lineHeight: 1.5 }}>
                 {f.desc}
               </p>
             </div>
@@ -619,30 +649,10 @@ function FeaturesSection() {
 
 
 const benefits = [
-  {
-    icon: "speed",
-    title: "Improved Efficiency",
-    desc: "Eliminate paper-based friction. Accelerate approval cycles from days to minutes.",
-    accent: "#4ade80",
-  },
-  {
-    icon: "security",
-    title: "Enhanced Security",
-    desc: "Multi-factor authentication with encrypted, tamper-proof audit trails on every document.",
-    accent: "#60a5fa",
-  },
-  {
-    icon: "gavel",
-    title: "Regulatory Compliance",
-    desc: "Fully aligned with Kenya's Data Protection Act and global ISO 27001 standards.",
-    accent: "#f59e0b",
-  },
-  {
-    icon: "savings",
-    title: "Cost Reduction",
-    desc: "Cut operational costs by eliminating printing, physical storage, and courier overheads.",
-    accent: "#a78bfa",
-  },
+  { icon: "bolt", title: "Faster Contracts", desc: "Close deals in minutes.", accent: "#4ade80" },
+  { icon: "description", title: "Less Paperwork", desc: "Go fully paperless.", accent: "#60a5fa" },
+  { icon: "gavel", title: "Legally Binding", desc: "Global e-signature standards.", accent: "#f59e0b" },
+  { icon: "security", title: "Secure Workflows", desc: "End-to-end encryption.", accent: "#a78bfa" },
 ];
 
 
@@ -711,24 +721,22 @@ const benefits = [
               color: t.onSurface,
             }}
           >
-            One Platform.
+            Everything You Need
             <br />
-            Every Device.
+            for Digital Trust
           </h2>
 
           <p
             style={{
-              maxWidth: 720,
+              maxWidth: 560,
               margin: "0 auto 60px",
               fontFamily: "Inter, sans-serif",
-              fontSize: 18,
-              lineHeight: 1.8,
+              fontSize: 20,
+              lineHeight: 1.5,
               color: t.secondary,
             }}
           >
-            Access digital signatures, identity verification,
-            timestamping, and compliance workflows seamlessly
-            across desktop, tablet, and mobile devices.
+            Legally binding signatures. PKI identity verification. Tamper-proof audit trails.
           </p>
         </div>
 
@@ -756,7 +764,7 @@ const benefits = [
           />
 
           <img
-            src="/images/mockups/Certysign mockups.png"
+            src="/images/mockups/certysign-mockups.png"
             alt="CertySign Platform"
             style={{
               width: "100%",
@@ -811,13 +819,13 @@ function BenefitsSection() {
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <div style={{ width: 28, height: 2, background: t.primary, borderRadius: 2 }} />
             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: t.primary }}>
-              Why Certisign
+              Why CertySign
             </span>
           </div>
 
           {/* Centre heading */}
-          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 32, fontWeight: 700, color: t.onSurface, margin: 0, textAlign: "center", whiteSpace: "normal" }}>
-            Transforming <span style={{ color: t.primary }}>Outcomes</span>
+          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: "clamp(28px, 3.5vw, 40px)", fontWeight: 700, color: t.onSurface, margin: 0, textAlign: "center", whiteSpace: "normal" }}>
+            Why <span style={{ color: t.primary }}>CertySign</span>
           </h2>
 
           {/* Right subtext */}
@@ -878,21 +886,20 @@ function BenefitsSection() {
               {/* Title */}
               <h4 style={{
                 fontFamily: "'Hanken Grotesk', sans-serif",
-                fontSize: 16,
+                fontSize: 20,
                 fontWeight: 700,
                 color: t.onSurface,
-                margin: "0 0 10px",
+                margin: "0 0 8px",
                 lineHeight: 1.3,
               }}>
                 {b.title}
               </h4>
 
-              {/* Desc */}
               <p style={{
                 fontFamily: "Inter, sans-serif",
-                fontSize: 13,
+                fontSize: 16,
                 color: t.secondary,
-                lineHeight: 1.65,
+                lineHeight: 1.5,
                 margin: 0,
                 flexGrow: 1,
               }}>
@@ -908,51 +915,152 @@ function BenefitsSection() {
 }
 
 
-const sectors = [
-  { icon: "account_balance",    label: "Government" },
-  { icon: "payments",           label: "Financial Institutions" },
-  { icon: "volunteer_activism", label: "NGOs" },
-  { icon: "business",           label: "Private Enterprises" },
-  { icon: "school",             label: "Educational Institutions" },
+const useCases = [
+  {
+    tag: "Public Sector",
+    icon: "account_balance",
+    title: "Government & Public Sector",
+    items: ["Government contracts", "Procurement approvals", "Court & legal filings", "Licenses & permits", "Citizen service forms"],
+    note: "Sign digitally — no print, stamp, or scan.",
+  },
+  {
+    tag: "Legal",
+    icon: "gavel",
+    title: "Legal Industry",
+    items: ["Contracts & NDAs", "Affidavits", "Partnership agreements", "Client engagement letters", "Court documentation"],
+    note: "Immutable audit trails. Timestamp verification.",
+  },
+  {
+    tag: "Finance",
+    icon: "payments",
+    title: "Banking & Financial Services",
+    items: ["Loan agreements", "Account opening", "Mortgage documents", "Investment contracts", "KYC compliance"],
+    note: "PKI-backed signatures. Tamper-proof records.",
+  },
+  {
+    tag: "Enterprise",
+    icon: "corporate_fare",
+    title: "Corporate & Enterprise",
+    items: ["Vendor agreements", "Procurement approvals", "HR contracts", "Board resolutions", "Policy approvals"],
+    note: "Legal → Finance → CEO → Client — all digital.",
+  },
+  {
+    tag: "HR",
+    icon: "groups",
+    title: "Human Resources",
+    items: ["Employment contracts", "Offer letters", "NDAs", "Performance agreements", "Policy acknowledgements"],
+    note: "Faster onboarding. No paper.",
+  },
+  {
+    tag: "Healthcare",
+    icon: "local_hospital",
+    title: "Healthcare",
+    items: ["Patient consent forms", "Insurance documentation", "Medical records authorization", "Healthcare agreements"],
+    note: "Authenticity & regulatory compliance.",
+  },
+  {
+    tag: "Real Estate",
+    icon: "apartment",
+    title: "Real Estate",
+    items: ["Lease agreements", "Property sale contracts", "Mortgage documents", "Tenant agreements"],
+    note: "Days to minutes — fully online.",
+  },
+  {
+    tag: "Procurement",
+    icon: "local_shipping",
+    title: "Procurement & Supply Chain",
+    items: ["Supplier contracts", "Purchase agreements", "Delivery confirmations", "Vendor onboarding"],
+    note: "Faster cycles. Secure validation.",
+  },
+  {
+    tag: "Education",
+    icon: "school",
+    title: "Education Sector",
+    items: ["Academic certificates", "Transcripts", "Student consent forms", "Research agreements"],
+    note: "Prevent certificate fraud.",
+  },
+  {
+    tag: "SME",
+    icon: "storefront",
+    title: "SMEs & Startups",
+    items: ["Service contracts", "Freelancer agreements", "Partnership deals", "Client onboarding"],
+    note: "Affordable. Fast. Paperless.",
+  },
+  {
+    tag: "International",
+    icon: "public",
+    title: "Cross-Border Agreements",
+    items: ["Global vendor contracts", "International partnerships", "Digital trade agreements"],
+    note: "Verifiable trust across jurisdictions.",
+  },
+  {
+    tag: "Verification",
+    icon: "qr_code_scanner",
+    title: "Document Verification",
+    items: ["Signature verification", "Timestamp confirmation", "QR code lookup", "Public authenticity checks"],
+    note: "Upload a signed PDF — confirm instantly.",
+  },
 ];
 
-
-function SectorsSection() {
+function UseCasesSection() {
   return (
-    <section id="sectors" style={{ padding: "80px 64px", background: t.surfaceContainer }}>
+    <section id="use-cases" style={{ padding: "96px 64px", background: t.surfaceContainer }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-        <h2
-          data-reveal
-          style={{ ...revealStyle(0), fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 32, fontWeight: 600, color: t.onSurface, textAlign: "center", marginBottom: 48 }}
-        >
-          Built for Every Sector
-        </h2>
+        <div data-reveal style={{ ...revealStyle(0), textAlign: "center", marginBottom: 64 }}>
+          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 13, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: t.primary }}>
+            Who Uses CertySign
+          </span>
+          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: "clamp(36px, 5vw, 52px)", fontWeight: 700, color: t.onSurface, margin: "16px 0", lineHeight: 1.1 }}>
+            Use Cases Across Every Industry
+          </h2>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 20, color: t.secondary, maxWidth: 680, margin: "0 auto", lineHeight: 1.5 }}>
+            Secure digital workflows wherever trust matters.
+          </p>
+        </div>
 
-        <div data-reveal style={{ ...revealStyle(100), display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16 }}>
-          {sectors.map((s) => (
+        <div className="use-cases-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+          {useCases.map((sector, i) => (
             <div
-              key={s.label}
+              key={sector.title}
+              data-reveal
               style={{
+                ...revealStyle(i * 60),
                 background: t.surfaceLowest,
                 border: `1px solid ${t.outlineVariant}`,
-                borderRadius: 999,
-                padding: "10px 20px",
+                borderRadius: 20,
+                padding: "28px 24px",
                 display: "flex",
-                alignItems: "center",
-                gap: 8,
-                fontFamily: "Inter, sans-serif",
-                fontSize: 12,
-                fontWeight: 600,
-                letterSpacing: "0.05em",
-                color: t.primary,
-                cursor: "default",
-                transition: "border-color 0.2s",
+                flexDirection: "column",
+                gap: 16,
+                transition: "box-shadow 0.3s, border-color 0.3s",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.borderColor = t.primary)}
-              onMouseLeave={(e) => (e.currentTarget.style.borderColor = t.outlineVariant)}
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 16px 40px rgba(0,0,0,0.08)"; e.currentTarget.style.borderColor = `${t.primary}55`; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.borderColor = t.outlineVariant; }}
             >
-              <span className="material-symbols-outlined" style={{ fontSize: 16 }}>{s.icon}</span>
-              {s.label}
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{ width: 48, height: 48, borderRadius: 12, background: `${t.primary}12`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <span className="material-symbols-outlined" style={{ fontSize: 24, color: t.primary }}>{sector.icon}</span>
+                </div>
+                <div>
+                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: t.primary }}>{sector.tag}</div>
+                  <h3 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 22, fontWeight: 700, color: t.onSurface, margin: "4px 0 0", lineHeight: 1.2 }}>{sector.title}</h3>
+                </div>
+              </div>
+
+              <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
+                {sector.items.map((item) => (
+                  <li key={item} style={{ fontFamily: "Inter, sans-serif", fontSize: 16, color: t.onSurfaceVariant, display: "flex", alignItems: "flex-start", gap: 8, lineHeight: 1.4 }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: 16, color: t.primary, marginTop: 2, flexShrink: 0 }}>check_circle</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              {sector.note && (
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 15, fontWeight: 600, color: t.primary, margin: 0, paddingTop: 8, borderTop: `1px solid ${t.outlineVariant}` }}>
+                  {sector.note}
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -965,9 +1073,9 @@ function SectorsSection() {
 
 
 const complianceItems = [
-  { icon: "verified_user", title: "Data Protection Act", desc: "Every workflow is fully compliant with Kenya's DPA — your data stays sovereign." },
-  { icon: "workspace_premium", title: "ISO 27001 Certified", desc: "Our infrastructure meets the gold standard for information security management." },
-  { icon: "account_balance", title: "CAK Authorized", desc: "Licensed and regulated by the Communications Authority of Kenya." },
+  { icon: "verified_user", title: "Data Protection Act", desc: "Kenya DPA compliant. Data stays sovereign." },
+  { icon: "workspace_premium", title: "ISO 27001 Certified", desc: "Gold standard information security." },
+  { icon: "account_balance", title: "CAK Authorized ECSP", desc: "Licensed by Communications Authority of Kenya." },
 ];
 
 const certBadges = [
@@ -1020,12 +1128,12 @@ function SecuritySection() {
          }}
          >
 
-         <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 40, fontWeight: 700, lineHeight: 1.15, margin: 0 }}>
-           Uncompromising<br />
-           <span style={{ color: t.primaryDim }}>Compliance.</span>
+         <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 700, lineHeight: 1.15, margin: 0 }}>
+           Enterprise-Grade<br />
+           <span style={{ color: t.primaryDim }}>Security.</span>
          </h2>
-         <p style={{ fontFamily: "Inter, sans-serif", fontSize: 16, lineHeight: 1.7, opacity: 0.75, margin: 0 }}>
-           Every transaction on Certisign is secure, verifiable, and legally binding — under Kenyan and International law.
+         <p style={{ fontFamily: "Inter, sans-serif", fontSize: 18, lineHeight: 1.6, opacity: 0.75, margin: 0 }}>
+           PKI infrastructure. End-to-end encryption. Legally binding under Kenyan and international law.
          </p>
        </div>
 
@@ -1075,10 +1183,10 @@ function SecuritySection() {
              padding: "28px 28px 24px",
            }}>
              <span className="material-symbols-outlined" style={{ fontSize: 28, color: t.primaryDim, display: "block", marginBottom: 12 }}>shield</span>
-             <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 18, fontWeight: 600, lineHeight: 1.45, margin: "0 0 8px", color: "#fff" }}>
-               "Trusted by enterprises across Kenya for secure, paperless workflows."
+             <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 20, fontWeight: 600, lineHeight: 1.45, margin: "0 0 8px", color: "#fff" }}>
+               Trusted by enterprises across Kenya.
              </p>
-             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 12, opacity: 0.5 }}>Digisign Security Guarantee</span>
+             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 12, opacity: 0.5 }}>CertySign Security Guarantee</span>
            </div>
 
 
@@ -1163,17 +1271,19 @@ function CTASection() {
 
 
         <div style={{ position: "relative", zIndex: 1 }}>
-          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: 32, fontWeight: 600, marginBottom: 16 }}>
-            Build Digital Trust Today
+          <h2 style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 700, marginBottom: 16 }}>
+            Start Signing Today
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 18, lineHeight: 1.6, color: "#c0c9d0", maxWidth: 560, margin: "0 auto 28px" }}>
-            Join the digital transformation. Move from paper to secure, verifiable digital workflows with Certysign.
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 20, lineHeight: 1.5, color: "#c0c9d0", maxWidth: 560, margin: "0 auto 28px" }}>
+            Join organizations securing documents with enterprise-grade PKI.
           </p>
 
 
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
             <a
-              href="https://app.certysign.io"
+              href="https://certysign.io/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}   
               >   
 
@@ -1193,10 +1303,10 @@ function CTASection() {
                 onMouseEnter={(e) => { e.currentTarget.style.filter = "brightness(1.15)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.3)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.filter = "none"; e.currentTarget.style.boxShadow = "none"; }}
               >
-                Launch App
+                Get Started Free
               </button>
             </a>
-            <a href="/contact" style={{ textDecoration: "none" }}>
+            <Link href="/contact/sales" style={{ textDecoration: "none" }}>
               <button
                 style={{
                   background: "transparent",
@@ -1213,9 +1323,29 @@ function CTASection() {
                 onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; e.currentTarget.style.borderColor = t.inverseText; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderColor = `${t.inverseText}40`; }}
               >
-                Talk to Sales
+                Contact Sales
               </button>
-            </a>
+            </Link>
+            <Link href="/contact/support" style={{ textDecoration: "none" }}>
+              <button
+                style={{
+                  background: "transparent",
+                  color: t.inverseText,
+                  padding: "14px 40px",
+                  borderRadius: 12,
+                  border: `1px solid ${t.inverseText}40`,
+                  fontFamily: "'Hanken Grotesk', sans-serif",
+                  fontSize: 18,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  transition: "background 0.2s, border-color 0.2s",
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; e.currentTarget.style.borderColor = t.inverseText; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderColor = `${t.inverseText}40`; }}
+              >
+                Contact Support
+              </button>
+            </Link>
           </div>
 
           
@@ -1230,12 +1360,20 @@ function CTASection() {
 }
 
 
-export default function Certisign() {
+export default function CertySign() {
   const root = useRef(null);
   useReveal(root);
 
   return (
     <>
+      <SEO
+        title="CertySign - Sign With Certainty"
+        description="Sign with certainty. Kenya's digital signature, e-KYC and document trust platform. Create legally binding signatures at certysign.io. ECSP licensed by CAK."
+        keywords="CertySign, digital signatures Kenya, PKI, e-KYC, CAK licensed, digital certificate"
+        url="/products/certysign"
+        image="/images/mockups/certysign-mockups.png"
+        type="product"
+      />
    <style
   dangerouslySetInnerHTML={{
     __html: `
@@ -1271,6 +1409,10 @@ export default function Certisign() {
         }
 
         .features-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+
+        .use-cases-grid {
           grid-template-columns: repeat(2, 1fr) !important;
         }
 
@@ -1367,6 +1509,10 @@ export default function Certisign() {
           grid-template-columns: 1fr !important;
         }
 
+        .use-cases-grid {
+          grid-template-columns: 1fr !important;
+        }
+
         .benefits-grid {
           grid-template-columns: 1fr !important;
         }
@@ -1386,7 +1532,7 @@ export default function Certisign() {
         <FeaturesSection />
         <ProductShowcaseSection />
         <BenefitsSection />
-        <SectorsSection />
+        <UseCasesSection />
         <SecuritySection />
         <CTASection />
       </div>

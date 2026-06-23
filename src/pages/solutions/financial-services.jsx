@@ -1,14 +1,15 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiCheckCircle, FiArrowRight, FiShield, FiUsers, FiAward, FiZap } from 'react-icons/fi'
 
 export default function FinancialServicesSolution() {
   return (
     <>
-      <Head>
-        <title>Financial Services Solutions | RCFI Technology</title>
-        <meta name="description" content="Digital transformation solutions for banks, SACCOs, insurance, and fintech companies in Kenya and East Africa" />
-      </Head>
+      <SEO
+        title="Financial Services Solutions"
+        description="Digital transformation solutions for banks, SACCOs, insurance, and fintech companies in Kenya and East Africa"
+        url="/solutions/financial-services"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

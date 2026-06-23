@@ -1,14 +1,15 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiCheckCircle, FiArrowRight, FiShield, FiUsers, FiAward } from 'react-icons/fi'
 
 export default function GovernmentSolution() {
   return (
     <>
-      <Head>
-        <title>Government & Public Sector Solutions | RCFI Technology</title>
-        <meta name="description" content="Digital transformation solutions for government agencies, county governments, and public institutions in Kenya" />
-      </Head>
+      <SEO
+        title="Government & Public Sector Solutions"
+        description="Digital transformation solutions for government agencies, county governments, and public institutions in Kenya"
+        url="/solutions/government"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

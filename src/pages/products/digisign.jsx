@@ -3,10 +3,6 @@ import { useRouter } from 'next/router'
 
 export default function CertySignRedirect() {
   const router = useRouter()
-  useEffect(() => { router.replace('/products/certysign') }, [])
+  useEffect(() => { router.replace('/products/certysign') }, [router])
   return null
-}
-
-export async function getServerSideProps() {
-  return { redirect: { destination: '/products/certysign', permanent: true } }
 }

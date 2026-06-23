@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiFileText, FiBook, FiVideo, FiHelpCircle, FiTrendingUp, FiMail } from 'react-icons/fi'
 
@@ -75,10 +75,11 @@ export default function ResourcesIndex() {
 
   return (
     <>
-      <Head>
-        <title>Resources - Knowledge Center | RCFI Technology</title>
-        <meta name="description" content="Case studies, white papers, blog, documentation, and FAQs about digital transformation in Kenya" />
-      </Head>
+      <SEO
+        title="Resources"
+        description="Case studies, white papers, blog, documentation, and FAQs about digital transformation in Kenya"
+        url="/resources"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

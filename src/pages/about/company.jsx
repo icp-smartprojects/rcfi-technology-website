@@ -1,13 +1,14 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import CompanyOverview from '@/components/about/CompanyOverview'
 
 export default function CompanyPage() {
   return (
     <>
-      <Head>
-        <title>Our Company - RCFI</title>
-        <meta name="description" content="Learn about RCFI and our mission to transform digital trust" />
-      </Head>
+      <SEO
+        title="Our Company"
+        description="Learn about RCFI and our mission to transform digital trust"
+        url="/about/company"
+      />
       <CompanyOverview />
     </>
   )

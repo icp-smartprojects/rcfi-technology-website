@@ -1,14 +1,15 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiUsers, FiCheckCircle, FiShield, FiAward, FiArrowRight, FiHeart, FiTrendingUp } from 'react-icons/fi'
 
 export default function NGOSolution() {
   return (
     <>
-      <Head>
-        <title>NGO & Civil Society Solutions | RCFI Technology</title>
-        <meta name="description" content="Grant management, compliance, and impact tracking solutions for NGOs, CSOs, and development organizations in Kenya" />
-      </Head>
+      <SEO
+        title="NGO & Civil Society Solutions"
+        description="Grant management, compliance, and impact tracking solutions for NGOs, CSOs, and development organizations in Kenya"
+        url="/solutions/ngo-civil-society"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

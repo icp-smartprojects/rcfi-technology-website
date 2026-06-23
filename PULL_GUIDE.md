@@ -152,8 +152,11 @@ rm -rf node_modules
 npm install
 ```
 
-**Page shows 404 on reload**
-This is fixed — `trailingSlash: true` is set in `next.config.js`. If you still see it on a deployed server, make sure the server is running `next start` (not serving static files directly).
+**Page shows 404 or white screen on reload**
+- **After `npm run build:static`:** the dev cache is cleared automatically. Restart dev with `npm run dev` or `npm run dev:clean`.
+- **To preview the real deploy build:** use `npm run preview:static` (serves the `out/` folder on port 3001).
+- **On cPanel/Apache:** use the included `public/.htaccess` (copied to `out/` on build). Do **not** rewrite `/_next/` URLs to `index.html` — that causes white screens and MIME errors.
+- URLs use trailing slashes (`/products/certysign/`). The `.htaccess` redirects `/products/certysign` → `/products/certysign/`.
 
 **Permission denied on clone**
 Your GitHub account may not be in the organization yet. Contact the repo admin.

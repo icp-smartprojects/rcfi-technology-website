@@ -1,13 +1,14 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Team from '@/components/about/Team'
 
 export default function TeamPage() {
   return (
     <>
-      <Head>
-        <title>Our Team - RCFI</title>
-        <meta name="description" content="Meet the talented team behind RCFI's innovation" />
-      </Head>
+      <SEO
+        title="Our Team"
+        description="Meet the talented team behind RCFI's innovation"
+        url="/about/team"
+      />
       <Team />
     </>
   )

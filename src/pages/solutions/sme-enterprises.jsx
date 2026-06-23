@@ -1,14 +1,15 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiBarChart2, FiCheckCircle, FiShield, FiUsers, FiAward, FiArrowRight, FiTrendingUp, FiDollarSign } from 'react-icons/fi'
 
 export default function SMESolution() {
   return (
     <>
-      <Head>
-        <title>SME & Enterprise Solutions | RCFI Technology</title>
-        <meta name="description" content="Digital transformation solutions for small and medium enterprises, startups, and growing businesses in Kenya" />
-      </Head>
+      <SEO
+        title="SME & Enterprise Solutions"
+        description="Digital transformation solutions for small and medium enterprises, startups, and growing businesses in Kenya"
+        url="/solutions/sme-enterprises"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

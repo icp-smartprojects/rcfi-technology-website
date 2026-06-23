@@ -118,14 +118,20 @@ Every push to main branch automatically deploys!
    - Upload contents of `out/` folder to `public_html/`
 
 3. **Configure .htaccess**
+   The project includes `public/.htaccess` — it is copied into `out/` automatically on build.
+   **Important:** Do not use a catch-all rewrite to `/index.html` — that breaks `/_next/` JavaScript files and causes white screens on refresh.
+
+   If you need to add rules manually:
    ```apache
    <IfModule mod_rewrite.c>
      RewriteEngine On
      RewriteBase /
-     RewriteRule ^index\.html$ - [L]
-     RewriteCond %{REQUEST_FILENAME} !-f
-     RewriteCond %{REQUEST_FILENAME} !-d
-     RewriteRule . /index.html [L]
+     RewriteRule ^(_next|images|fonts) - [L]
+     RewriteCond %{REQUEST_FILENAME} -f [OR]
+     RewriteCond %{REQUEST_FILENAME} -d
+     RewriteRule ^ - [L]
+     RewriteCond %{REQUEST_URI} !/$
+     RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
    </IfModule>
    ```
 

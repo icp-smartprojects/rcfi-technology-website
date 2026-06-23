@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiClock, FiUser } from 'react-icons/fi'
 
@@ -64,10 +64,11 @@ export default function Blog() {
 
   return (
     <>
-      <Head>
-        <title>Blog - Latest Insights & Updates | RCFI Technology</title>
-        <meta name="description" content="Read the latest articles on digital transformation, compliance, and technology trends in Kenya" />
-      </Head>
+      <SEO
+        title="Blog"
+        description="Read the latest articles on digital transformation, compliance, and technology trends in Kenya"
+        url="/resources/blog"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

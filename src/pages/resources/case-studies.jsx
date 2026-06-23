@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiCheckCircle, FiTrendingUp } from 'react-icons/fi'
 
@@ -98,10 +98,11 @@ export default function CaseStudies() {
 
   return (
     <>
-      <Head>
-        <title>Case Studies - Real Success Stories | RCFI Technology</title>
-        <meta name="description" content="Read how organizations across Kenya are transforming with CertySign, Elano, and Prezio" />
-      </Head>
+      <SEO
+        title="Case Studies"
+        description="Read how organizations across Kenya are transforming with CertySign, Elano, and Prezio"
+        url="/resources/case-studies"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">

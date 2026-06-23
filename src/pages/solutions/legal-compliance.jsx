@@ -1,14 +1,15 @@
-import Head from 'next/head'
+import SEO from '@/components/common/SEO'
 import Link from 'next/link'
 import { FiCheckCircle, FiShield, FiLock, FiFileText, FiArrowRight, FiClock, FiAward } from 'react-icons/fi'
 
 export default function LegalSolution() {
   return (
     <>
-      <Head>
-        <title>Legal & Compliance Solutions | RCFI Technology</title>
-        <meta name="description" content="Secure, legally binding digital workflow solutions for law firms, advocates, notaries, and compliance professionals in Kenya" />
-      </Head>
+      <SEO
+        title="Legal & Compliance Solutions"
+        description="Secure, legally binding digital workflow solutions for law firms, advocates, notaries, and compliance professionals in Kenya"
+        url="/solutions/legal-compliance"
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary-50 via-white to-primary-50">
