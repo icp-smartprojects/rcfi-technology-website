@@ -8,6 +8,19 @@ export default function Hero() {
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-secondary-50 -z-10"></div>
+
+      {/* Background Image */}
+<div
+  className="absolute inset-0 -z-10"
+  style={{
+    backgroundImage: "url('/images/mockups/africa.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    opacity: 0.75,
+    filter: "saturate(1.1) contrast(1.05)",
+  }}
+/>
       
       {/* Animated Background Shapes */}
       <div className="absolute inset-0 overflow-hidden -z-10">
@@ -38,6 +51,7 @@ export default function Hero() {
           <p className="text-xl md:text-2xl text-neutral-600 mb-10 leading-relaxed max-w-3xl mx-auto animate-slide-up animation-delay-100">
             {companyInfo.description}
           </p>
+
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up animation-delay-200">
