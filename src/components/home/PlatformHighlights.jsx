@@ -15,7 +15,7 @@ export default function PlatformHighlights() {
   ]
 
   return (
-    <section className="section-padding bg-neutral-50">
+    <section className="section-padding bg-white relative">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}

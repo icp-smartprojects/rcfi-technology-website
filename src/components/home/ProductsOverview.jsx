@@ -10,7 +10,7 @@ export default function ProductsOverview() {
   ]
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-section-tint bg-pattern-dots-light relative">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

@@ -48,30 +48,34 @@ export default function Header() {
     }
   }
 
+  const isHome = router.pathname === '/'
+  const useDarkHeader = isHome && !isScrolled
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+      useDarkHeader
+        ? 'bg-transparent'
+        : isScrolled
+          ? 'bg-white shadow-lg'
+          : 'bg-white/95 backdrop-blur-sm'
     }`}>
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <img 
-              src="/images/assets/logo-black.svg" 
+            <img
+              src={useDarkHeader ? '/images/assets/logo-white.svg' : '/images/assets/logo-black.svg'}
               alt="RCFI Logo"
-              className="w-48 h-48 object-contain"
+              className="h-12 w-auto object-contain"
             />
             <div>
-              <div className="font-display font-bold text-lg text-neutral-900">RCFI</div>
-              <div className="text-xs text-neutral-600">Technology</div>
+              <div className={`font-display font-bold text-lg ${useDarkHeader ? 'text-white' : 'text-neutral-900'}`}>RCFI</div>
+              <div className={`text-xs ${useDarkHeader ? 'text-primary-200' : 'text-neutral-600'}`}>Technology</div>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {/* Products Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-neutral-700 hover:text-primary-600 font-medium">
+              <button className={`flex items-center space-x-1 font-medium ${useDarkHeader ? 'text-primary-100 hover:text-white' : 'text-neutral-700 hover:text-primary-600'}`}>
                 <span>Products</span>
                 <FiChevronDown className="w-4 h-4" />
               </button>
@@ -91,9 +95,8 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Solutions Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-neutral-700 hover:text-primary-600 font-medium">
+              <button className={`flex items-center space-x-1 font-medium ${useDarkHeader ? 'text-primary-100 hover:text-white' : 'text-neutral-700 hover:text-primary-600'}`}>
                 <span>Solutions</span>
                 <FiChevronDown className="w-4 h-4" />
               </button>
@@ -112,9 +115,8 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Resources Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-neutral-700 hover:text-primary-600 font-medium">
+              <button className={`flex items-center space-x-1 font-medium ${useDarkHeader ? 'text-primary-100 hover:text-white' : 'text-neutral-700 hover:text-primary-600'}`}>
                 <span>Resources</span>
                 <FiChevronDown className="w-4 h-4" />
               </button>
@@ -133,29 +135,27 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/partners" className="text-neutral-700 hover:text-primary-600 font-medium">
+            <Link href="/partners" className={`font-medium ${useDarkHeader ? 'text-primary-100 hover:text-white' : 'text-neutral-700 hover:text-primary-600'}`}>
               Partners
             </Link>
 
-            <Link href="/about" className="text-neutral-700 hover:text-primary-600 font-medium">
+            <Link href="/about" className={`font-medium ${useDarkHeader ? 'text-primary-100 hover:text-white' : 'text-neutral-700 hover:text-primary-600'}`}>
               About
             </Link>
           </div>
 
-          {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-semibold">
+            <Link href="/contact" className={`font-semibold ${useDarkHeader ? 'text-white hover:text-primary-100' : 'text-primary-600 hover:text-primary-700'}`}>
               Contact Sales
             </Link>
-            <Link href="/contact/demo" className="btn btn-primary">
+            <Link href="/contact/demo" className={useDarkHeader ? 'btn btn-white' : 'btn btn-primary'}>
               Request Demo
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-neutral-700"
+            className={`lg:hidden p-2 ${useDarkHeader ? 'text-white' : 'text-neutral-700'}`}
           >
             {isMobileMenuOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
           </button>
@@ -163,7 +163,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-neutral-200">
+          <div className={`lg:hidden py-4 border-t ${useDarkHeader ? 'border-white/20 bg-primary-900/95 backdrop-blur-md' : 'border-neutral-200'}`}>
             <div className="space-y-4">
               {/* Mobile Products */}
               <div>

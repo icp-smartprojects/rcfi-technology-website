@@ -18,6 +18,7 @@ export default function CTAButton({
     secondary: 'bg-secondary-600 text-white hover:bg-secondary-700 focus:ring-secondary-500 shadow-lg hover:shadow-xl hover:-translate-y-0.5',
     accent: 'bg-accent-600 text-white hover:bg-accent-700 focus:ring-accent-500 shadow-lg hover:shadow-xl hover:-translate-y-0.5',
     outline: 'border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500',
+    'outline-white': 'border-2 border-white/80 text-white hover:bg-white hover:text-primary-700 focus:ring-white focus:ring-offset-primary-800',
     ghost: 'text-primary-600 hover:bg-primary-50 focus:ring-primary-500',
     white: 'bg-white text-primary-700 hover:bg-neutral-50 focus:ring-primary-500 shadow-lg hover:shadow-xl hover:-translate-y-0.5',
   }

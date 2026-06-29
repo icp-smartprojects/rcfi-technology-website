@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
   ]
 
   return (
-    <section className="section-padding bg-neutral-50">
+    <section className="section-padding bg-white relative">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 bg-white rounded-2xl shadow-soft p-8 md:p-12">
+        <div className="mt-16 bg-primary-50 border border-primary-200/60 rounded-2xl shadow-soft p-8 md:p-12">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary-600 mb-2">100%</div>

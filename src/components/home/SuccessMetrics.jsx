@@ -4,6 +4,7 @@ import { companyInfo } from '@/data/companyData'
 export default function SuccessMetrics() {
   return (
     <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-mesh-dark opacity-40 pointer-events-none" />
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{

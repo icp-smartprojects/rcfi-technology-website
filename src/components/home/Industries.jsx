@@ -46,7 +46,7 @@ export default function Industries() {
   ]
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-section-tint relative">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -64,7 +64,7 @@ export default function Industries() {
             <Link
               key={industry.id}
               href={industry.href}
-              className="group bg-white rounded-2xl shadow-soft p-8 hover:shadow-xl transition-all duration-300 card-hover animate-slide-up"
+              className="group bg-white rounded-2xl shadow-soft p-8 hover:shadow-xl transition-all duration-300 card-hover animate-slide-up border border-primary-100/80"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Icon */}
@@ -98,14 +98,11 @@ export default function Industries() {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center p-8 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl">
-            <div className="text-lg font-semibold text-neutral-900">
-              Don't see your industry?
+          <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center p-8 bg-gradient-to-br from-primary-700 to-primary-800 rounded-2xl text-white shadow-xl">
+            <div className="text-lg font-semibold">
+              Don&apos;t see your industry?
             </div>
-            <Link 
-              href="/contact" 
-              className="btn btn-primary"
-            >
+            <Link href="/contact" className="btn btn-white">
               Talk to Us About Custom Solutions
             </Link>
           </div>

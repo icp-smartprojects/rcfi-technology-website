@@ -36,7 +36,7 @@ export default function LatestNews() {
   ]
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-section-tint bg-pattern-dots-light">
       <div className="container-custom">
         {/* Section Header */}
         <div className="flex items-center justify-between mb-12">
