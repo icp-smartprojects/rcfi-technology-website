@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a {
+    @apply text-navy transition-colors;
+  }
+
+  a:hover {
+    @apply text-green;
+  }
+
+  ::selection {
+    background: rgba(30, 142, 110, 0.22);
+    color: #072f4c;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-8;
+  }
+
+  .eyebrow {
+    @apply text-[13px] font-bold uppercase tracking-[0.12em] text-green;
+  }
+
+  .eyebrow-light {
+    @apply text-[13px] font-bold uppercase tracking-[0.12em] text-green-mint;
+  }
+
+  .heading-display {
+    @apply font-display font-extrabold text-navy text-pretty;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-green px-7 py-3.5 text-[15px] font-bold text-white no-underline transition-colors hover:bg-green-hover hover:text-white;
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center justify-center rounded-lg bg-navy px-7 py-3.5 text-[15px] font-bold text-white no-underline transition-colors hover:bg-navy-hover hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg border border-white/35 bg-white/10 px-7 py-3.5 text-[15px] font-semibold text-white no-underline transition-colors hover:bg-white/20 hover:text-white;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-lg border border-[#C7D3DC] bg-white px-7 py-3.5 text-[15px] font-semibold text-navy no-underline transition-colors hover:border-navy hover:text-navy;
+  }
+
+  .btn-white {
+    @apply inline-flex items-center justify-center self-start rounded-lg bg-white px-7 py-3.5 text-[15px] font-bold text-navy no-underline transition-colors hover:bg-[#EDF3F7] hover:text-navy;
+  }
+
+  .card {
+    @apply rounded-[14px] border border-line bg-white;
+  }
+
+  .card-soft {
+    @apply rounded-xl border border-line bg-white;
+  }
+
+  .input-field {
+    @apply rounded-lg border border-[#C7D3DC] bg-white px-3.5 py-3 text-[15px] text-ink outline-none transition-colors focus:border-navy;
+  }
+
+  /* Free-floating titles on dusk / dark photo bands */
+  .band-heading .heading-display,
+  .band-heading h2 {
+    @apply text-white;
+  }
+
+  .band-heading .eyebrow {
+    @apply text-green-mint;
+  }
+
+  .band-heading .band-lead {
+    @apply text-ink-pale;
+  }
+
+  .surface-card {
+    @apply rounded-xl border border-white/20 bg-white/95 shadow-[0_10px_28px_rgba(2,20,35,0.18)] backdrop-blur-[2px];
+  }
+
+  .page-shell {
+    min-height: 1px;
+  }
+}

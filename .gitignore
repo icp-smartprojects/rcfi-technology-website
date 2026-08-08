@@ -39,3 +39,7 @@ next-env.d.ts
 *.swp
 *.swo
 *~
+
+# Website V2 (production)
+website-v2/node_modules/
+website-v2/.next/
